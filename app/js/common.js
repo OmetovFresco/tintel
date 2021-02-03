@@ -1239,10 +1239,6 @@ $(".traectoria_scroll > .left").click(function(e) {
     }
 
     $(".traectoria_scroll > .right").removeClass('not-active');
-
-    console.log("LEFT");
-    console.log("margin_left = " + margin_left);
-    console.log("=========");
 });
 
 $(".traectoria_scroll > .right").click(function(e) {
@@ -1260,10 +1256,6 @@ $(".traectoria_scroll > .right").click(function(e) {
     }
 
     $(".traectoria_scroll > .left").removeClass('not-active');
-
-    console.log("RIGHT");
-    console.log("margin_left = " + margin_left);
-    console.log("=========");
 });
 
 $(".traectoria_line-today").click(function(e) {
