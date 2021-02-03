@@ -1,0 +1,3685 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Exterium</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/style/jquery.jscrollpane.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.2.7/tippy.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+
+    <!-- NEW -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    <div id="small_screen">
+        <div class="content">
+            <div class="big">У вас маленький экран</div>
+        </div>
+    </div>
+    
+    <!-- <div class="ie_msg">
+    	<div class="header">
+    		<a href="/">
+    			<div class="site_name">
+    		        <div class="logo"></div>
+    		    </div>
+    		</a>
+    	</div>
+    	<div class="content">
+    		<div class="text">
+    			<h4>К сожалению, Ваш браузер устарел и не поддерживает используемые на платформе технологии</h4>
+    			<p>Мы рекомендуем обновить ваш браузер или перейти по одной из ссылок ниже, чтобы загрузить последнюю версию современного браузера.</p>
+    
+    			<div class="browser_list">
+    				<a href="https://www.google.com/intl/ru_ru/chrome/" target="_blank">
+    					<img src="../img/icons/chrome.svg" alt="">
+    					<span>Google Chrome</span>
+    				</a>
+    				<a href="https://www.mozilla.org/ru/firefox/new/" target="_blank">
+    					<img src="../img/icons/firefox.svg" alt="">
+    					<span>Mozila Firefox</span>
+    				</a>
+    				<a href="https://www.apple.com/ru/safari/" target="_blank">
+    					<img src="../img/icons/safari.svg" alt="">
+    					<span>Safari</span>
+    				</a>
+    				<a href="https://www.opera.com/" target="_blank">
+    					<img src="../img/icons/opera.svg" alt="">
+    					<span>Opera</span>
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    </div> -->
+    <div id="left_menu">
+        <a href="/challenges.html">
+             <div class="site_name">
+                <!-- <div class="logo">
+                    <span>EX</span>
+                </div>
+                <div class="text">
+                    <span class="name">Exterium</span>
+                    <span class="deskr">Make it. Creative</span>
+                </div> -->
+            </div>
+        </a>
+    
+        <div class="menu_list">
+            <a href="/navigator.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-navigator"></span>
+                </span>
+                <span class="item_name">
+                    <span>Navigator</span>
+                </span>
+            </a>
+    
+            <a href="/courses.html" class="menu_item active">
+                <span class="icon">
+                    <span class="icon-education"></span>
+                </span>
+                <span class="item_name">
+                    <span>Education</span>
+                </span>
+            </a>
+    
+            <a href="/projects.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-project"></span>
+                </span>
+                <span class="item_name">
+                    <span>Project</span>
+                </span>
+            </a>
+    
+            <a href="/challenges.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-challenge"></span>
+                </span>
+                <span class="item_name">
+                    <span>Challenge</span>
+                </span>
+            </a>
+    
+            <a href="/people.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-people"></span>
+                </span>
+                <span class="item_name">
+                    <span>People</span>
+                </span>
+            </a>
+    
+            <a href="/events.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-events"></span>
+                </span>
+                <span class="item_name">
+                    <span>Events</span>
+                </span>
+            </a>
+    
+            <a href="/questions.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-q-a"></span>
+                </span>
+                <span class="item_name">
+                    <span>Questions</span>
+                </span>
+            </a>
+        </div>
+    
+        <div class="footer">
+            <div class="about">
+                <a href="#about">О системе</a>
+            </div>
+            <div class="copy">
+                <span>© Все права защищены 2018</span>
+            </div>
+        </div>
+    </div>
+    <div id="top_menu">
+        <div class="user_pages">
+            <a href="/treks.html">Треки</a>
+            <a href="/activities.html">Активности</a>
+            <a href="/recommendations.html">Рекомендации</a>
+            <a href="/profile.html">Профайл</a>
+        </div>
+    
+        <div class="the_best">
+            <div>
+                <div class="ico">
+                    <img src="/img/best_1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Сегодня рулит:</span>
+                    <span>
+                        <a href="/profile.html">Кирилл Орехов</a>
+                    </span>
+                </div>
+            </div>
+    
+            <div>
+                <div class="ico">
+                    <img src="/img/best_2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Всего на треках:</span>
+                    <span>4253 человек</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <a href="/messages.html" class="link_btn messages">
+                <div class="indicator"></div>
+                <i class="icon icon-a-mail"></i>
+            </a>
+            <div class="open_list_btn notifications">
+                <div class="indicator"></div>
+                <i class="icon icon-a-notifications"></i>
+            </div>
+        </div>
+        <div class="user">
+            <span>Василиса</span>
+            <div class="ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+        </div>
+        
+        <div class="menu">
+            <a href="/profile.html">
+                <img src="../img/icons/a-person-outline.svg" alt="">
+                Профайл
+            </a>
+            <a href="/settings.html">
+                <img src="../img/icons/a-settings.svg" alt="">
+                Настройки
+            </a>
+            <div class="line"></div>
+            <a href="/login.html">
+                <img src="../img/icons/a-logout.svg" alt="">
+                Выход
+            </a>
+        </div>
+    
+    </div>
+    
+    <div class="notifications_popup popup_cloud">
+    
+        <div class="event_alert">
+            <span class="status">Ура! Ваша заявка на курс</span>
+            <span class="event_status accepted">принята</span>
+            <div class="text">
+                <a href="#">«Промышленный дизайн»</a>
+            </div>
+            <div class="time">
+                <span>12:36</span>
+            </div>
+        </div>
+    
+        <div class="event_alert">
+            <span class="status">Увы, Ваша заявка на мероприятие</span>
+            <span class="event_status rejected">отклонена</span>
+            <div class="text">
+                <a href="#">«Сессия по реализации национальных проектов на территории Томской области»</a>
+            </div>
+            <div class="time">
+                <span>10:24</span>
+            </div>
+        </div>
+    
+        <div class="show_all">
+            <a href="/notifications.html">Все уведомления</a>
+        </div>
+    
+    </div>
+
+<div class="page right_block">
+	<div class="content">
+
+		<div class="row">
+			<div class="col-12">
+				
+				<div class="page_title">
+					<h4>Моя траектория развития</h4>
+					<a href="#" class="border_btn traectoria_line-today">Сегодня</a>
+				</div>
+
+				<div class="traectoria_scroll">
+
+					<span class="left">Назад</span>
+					<span class="right not-active">Вперед</span>
+					<!-- not-active -->
+
+					<div class="traectoria_line">
+						<div class="traectories">
+							<div class="traectories_scroll_line">
+
+								<!-- образование -->
+								<div class="traectoria_section education">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-education"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- челлендж - выполнено -->
+								<div class="traectoria_section challenge performed">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-challenge"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта  <span>+ 12 баллов</span> </span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- проект -->
+								<div class="traectoria_section project">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-project"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- событие -->
+								<div class="traectoria_section event">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-events"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- образование -->
+								<div class="traectoria_section education">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-education"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- образование -->
+								<div class="traectoria_section education">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-education"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- образование -->
+								<div class="traectoria_section education">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-education"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- челлендж - выполнено -->
+								<div class="traectoria_section challenge performed">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-challenge"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта  <span>+ 12 баллов</span> </span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- проект -->
+								<div class="traectoria_section project">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-project"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- событие -->
+								<div class="traectoria_section event">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-events"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- образование -->
+								<div class="traectoria_section education">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-education"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- челлендж - выполнено -->
+								<div class="traectoria_section challenge performed">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-challenge"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта  <span>+ 12 баллов</span> </span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний города Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+													<span>+4</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- проект -->
+								<div class="traectoria_section project">
+									<div class="traectoria_content">
+										<div class="icon">
+											<a href="#">
+												<span class="icon-project"></span>
+											</a>
+										</div>
+										<div class="text">
+											<span class="status">Участник проекта</span>
+											<a href="#" class="name">Интерактивная карта всех действующих IT-компаний Томска</a>
+											<div class="line">
+												<a href="#" class="track-prog" data-tippy-content="Программная инженерия" data-tippy-theme="light">
+													<div class="ico">
+														<img src="/img/icons/track-prog-engineering.svg" alt="" class="svg">
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="activity">
+										<span>01.12.20</span>
+									</div>
+								</div>
+
+								<!-- последняя полоска -->
+								<div class="traectoria_section">
+									<div class="traectoria_content"><div class="icon">
+										<a href="#" data-tippy-content="Нажми и получи рекомендацию" data-tippy-theme="light">
+											<span class="icon-q-a"></span>
+										</a>
+									</div></div>
+									<div class="activity"></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+
+		<div class="row mt-40">	
+			<div class="col-12">
+				<div class="page_title">
+			        <h4>Компетенции</h4>
+			        <div class="switch" data-switch="competences">
+			        	<span class="active">Профессиональные</span>
+			        	<span>Базовые</span>
+			        </div>
+			    </div>
+
+			    <div class="switch_content" data-switch="competences">
+			    	<div class="active">
+						<div class="col-12">
+							<div class="row">
+
+								<div class="col-6">
+									<div class="roads_list">
+										<div class="prev"></div>
+										<div class="list">
+											<div class="pin active">
+												<div class="name"><span>Научно-производственная сфера</span></div>
+											</div>
+											<div class="pin">
+												<div class="name"><span>Креативная экономика</span></div>
+											</div>
+											<div class="pin">
+												<div class="name"><span>Экологическая сфера</span></div>
+											</div>
+											<div class="pin">
+												<div class="name"><span>Новый технологический сектор</span></div>
+											</div>
+											<div class="pin">
+												<div class="name"><span>Киберэкономика</span></div>
+											</div>
+										</div>
+										<div class="next"></div>
+									</div>
+								</div>
+								<div class="col-6"></div>
+							
+								<div class="col-6">
+									<div class="roads_in_sphere active">
+										<div class="sphere active">
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/atomic-nuclear-energy-1.png" alt="" class="position">
+													<img src="../img/treks/atomic-nuclear-energy-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Начало движения</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/bioinformatics-3.png" alt="" class="position">
+													<img src="../img/treks/bioinformatics-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Набор скорости</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/digital-journalism-6.png" alt="" class="position">
+													<img src="../img/treks/digital-journalism-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/agrobiotechnology-4.png" alt="" class="position">
+													<img src="../img/treks/agrobiotechnology-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+										</div>
+										<div class="sphere">
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/atomic-nuclear-energy-1.png" alt="" class="position">
+													<img src="../img/treks/atomic-nuclear-energy-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Начало движения</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/bioinformatics-3.png" alt="" class="position">
+													<img src="../img/treks/bioinformatics-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Набор скорости</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/digital-journalism-6.png" alt="" class="position">
+													<img src="../img/treks/digital-journalism-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/agrobiotechnology-4.png" alt="" class="position">
+													<img src="../img/treks/agrobiotechnology-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+										</div>
+										<div class="sphere">
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/atomic-nuclear-energy-1.png" alt="" class="position">
+													<img src="../img/treks/atomic-nuclear-energy-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Начало движения</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/bioinformatics-3.png" alt="" class="position">
+													<img src="../img/treks/bioinformatics-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Набор скорости</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/digital-journalism-6.png" alt="" class="position">
+													<img src="../img/treks/digital-journalism-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/agrobiotechnology-4.png" alt="" class="position">
+													<img src="../img/treks/agrobiotechnology-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+										</div>
+										<div class="sphere">
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/atomic-nuclear-energy-1.png" alt="" class="position">
+													<img src="../img/treks/atomic-nuclear-energy-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Начало движения</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/bioinformatics-3.png" alt="" class="position">
+													<img src="../img/treks/bioinformatics-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Набор скорости</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/digital-journalism-6.png" alt="" class="position">
+													<img src="../img/treks/digital-journalism-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/agrobiotechnology-4.png" alt="" class="position">
+													<img src="../img/treks/agrobiotechnology-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+										</div>
+										<div class="sphere">
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/atomic-nuclear-energy-1.png" alt="" class="position">
+													<img src="../img/treks/atomic-nuclear-energy-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Начало движения</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/bioinformatics-3.png" alt="" class="position">
+													<img src="../img/treks/bioinformatics-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>Набор скорости</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/digital-journalism-6.png" alt="" class="position">
+													<img src="../img/treks/digital-journalism-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+											<div>
+												<div class="name">
+													<span>Lorem ipsum dolor sit.</span>
+												</div>
+												<div class="img">
+													<img src="../img/treks/agrobiotechnology-4.png" alt="" class="position">
+													<img src="../img/treks/agrobiotechnology-map.jpg" alt="" class="map">
+												</div>
+												<div class="start_marker">
+													<span>На старте</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-6">
+									<div class="history_map">
+										
+										<div class="title">
+											<h5>Треки научно-производственной сферы</h5>
+										</div>
+										<div class="link">
+											<a href="#">
+												Подробнее о треке
+												<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
+												    <path fill="#1588ee" fill-rule="nonzero" d="M7 10.59L2.673 6 7 1.41 5.668 0 0 6l5.668 6z"/>
+												</svg>
+											</a>
+										</div>
+
+										<div class="descr mt-24">
+											<span>Начни движение с простых образовательных активностей</span>
+										</div>
+										<div class="recomm_cards">
+											<div class="recomm_card_slider">
+
+												<a href="challenge_page.html" class="recomm_card points_right blue">
+													<span class="where">Челлендж</span>
+													<span class="pionts">
+														<span>36</span>
+														<span>баллов</span>
+													</span>
+													<span class="name">Соревнования по робототехнике</span>
+
+													<div class="bg">
+														<div style="background-image: url('img/bg/image.jpg')"></div>
+													</div>
+												</a>
+
+												<a href="challenge_page.html" class="recomm_card points_right orange">
+													<span class="where">Курс</span>
+													<span class="pionts">
+														<span>36</span>
+														<span>баллов</span>
+													</span>
+													<span class="name">Дизайн-мышление в программировании и верстке</span>
+													
+													<div class="bg">
+														<div style="background-image: url('img/bg/image.jpg')"></div>
+													</div>
+												</a>
+
+												<a href="challenge_page.html" class="recomm_card points_right red">
+													<span class="where">Открытая лекция</span>
+													<span class="pionts">
+														<span>36</span>
+														<span>баллов</span>
+													</span>
+													<span class="name">Встреча HR-клуба Томских компаний</span>
+													
+													<div class="bg">
+														<div style="background-image: url('img/bg/image.jpg')"></div>
+													</div>
+												</a>
+
+											</div>
+
+											
+											<div class="counter">
+												<span id="recomm_card_slider_counter">1</span>
+												<span>/3</span>
+											</div>
+										</div>
+
+										<div class="title mt-32">
+											<h5>Как начать?</h5>
+										</div>
+
+										<div class="num_list">
+											<div>
+												<span>1</span>
+												<span>Нажми «Принять участие»</span>
+											</div>
+											<div>
+												<span>2</span>
+												<span>Выполни задание и опубликуй работу</span>
+											</div>
+											<div>
+												<span>3</span>
+												<span>Дождись ее проверки и получи баллы</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								
+							</div>
+						</div>
+
+			    	</div>
+
+			    	<div>
+						<div class="col-12">
+							<div class="row">
+
+								<div class="col-6">
+						    		<div class="pentagon">
+						    			<div class="labels_penta">
+							    			<div class="label"><span>Экологическая сфера</span></div>
+							    			<div class="label"><span>Креативная экономика</span></div>
+							    			<div class="label"><span>Киберэкономика</span></div>
+							    			<div class="label"><span>Новый технологический сектор</span></div>
+							    			<div class="label"><span>Научно-производственная сфера</span></div>
+							    		</div>
+							    		<canvas id="myChart" class="radar" width="320px" height="232px"></canvas>
+						    		</div>
+						    	</div>
+
+								<div class="col-6">
+									<div class="history_map">
+										<div class="title">
+											<h4>Треки научно-производственной сферы</h4>
+										</div>
+										<div class="descr mt-24">
+											<span>Не очень длинный текст о том что это за диаграмма, компетенции, вот это вот все, на две строки</span>
+										</div>
+										<div class="title mt-16">
+											<h6>Начинай движение</h6>
+										</div>
+
+										<div class="list">
+											<div>
+												<div class="icon">
+													<img src="../img/icons/1.png" alt="">
+												</div>
+												<span>Обрати внимание, где сейчас находится курсор каждого трека. Сейчас ты НА СТАРТЕ.</span>
+											</div>
+											<div>
+												<div class="icon">
+													<img src="../img/icons/2.png" alt="">
+												</div>
+												<span>Выбирай понравившийся челлендж, мероприятие или проект.</span>
+											</div>
+											<div>
+												<div class="icon">
+													<img src="../img/icons/3.png" alt="">
+												</div>
+												<span>Получай баллы и компетенции за его выполнение.</span>
+											</div>
+											<div>
+												<div class="icon">
+													<img src="../img/icons/4.png" alt="">
+												</div>
+												<span>При начислении от 1 до 20 баллов курсор соответствующего трека передвинется. Ты перейдешь в статус НАЧАЛО ДВИЖЕНИЯ.</span>
+											</div>
+											<div>
+												<div class="icon">
+													<img src="../img/icons/5.png" alt="">
+												</div>
+												<span>Получи статус НАБОР СКОРОСТИ до 20 декабря 2019 года и выиграй приз! Для этого набери от 21 до 51 балла.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+					    	</div>
+					    </div>
+			    	</div>
+
+			    	<div class="treks_popup">
+						<div class="title">
+							<h4>Треки научно-производственной сферы</h4>
+							<!-- <div class="close">×</div> -->
+						</div>
+						<div class="descr">
+							<span>Не очень длинный текст о том что это за диаграмма, компетенции, вот это вот все, на две строки</span>
+						</div>
+
+						<div class="treks_name_list">
+							<span class="active">Промышленный дизайн</span>
+							<span>Промышленная экономика</span>
+							<span>Технологии освоения космоса</span>
+							<span>Агробио-технологии</span>
+						</div>
+
+						<div class="treks_donut">
+							<svg width="180px" height="180px" viewBox="1 1 44 44" class="donut" aria-labelledby="beers-title beers-desc" role="img">
+								<circle class="donut-ring" cx="22" cy="22" r="42%" fill="transparent" stroke="#ffffff0" stroke-width="8px" role="presentation"></circle>
+								<!-- Зона #1 -->
+								<circle class="donut-segment" cx="22" cy="22" r="40%" fill="transparent" stroke="#ff4b3a" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="62.5"></circle>
+								<!-- Зона #2 -->
+								<circle class="donut-segment" cx="22" cy="22" r="40%" fill="transparent" stroke="#ff800b" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="75"></circle>
+								<!-- Зона #3 -->
+								<circle class="donut-segment" cx="22" cy="22" r="40%" fill="transparent" stroke="#ffc500" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="87.5"></circle>
+								<!-- Зона #4 -->
+								<circle class="donut-segment" cx="22" cy="22" r="40%" fill="transparent" stroke="#00cd6a" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="100"></circle>
+							</svg>
+						</div>
+
+						<div class="competencies_block">
+							<h6>Компетенции</h6>
+							<div class="competencies_list">
+								<div class="competence">
+									<span>Технологии компьютерного конструирования CAD</span>
+									<div class="line">
+										<div style="width: 74%;"></div>
+									</div>
+								</div>
+
+								<div class="competence">
+									<span>Разработка дизайн-концепции объетов промышленного производства</span>
+									<div class="line">
+										<div style="width: 31%;"></div>
+									</div>
+								</div>
+
+								<div class="competence">
+									<span>Владение графическими редакторами</span>
+									<div class="line">
+										<div style="width: 53%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+			    </div>
+
+						
+			</div>
+		</div>
+
+		<div class="row mt-40">	
+			<div class="col-6">
+
+				<div class="row">
+					<div class="col-12">
+						<div class="page_title">
+					        <h4>Достижения</h4>
+					    </div>
+						
+						<div class="progress_stat">
+							
+							<a href="#progress_modal" class="open_modal">
+								<div class="progress_item">
+									<div class="icon">
+										<div class="count buble">4</div>
+										<img src="/img/icons/achivements.svg" alt="">
+									</div>
+									<div class="name">
+										<span>Достижения</span>
+									</div>
+								</div>
+							</a>
+
+							<a href="#challenges_modal" class="open_modal">
+								<div class="progress_item">
+									<div class="icon">
+										<div class="count buble">5</div>
+										<img src="/img/icons/challenges.svg" alt="">
+									</div>
+									<div class="name">
+										<span>Челленджи</span>
+									</div>
+								</div>
+							</a>
+							
+							<a href="#activity_modal" class="open_modal">
+								<div class="progress_item">
+									<div class="icon">
+										<div class="count buble">4</div>
+										<img src="/img/icons/event.svg" alt="">
+									</div>
+									<div class="name">
+										<span>Мероприятия</span>
+									</div>
+								</div>
+							</a>
+							
+							<a href="#projects_modal" class="open_modal">
+								<div class="progress_item">
+									<div class="icon">
+										<div class="count buble">2</div>
+										<img src="/img/icons/projects.svg" alt="">
+									</div>
+									<div class="name">
+										<span>Проекты</span>
+									</div>
+								</div>
+							</a>
+							
+							<a href="#courses_modal" class="open_modal">
+								<div class="progress_item">
+									<div class="icon">
+										<div class="count buble">3</div>
+										<img src="/img/icons/courses.svg" alt="">
+									</div>
+									<div class="name">
+										<span>Курсы</span>
+									</div>
+								</div>
+							</a>
+
+						</div>
+					</div>
+
+					<div class="col-6 mt-40">
+						<div class="page_title">
+					        <h4>Увлечения</h4>
+					        <div class="title_menu">
+					        	<div class="title_menu_content">
+						        	<a href="#hobbies_modal" class="open_modal">Редактировать</a>
+						        </div>
+					        </div>
+					    </div>
+						
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+
+						<a href="#" class="link_border">Смотреть все</a>
+					</div>
+
+					<div class="col-6 mt-40">
+						<div class="page_title">
+					        <h4>Языки</h4>
+					        <div class="title_menu">
+					        	<div class="title_menu_content">
+						        	<a href="#langs_modal" class="open_modal">Редактировать</a>
+						        </div>
+					        </div>
+					    </div>
+
+					    <div class="lang">
+							<i class="ru"></i>
+							<span>
+								Русский
+								<span>(родной)</span>
+							</span>
+						</div>
+
+						<div class="lang">
+							<i class="gb"></i>
+							<span>
+								Английский
+								<span>(С1 — Advance)</span>
+							</span>
+						</div>
+
+						<!-- <div class="lang">
+							<i class="by"></i>
+							<span>Белорусский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ge"></i>
+							<span>Грузинский</span>
+						</div>
+
+						<div class="lang">
+							<i class="kz"></i>
+							<span>Казахский</span>
+						</div>
+
+						<div class="lang">
+							<i class="kg"></i>
+							<span>Киргизский</span>
+						</div>
+
+						<div class="lang">
+							<i class="lv"></i>
+							<span>Латвийский</span>
+						</div>
+
+						<div class="lang">
+							<i class="lt"></i>
+							<span>Литовский</span>
+						</div>
+
+						<div class="lang">
+							<i class="md"></i>
+							<span>Молдавский</span>
+						</div>
+
+						<div class="lang">
+							<i class="tj"></i>
+							<span>Таджикский</span>
+						</div>
+
+						<div class="lang">
+							<i class="tm"></i>
+							<span>Туркменский</span>
+						</div>
+
+						<div class="lang">
+							<i class="uz"></i>
+							<span>Узбекский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ua"></i>
+							<span>Украинский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ee"></i>
+							<span>Эстонский</span>
+						</div>
+
+						<div class="lang">
+							<i class="cn"></i>
+							<span>Китайский</span>
+						</div>
+
+						<div class="lang">
+							<i class="es"></i>
+							<span>Испанский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ae"></i>
+							<span>Арабский</span>
+						</div>
+
+						<div class="lang">
+							<i class="pt"></i>
+							<span>Португальский</span>
+						</div>
+
+						<div class="lang">
+							<i class="de"></i>
+							<span>Немецкий</span>
+						</div>
+
+						<div class="lang">
+							<i class="gf"></i>
+							<span>Французский</span>
+						</div>
+
+						<div class="lang">
+							<i class="az"></i>
+							<span>
+								Азербайджанский
+							</span>
+						</div> -->
+
+						<a href="#" class="link_border">Смотреть все</a>
+					</div>
+
+					<div class="col-12 mt-40">
+						<div class="page_title">
+					        <h4>Технические навыки</h4>
+					        <div class="title_menu">
+					        	<div class="title_menu_content">
+						        	<a href="#interests_modal" class="open_modal">Редактировать</a>
+						        </div>
+					        </div>
+						        
+					    </div>
+					    <div class="interests_list">
+							<span>Adobe Illustrator</span>
+							<span>Черчение</span>
+							<span>3D-печать</span>
+							<span>Моделирование</span>
+							<span>Adobe Photoshop</span>
+							<span>C#</span>
+							<span>C++</span>
+						</div>
+
+						<a href="#" class="link_border">Смотреть все</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-6">
+
+				<div class="page_title">
+			        <h4>Ваше место в рейтинге</h4>
+			    </div>
+
+				<div class="top_list">
+					<div class="line">
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+									<div class="points buble">122</div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava2.png');">
+									<div class="points buble">102</div>
+								</div>
+								<div class="name">
+									<span>Максим</span>
+									<span>Балановский</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+									<div class="points buble">96</div>
+								</div>
+								<div class="name">
+									<span>Петр</span>
+									<span>Лазарев</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava4.png');">
+									<div class="points buble">93</div>
+								</div>
+								<div class="name">
+									<span>Кирилл</span>
+									<span>Орехов</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+					<div class="line">
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava5.png');">
+									<div class="points buble">85</div>
+								</div>
+								<div class="name">
+									<span>Константин</span>
+									<span>Беляев</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava6.png');">
+									<div class="points buble">59</div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava6.png');">
+									<div class="points buble">62</div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava5.png');">
+									<div class="points buble">85</div>
+								</div>
+								<div class="name">
+									<span>Константин</span>
+									<span>Беляев</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+									<div class="points buble">60</div>
+								</div>
+								<div class="name">
+									<span>Максим</span>
+									<span>Балановский</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava6.png');">
+									<div class="points buble">59</div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava7.png');">
+									<div class="points buble">56</div>
+								</div>
+								<div class="name">
+									<span>Максим</span>
+									<span>Балановский</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+									<div class="points buble">58</div>
+								</div>
+								<div class="name">
+									<span>Петр</span>
+									<span>Лазарев</span>
+								</div>
+							</a>
+						</div>						
+					</div>
+
+					<div class="line you">
+						<div class="user user_top select">
+							<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+								<div class="points buble">96</div>
+							</div>
+							<div class="text">
+								<div class="name">
+									<span>Петр Лазарев</span>
+								</div>
+								<div class="info">
+									<span>Место в рейтиге:</span>
+									<span>7 из 1392</span>
+								</div>
+								<div class="info">
+									<span>На платформе:</span>
+									<span>32 дня</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- <div class="col-6">
+				<div class="page_title">
+			        <h4>Загруженность</h4>
+			    </div>
+
+				<div id="speedometer">
+					
+					<div class="diogram">
+						<div class="speedometr" data-hourly-load="11:10">
+							<div class="line">
+								<img src="/img/speedometr_line.svg" alt="">
+							</div>
+							<img src="/img/speedometr.svg" alt="">
+						</div>
+						<div class="hourly_load"></div>
+					</div>
+
+					<div class="text_diogram">
+						<p>Текст о том сколько дополнительных часов может заниматься школьник. И сколько этих часов уже набралось.</p>
+					</div>
+
+				</div>
+
+			</div> -->
+
+		</div>
+
+		<!-- <div class="row mt-40">
+
+			<div class="col-6">
+				<div class="page_title">
+			        <h4>Тип личности</h4>
+			        <i class="explanation icon-q-a">
+			        	<span class="tooltip">
+			        		<span>Киберэкономика состоит из системных ресурсов, которые повышают эффективность экономических процессов путем оптимального управления связью и взаимодействием между подсистемами субъектов и объектов экономических отношений. Глобализация на основе новейших ИКТ.</span>
+			        	</span>
+			        </i>
+			    </div>
+				
+				<div class="type_line" data-type="-43">
+					<span>Экстраверсия</span>
+					<span>Интроверсия</span>
+					<div class="line">
+						<div class="blue_line"></div>
+					</div>
+				</div>
+				<div class="type_line" data-type="75.673">
+					<span>Независимость</span>
+					<span>Согласие</span>
+					<div class="line">
+						<div class="blue_line"></div>
+					</div>
+				</div>
+				<div class="type_line" data-type="24.571">
+					<span>Обучаемость</span>
+					<span>Инертность</span>
+					<div class="line">
+						<div class="blue_line"></div>
+					</div>
+				</div>
+
+			</div>
+		</div> -->
+
+		<div class="row mt-40">
+
+			<div class="col-12">
+				<div class="page_title publications_title">
+			        <h4>Вознаграждения</h4>
+			        <div class="slider_nav">
+			        	<div class="awards_slider_prev"></div>
+			        	<div class="awards_slider_next"></div>
+			        </div>
+			    </div>
+				
+			    <div class="awards_slider">
+
+			    	<!-- награда -->
+			    	<div>
+			    		<div class="award" data-tippy-content='<b>Награда за участие</b><span>Дается за активацию аккаунта</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/3.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда -->
+			    	<div>
+			    		<div class="award" data-tippy-content='<b>Счет в твою пользу</b><span>Начислены первые баллы компетенций.</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/8.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда -->
+			    	<div>
+			    		<div class="award" data-tippy-content='<b>Пример для подражания</b><span>Попал в ТОП участников</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/4.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда - полученная -->
+			    	<div>
+			    		<div class="award received" data-tippy-content='<b>Мастер на все треки</b><span>Проявил компетенции минимум по 3 трекам</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/2.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда -->
+			    	<div>
+			    		<div class="award" data-tippy-content='<b>Свой среди своих</b><span>Оставил 10 комментариев к работам других пользователей</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/7.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда -->
+			    	<div>
+			    		<div class="award" data-tippy-content='<b>Про-движение</b><span>Перешел от статуса "Начало движения" к "Набор скорости"</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/5.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда - полученная -->
+			    	<div>
+			    		<div class="award received" data-tippy-content='<b>Всегда на треках</b><span>Был онлайн хотя бы один день в неделю на протяжении 4 недель подряд</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/1.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда -->
+			    	<div>
+			    		<div class="award" data-tippy-content='<b>Путь совершенствования</b><span>Изучил 3 курса</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/6.svg" alt="">
+			    		</div>
+			    	</div>
+
+			    	<!-- награда -->
+			    	<div>
+			    		<div class="award" data-tippy-content='<b>Турист</b><span>В течение месяца не завершил ни одну из активностей, на которые записался</span>' data-tippy-theme="light">
+			    			<img src="../img/achivements/9.svg" alt="">
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="row mt-40">	
+			<div class="col-12">
+				<div class="page_title publications_title">
+			        <h4>Мои публикации</h4>
+			        <a href="#archive" class="open_modal border_btn">Все</a>
+			        <div class="slider_nav">
+			        	<div class="line-slider_prev"></div>
+			        	<div class="line-slider_next"></div>
+			        </div>
+			    </div>
+
+			    <div class="line-slider publications">
+			    	
+			    	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+			    </div>
+			</div>
+		</div>
+	    
+	</div>
+</div>
+
+<!-- Мои публикации модалка -->
+<div id="archive" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Мои публикации</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+			
+			<div class="text">
+				<span>Здесь отображаются все ваши публикации для треков.</span>
+			</div>
+			
+			<div class="list">
+				<div class="news">
+					<div class="news_list">
+
+						<div class="cut_news_title">
+							<span>Трек «Промышленный дизайн»</span>
+						</div>
+
+						<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<!--  -->
+
+					   	<div class="cut_news_title">
+							<span>Трек «Промышленный дизайн»</span>
+						</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<!--  -->
+
+					   	<div class="cut_news_title">
+							<span>Трек «Промышленный дизайн»</span>
+						</div>
+
+					   <div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+					   	
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Технические навыки модалка -->
+<div id="interests_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Технические навыки</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+			<div class="interests_modal_all_list">
+				<div class="interests_modal_selected checked_cb_container">
+					<label for="interest_1"><input id="interest_1" type="checkbox" name="interests[]"><span class="interest">Adobe Illustrator</span></label>
+					<label for="interest_2"><input id="interest_2" type="checkbox" name="interests[]"><span class="interest">Черчение</span></label>
+					<label for="interest_3"><input id="interest_3" type="checkbox" name="interests[]"><span class="interest">3D-печать</span></label>
+					<label for="interest_4"><input id="interest_4" type="checkbox" name="interests[]"><span class="interest">Моделирование</span></label>
+					<label for="interest_5"><input id="interest_5" type="checkbox" name="interests[]"><span class="interest">Adobe Photoshop</span></label>
+					<label for="interest_6"><input id="interest_6" type="checkbox" name="interests[]"><span class="interest">C#</span></label>
+					<label for="interest_7"><input id="interest_7" type="checkbox" name="interests[]"><span class="interest">C++</span></label>
+					<label for="interest_8"><input id="interest_1" type="checkbox" name="interests[]"><span class="interest">Adobe Illustrator</span></label>
+					<label for="interest_9"><input id="interest_2" type="checkbox" name="interests[]"><span class="interest">Черчение</span></label>
+					<label for="interest_10"><input id="interest_3" type="checkbox" name="interests[]"><span class="interest">3D-печать</span></label>
+					<label for="interest_11"><input id="interest_4" type="checkbox" name="interests[]"><span class="interest">Моделирование</span></label>
+					<label for="interest_12"><input id="interest_5" type="checkbox" name="interests[]"><span class="interest">Adobe Photoshop</span></label>
+					<label for="interest_13"><input id="interest_6" type="checkbox" name="interests[]"><span class="interest">C#</span></label>
+					<label for="interest_14"><input id="interest_7" type="checkbox" name="interests[]"><span class="interest">C++</span></label>
+				</div>
+
+				<div class="line"></div>
+
+				<div class="list">
+					<label for="interest_1"><input id="interest_1" type="checkbox" name="interests[]"><span class="interest">Adobe Illustrator</span></label>
+					<label for="interest_2"><input id="interest_2" type="checkbox" name="interests[]"><span class="interest">Черчение</span></label>
+					<label for="interest_3"><input id="interest_3" type="checkbox" name="interests[]"><span class="interest">3D-печать</span></label>
+					<label for="interest_4"><input id="interest_4" type="checkbox" name="interests[]"><span class="interest">Моделирование</span></label>
+					<label for="interest_5"><input id="interest_5" type="checkbox" name="interests[]"><span class="interest">Adobe Photoshop</span></label>
+					<label for="interest_6"><input id="interest_6" type="checkbox" name="interests[]"><span class="interest">C#</span></label>
+					<label for="interest_7"><input id="interest_7" type="checkbox" name="interests[]"><span class="interest">C++</span></label>
+					<label for="interest_8"><input id="interest_1" type="checkbox" name="interests[]"><span class="interest">Adobe Illustrator</span></label>
+					<label for="interest_9"><input id="interest_2" type="checkbox" name="interests[]"><span class="interest">Черчение</span></label>
+					<label for="interest_10"><input id="interest_3" type="checkbox" name="interests[]"><span class="interest">3D-печать</span></label>
+					<label for="interest_11"><input id="interest_4" type="checkbox" name="interests[]"><span class="interest">Моделирование</span></label>
+					<label for="interest_12"><input id="interest_5" type="checkbox" name="interests[]"><span class="interest">Adobe Photoshop</span></label>
+					<label for="interest_13"><input id="interest_6" type="checkbox" name="interests[]"><span class="interest">C#</span></label>
+					<label for="interest_14"><input id="interest_7" type="checkbox" name="interests[]"><span class="interest">C++</span></label>
+				</div>
+	    	</div>
+
+	    	<div class="row">
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="blue_btn w100">Сохранить</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Увлечения модалка -->
+<div id="hobbies_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Увлечения</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+			<div class="hobbies_modal_all_list">
+
+				<div class="hobbies_modal_selected checked_cb_container">
+					<label for="hobby_1">
+		    			<input id="hobby_1" type="checkbox" name="hobby[]">
+		    			<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_2">
+						<input id="hobby_2" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_3">
+						<input id="hobby_3" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_4">
+						<input id="hobby_4" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_5">
+						<input id="hobby_5" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_6">
+						<input id="hobby_6" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_7">
+						<input id="hobby_7" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_8">
+						<input id="hobby_8" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_9">
+						<input id="hobby_9" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_10">
+						<input id="hobby_10" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_11">
+						<input id="hobby_11" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_12">
+						<input id="hobby_12" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+		    		<label for="hobby_13">
+		    			<input id="hobby_13" type="checkbox" name="hobby[]">
+		    			<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_14">
+						<input id="hobby_14" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_15">
+						<input id="hobby_15" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_16">
+						<input id="hobby_16" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_17">
+						<input id="hobby_17" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_18">
+						<input id="hobby_18" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_19">
+						<input id="hobby_19" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_20">
+						<input id="hobby_20" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_21">
+						<input id="hobby_21" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_22">
+						<input id="hobby_22" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_23">
+						<input id="hobby_23" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_24">
+						<input id="hobby_24" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_25">
+						<input id="hobby_25" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_26">
+						<input id="hobby_26" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_27">
+						<input id="hobby_27" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_28">
+						<input id="hobby_28" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_29">
+						<input id="hobby_29" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_30">
+						<input id="hobby_30" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_31">
+						<input id="hobby_31" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_32">
+						<input id="hobby_32" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_33">
+						<input id="hobby_33" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+				</div>
+
+				<div class="line"></div>
+
+				<div class="list">
+
+		    		<label for="hobby_1">
+		    			<input id="hobby_1" type="checkbox" name="hobby[]">
+		    			<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_2">
+						<input id="hobby_2" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_3">
+						<input id="hobby_3" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_4">
+						<input id="hobby_4" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_5">
+						<input id="hobby_5" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_6">
+						<input id="hobby_6" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_7">
+						<input id="hobby_7" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_8">
+						<input id="hobby_8" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_9">
+						<input id="hobby_9" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_10">
+						<input id="hobby_10" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_11">
+						<input id="hobby_11" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_12">
+						<input id="hobby_12" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+		    		<label for="hobby_13">
+		    			<input id="hobby_13" type="checkbox" name="hobby[]">
+		    			<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_14">
+						<input id="hobby_14" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_15">
+						<input id="hobby_15" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_16">
+						<input id="hobby_16" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_17">
+						<input id="hobby_17" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_18">
+						<input id="hobby_18" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_19">
+						<input id="hobby_19" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_20">
+						<input id="hobby_20" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_21">
+						<input id="hobby_21" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_22">
+						<input id="hobby_22" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_23">
+						<input id="hobby_23" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_24">
+						<input id="hobby_24" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_25">
+						<input id="hobby_25" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_26">
+						<input id="hobby_26" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_27">
+						<input id="hobby_27" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_28">
+						<input id="hobby_28" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_29">
+						<input id="hobby_29" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_30">
+						<input id="hobby_30" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_31">
+						<input id="hobby_31" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_32">
+						<input id="hobby_32" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_33">
+						<input id="hobby_33" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+				</div>
+	    	</div>
+
+	    	<div class="row">
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="blue_btn w100">Сохранить</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Языки модалка -->
+<div id="langs_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Языки</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="lang">
+				<i class="ru"></i>
+				<span>
+					Русский
+					<span>(родной)</span>
+					<span class="edit"></span>
+					<span class="delete"></span>
+				</span>
+			</div>
+
+			<div class="lang">
+				<i class="az"></i>
+				<span>
+					Азербайджанский
+					<span>(С1 — Advance)</span>
+					<span class="edit"></span>
+					<span class="delete"></span>
+				</span>
+			</div>
+
+
+		    <form>
+		    	<div class="row">
+		    		<div class="col-4">
+		    			<select>
+							<option selected>Английский</option>
+							<option>Русский</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<select>
+							<option selected>C1 — Advance</option>
+							<option>Родной</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<button class="border_btn big">Сохранить</button>
+		    		</div>
+		    	</div>
+		    </form>
+
+		    <hr>
+
+		    <form>
+		    	<div class="row">
+		    		<div class="col-4">
+		    			<select>
+		    				<option disabled selected>Язык</option>
+							<option>Английский</option>
+							<option>Русский</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<select>
+		    				<option disabled selected>Уровень владения</option>
+							<option>C1 — Advance</option>
+							<option>Родной</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<button class="blue_btn">Добавить</button>
+		    		</div>
+		    	</div>
+		    </form>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Компетенции модалка -->
+<div id="competences_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Добавить компетенции</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь вы можете отправить компетенции на подтверждение.</span>
+	    	</div>
+
+	    	<form action="">
+	    		<textarea name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+
+	    		<hr>
+
+	    		<div class="files_uploader">
+					<div id="output_upload" class="upload_list"></div>
+
+					<div class="input file">
+						<label class="" for="competences_modal_upload">
+			    			Загрузить файл
+			    		</label>
+			    		<input type="file" id="competences_modal_upload" name="competences_modal_upload[]" multiple />
+					</div>
+				</div>
+	    	</form>
+	    	
+		</div>
+	</div>
+</div>
+
+<!-- Достиения модалка -->
+<div id="progress_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Достижения</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь отображаются ваши достижения, в том числе полученные вне платформы.</span>
+	    	</div>
+
+	    	<div class="progres_list">
+	    		<div class="row">
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+	    		</div>
+	    		
+	    	</div>
+			<form action="">
+		    	<hr>
+				<div class="files_uploader">
+					<div id="progress_modal_output_upload" class="upload_list"></div>
+
+					<div class="input file">
+						<label class="" for="progress_modal_upload">
+			    			Загрузить фото
+			    		</label>
+			    		<input type="file" id="progress_modal_upload" name="competences_modal_upload[]" multiple />
+					</div>
+				</div>
+			</form>
+	    	
+		</div>
+	</div>
+</div>
+
+<!-- Челленджи модалка -->
+<div id="challenges_modal" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Челленджи</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+			<div class="list">
+				<div class="news">
+					<div class="news_list">
+
+						<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+					</div>
+				</div>
+	    	</div>
+	    	
+		</div>
+	</div>
+</div>
+
+<!-- Мероприятия модалка -->
+<div id="activity_modal" class="modal_div">
+	<div>
+		<div class="modal_title"><h3>Мероприятия</h3></div>
+
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text"><span>Здесь отображаются мероприятия, которые вы посетили.</span></div>
+
+	    	<div class="list">
+	    		<div class="news">
+		    		<div class="news_list">
+						
+						<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Проекты модалка -->
+<div id="projects_modal" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Проекты</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь отображаются проекты, которые вы прошли на платформе.</span>
+	    	</div>
+
+	    	<div class="list">
+	    		<div class="news">
+		    		<div class="news_list">
+						
+						<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+						
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Курсы модалка -->
+<div id="courses_modal" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Курсы</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь отображаются курсы пройденные на платформе.</span>
+	    	</div>
+
+	    	<div class="list">
+	    		<div class="news">
+		    		<div class="news_list">
+						
+						<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+						
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- Модалка для страницы пользователя -->
+<div id="del_friend" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Удаление из друзей</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+	    	<div class="text">
+	    		<span>Вы уверены, что хотите удалить Катерину Любер из друзей?</span>
+	    	</div>
+
+	    	<div class="row mt-24">
+	    		<div class="col-2"></div>
+	    		<div class="col-4">
+	    			<button class="border_btn big w100 close-button">Нет</button>
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="red_btn w100 close-button">Да</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+<script>
+	function competences_modal_upload(evt) {
+	    var files = evt.target.files; // FileList object
+	    document.getElementById('competences_modal_upload').innerHTML = "";
+
+	    document.getElementById('output_upload').innerHTML = "";
+	    
+	    for (var i = 0, f; f = files[i]; i++) {
+
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Только изображения....");
+	            break;
+	        }
+
+	        var reader = new FileReader();
+
+	        // Closure to capture the file information.
+	        reader.onload = (function(theFile) {
+	            return function(e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	                document.getElementById('output_upload').insertBefore(span, null);
+	            };
+	        })(f);
+
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	  
+	document.getElementById('competences_modal_upload').addEventListener('change', competences_modal_upload, false);
+
+	function progress_modal_upload(evt) {
+	    var files = evt.target.files; // FileList object
+	    document.getElementById('progress_modal_upload').innerHTML = "";
+
+	    document.getElementById('progress_modal_output_upload').innerHTML = "";
+	    
+	    for (var i = 0, f; f = files[i]; i++) {
+
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Только изображения....");
+	            break;
+	        }
+
+	        var reader = new FileReader();
+
+	        // Closure to capture the file information.
+	        reader.onload = (function(theFile) {
+	            return function(e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	                document.getElementById('progress_modal_output_upload').insertBefore(span, null);
+	            };
+	        })(f);
+
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	  
+	document.getElementById('progress_modal_upload').addEventListener('change', progress_modal_upload, false);
+</script>
+
+<div id="right_block">
+
+	<div class="expand_block"></div>
+
+	<div class="roll_up_btn"></div>
+
+	<a href="/settings.html" class="settings"><img src="../img/icons/a-settings.svg" alt=""></a>
+
+	<div class="profile">
+		<div class="photo">
+			<div class="ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+		</div>
+		<div class="name">
+			<span>Василиса<br>Александрова</span>
+		</div>
+		<div class="deskr">
+			<span>«Хочу войти в состав команды Томска по JuniorSkill!»</span>
+		</div>
+
+		<div class="online_status">
+			<span>Онлайн</span>
+		</div>
+
+		<div class="send_msg">
+			<a href="/messages.html" class="border_btn big">Написать сообщение</a>
+		</div>
+
+		<div class="add_friend">
+			<button class="border_btn big">Добавить в друзья</button>
+		</div>
+
+		<div class="delete-friend hide">
+			<a href="#del_friend" class="open_modal link_border ico ico-person-delete">Удалить из друзей</a>
+		</div>
+
+		<div class="complain">
+			<a href="#" class="link_border ico ico-attention">Пожаловаться</a>
+		</div>
+	</div>
+
+	<div class="friends">
+		<div class="page_title">
+	        <h4>Друзья</h4>
+	        <a href="/user_friends.html" class="link_border">Все друзья</a>
+	    </div>
+
+	    <div class="friends_slider">
+	    	<div>
+	    		<div class="users_list">
+	    			<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+								<div class="points buble">122</div>
+							</div>
+							<div class="name">
+								<span>Катерина</span>
+								<span>Любер</span>
+							</div>
+						</a>
+					</div>
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava2.png');">
+								<div class="points buble">102</div>
+							</div>
+							<div class="name">
+								<span>Максим</span>
+								<span>Балановский</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+								<div class="points buble">96</div>
+							</div>
+							<div class="name">
+								<span>Петр</span>
+								<span>Лазарев</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava4.png');">
+								<div class="points buble">93</div>
+							</div>
+							<div class="name">
+								<span>Кирилл</span>
+								<span>Орехов</span>
+							</div>
+						</a>
+					</div>
+	    		</div>
+	    	</div>
+
+	    	<div>
+	    		<div class="users_list">
+	    			<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+								<div class="points buble">122</div>
+							</div>
+							<div class="name">
+								<span>Катерина</span>
+								<span>Любер</span>
+							</div>
+						</a>
+					</div>
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava2.png');">
+								<div class="points buble">102</div>
+							</div>
+							<div class="name">
+								<span>Максим</span>
+								<span>Балановский</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+								<div class="points buble">96</div>
+							</div>
+							<div class="name">
+								<span>Петр</span>
+								<span>Лазарев</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava4.png');">
+								<div class="points buble">93</div>
+							</div>
+							<div class="name">
+								<span>Кирилл</span>
+								<span>Орехов</span>
+							</div>
+						</a>
+					</div>
+	    		</div>
+	    	</div>
+
+	    </div>
+	    <div class="slider_counter">
+	    	<span id="friends_slider_counter">1</span>/3
+	    </div>
+	</div>
+
+	<div class="mertors">
+		<div class="page_title">
+	        <h4>Наставники</h4>
+	    </div>
+
+	    <div class="mertors_slider shadow-box">
+	    	<div>
+	    		<div class="mentor">
+	    			<div class="img">
+	    				<div style="background-image: url('../img/bg/bg1.jpg');"></div>
+	    			</div>
+	    			<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');"></div>
+	    			<div class="name">
+	    				<span>Анастасия<br>Вольнорудова</span>
+	    			</div>
+	    			<div class="deskr">
+	    				<span>Основатель креативного агенства «Амика». В разработке и руководстве коммандой 10 лет</span>
+	    			</div>
+	    			
+	    		</div>
+	    	</div>
+
+	    	<div>
+	    		<div class="mentor">
+	    			<div class="img">
+	    				<div style="background-image: url('../img/bg/bg2.jpg');"></div>
+	    			</div>
+	    			<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');"></div>
+	    			<div class="name">
+	    				<span>Анастасия<br>Вольнорудова</span>
+	    			</div>
+	    			<div class="deskr">
+	    				<span>Основатель креативного агенства «Амика». В разработке и руководстве коммандой 10 лет</span>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    </div>
+	    <div class="slider_counter">
+	    	<span id="mertors_slider_counter">1</span>/3
+	    </div>
+	</div>
+
+</div>
+
+	<footer>
+
+	</footer>
+
+	<div id="overlay"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
+
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<!-- NEW -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

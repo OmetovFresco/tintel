@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>a-card-education</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="a-card-education" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,16 L16,9 L13,9 L13,16 L16,16 Z M18,16 L20,16 L20,18 L4,18 L4,16 L6,16 L6,9 L4,9 L12,3 L20,9 L18,9 L18,16 Z M11,16 L11,9 L8,9 L8,16 L11,16 Z M3,19 L21,19 L21,21 L3,21 L3,19 Z" id="Shape" fill="#BFBFBF" fill-rule="nonzero"></path>
+        <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" opacity="0" x="0" y="0" width="24" height="24"></rect>
+    </g>
+</svg>

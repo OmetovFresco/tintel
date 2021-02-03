@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>car</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Треки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Трек" transform="translate(-307.000000, -776.000000)">
+            <g id="компетенции" transform="translate(304.000000, 652.000000)">
+                <g id="car" transform="translate(0.000000, 120.000000)">
+                    <path d="M19.0550585,9.5 L17.8685479,5.5 L6.13145212,5.5 L4.94494149,9.5 L19.0550585,9.5 Z M19.5,11 L4.5,11 L4.5,16.5 L19.5,16.5 L19.5,11 Z M5,4 L19,4 L21,11 L21,20 L18,20 L18,18 L6,18 L6,20 L3,20 L3,11 L5,4 Z M7.5,15 C6.67157288,15 6,14.3284271 6,13.5 C6,12.6715729 6.67157288,12 7.5,12 C8.32842712,12 9,12.6715729 9,13.5 C9,14.3284271 8.32842712,15 7.5,15 Z M16.5,15 C15.6715729,15 15,14.3284271 15,13.5 C15,12.6715729 15.6715729,12 16.5,12 C17.3284271,12 18,12.6715729 18,13.5 C18,14.3284271 17.3284271,15 16.5,15 Z" id="Shape" fill="#4167BB" fill-rule="nonzero"></path>
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

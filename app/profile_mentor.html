@@ -1,0 +1,2122 @@
+//= template/header.html
+
+<div class="page right_block">
+	<div class="content">
+
+		<div class="row">	
+			<div class="col-6">
+				<div class="page_title">
+			        <h4>Компетенции</h4>
+			        <div class="switch" data-switch="competences">
+			        	<span class="active">Профессиональные</span>
+			        	<span>Базовые</span>
+			        </div>
+			    </div>
+
+			    <div class="switch_content" data-switch="competences">
+			    	<div class="active">
+
+			    		<div class="pentagon">
+			    			<div class="labels_penta">
+				    			<div class="label"><span>Экологическая сфера</span></div>
+				    			<div class="label"><span>Креативная экономика</span></div>
+				    			<div class="label"><span>Киберэкономика</span></div>
+				    			<div class="label"><span>Новый технологический сектор</span></div>
+				    			<div class="label"><span>Научно-производственная сфера</span></div>
+				    		</div>
+				    		<canvas id="myChart" class="radar" width="320px" height="232px"></canvas>
+
+				    		<div class="treks_popup">
+								<div class="title">
+									<h4>Треки научно-производственной сферы</h4>
+									<div class="close">×</div>
+								</div>
+								<div class="descr">
+									<span>Не очень длинный текст о том что это за диаграмма, компетенции, вот это вот все, на две строки</span>
+								</div>
+
+								<div class="treks_name_list">
+									<span class="active">Промышленный дизайн</span>
+									<span>Промышленная экономика</span>
+									<span>Технологии освоения космоса</span>
+									<span>Агробио-технологии</span>
+								</div>
+
+								<div class="treks_donut">
+									<svg width="180px" height="180px" viewBox="0 0 42 42" class="donut" aria-labelledby="beers-title beers-desc" role="img">
+										<circle class="donut-ring" cx="21" cy="21" r="40%" fill="transparent" stroke="#ffffff" stroke-width="8px" role="presentation"></circle>
+										<!-- Зона #1 -->
+										<circle class="donut-segment" cx="21" cy="21" r="40%" fill="transparent" stroke="#ff4b3a" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="62.5"></circle>
+										<!-- Зона #2 -->
+										<circle class="donut-segment" cx="21" cy="21" r="40%" fill="transparent" stroke="#ff800b" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="75"></circle>
+										<!-- Зона #3 -->
+										<circle class="donut-segment" cx="21" cy="21" r="40%" fill="transparent" stroke="#ffc500" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="87.5"></circle>
+										<!-- Зона #4 -->
+										<circle class="donut-segment" cx="21" cy="21" r="40%" fill="transparent" stroke="#00cd6a" stroke-width="8px" stroke-dasharray="12.5 87.5" stroke-dashoffset="100"></circle>
+									</svg>
+								</div>
+
+								<div class="competencies_block">
+									<h6>Компетенции</h6>
+									<div class="competencies_list">
+										<div class="competence">
+											<span>Технологии компьютерного конструирования CAD</span>
+											<div class="line">
+												<div style="width: 74%;"></div>
+											</div>
+										</div>
+
+										<div class="competence">
+											<span>Разработка дизайн-концепции объетов промышленного производства</span>
+											<div class="line">
+												<div style="width: 31%;"></div>
+											</div>
+										</div>
+
+										<div class="competence">
+											<span>Владение графическими редакторами</span>
+											<div class="line">
+												<div style="width: 53%;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+			    		</div>
+				    		
+			    	</div>
+
+			    	<div>
+			    		<!-- <div id="competences_donut" data-segments="
+							3,#ffc500,Front End разработка;
+							1,#ff4b3a,Просто тест2;
+							6,#333333,Back End разработка">
+						</div> -->
+
+						<!-- <span>Вы можете <a href="#competences_modal" class="open_modal border_btn">Добавить компетенции</a> подтвердив их компетентность</span> -->
+						
+						<div class="stub">
+							<div class="cont">
+								<div class="icon"></div>
+								<span>Данный функционал находится<br>в стадии разработки</span>
+							</div>
+						</div>
+
+			    	</div>
+			    </div>
+
+						
+			</div>
+
+			<div class="col-6">
+
+				<div class="page_title">
+			        <h4>Ваше место в рейтинге</h4>
+			    </div>
+
+				<div class="top_list">
+					<div class="line">
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+									<div class="points buble">122</div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava2.png');">
+									<div class="points buble">102</div>
+								</div>
+								<div class="name">
+									<span>Максим</span>
+									<span>Балановский</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+									<div class="points buble">96</div>
+								</div>
+								<div class="name">
+									<span>Петр</span>
+									<span>Лазарев</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">
+								<div class="ava" style="background-image: url('../img/photo/ava4.png');">
+									<div class="points buble">93</div>
+								</div>
+								<div class="name">
+									<span>Кирилл</span>
+									<span>Орехов</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+					<div class="line">
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava5.png');">
+									<div class="points buble">85</div>
+								</div>
+								<div class="name">
+									<span>Константин</span>
+									<span>Беляев</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="dots_users">
+							<span></span>
+						</div>
+
+						<div class="user user_top select">
+							<div class="ava" style="background-image: url('../img/photo/photo_1.jpg');">
+								<div class="points buble">64</div>
+							</div>
+							<div class="name">
+								<span>Василиса</span>
+								<span>Александрова</span>
+							</div>
+						</div>
+
+						<div class="dots_users">
+							<span></span>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava6.png');">
+									<div class="points buble">62</div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+									<div class="points buble">60</div>
+								</div>
+								<div class="name">
+									<span>Максим</span>
+									<span>Балановский</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava6.png');">
+									<div class="points buble">59</div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava7.png');">
+									<div class="points buble">56</div>
+								</div>
+								<div class="name">
+									<span>Максим</span>
+									<span>Балановский</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="user user_top">
+							<a href="/profile.html">	
+								<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+									<div class="points buble">58</div>
+								</div>
+								<div class="name">
+									<span>Петр</span>
+									<span>Лазарев</span>
+								</div>
+							</a>
+						</div>						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row mt-40">	
+			
+			<div class="col-6">
+				<div class="row">
+					<div class="col-6">
+						<div class="page_title">
+					        <h4>Интересы</h4>
+					        <div class="title_menu"></div>
+					        <div class="title_menu_content">
+					        	<a href="#hobbies_modal" class="open_modal">Редактировать</a>
+					        </div>
+					    </div>
+						
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+
+						<a href="#" class="link_border">Смотреть все</a>
+					</div>
+
+					<div class="col-6">
+						<div class="page_title">
+					        <h4>Языки</h4>
+					        <div class="title_menu"></div>
+					        <div class="title_menu_content">
+					        	<a href="#langs_modal" class="open_modal">Редактировать</a>
+					        </div>
+					    </div>
+
+					    <div class="lang">
+							<i class="ru"></i>
+							<span>
+								Русский
+								<span>(родной)</span>
+							</span>
+						</div>
+
+						<div class="lang">
+							<i class="gb"></i>
+							<span>
+								Английский
+								<span>(С1 — Advance)</span>
+							</span>
+						</div>
+
+						<!-- <div class="lang">
+							<i class="by"></i>
+							<span>Белорусский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ge"></i>
+							<span>Грузинский</span>
+						</div>
+
+						<div class="lang">
+							<i class="kz"></i>
+							<span>Казахский</span>
+						</div>
+
+						<div class="lang">
+							<i class="kg"></i>
+							<span>Киргизский</span>
+						</div>
+
+						<div class="lang">
+							<i class="lv"></i>
+							<span>Латвийский</span>
+						</div>
+
+						<div class="lang">
+							<i class="lt"></i>
+							<span>Литовский</span>
+						</div>
+
+						<div class="lang">
+							<i class="md"></i>
+							<span>Молдавский</span>
+						</div>
+
+						<div class="lang">
+							<i class="tj"></i>
+							<span>Таджикский</span>
+						</div>
+
+						<div class="lang">
+							<i class="tm"></i>
+							<span>Туркменский</span>
+						</div>
+
+						<div class="lang">
+							<i class="uz"></i>
+							<span>Узбекский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ua"></i>
+							<span>Украинский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ee"></i>
+							<span>Эстонский</span>
+						</div>
+
+						<div class="lang">
+							<i class="cn"></i>
+							<span>Китайский</span>
+						</div>
+
+						<div class="lang">
+							<i class="es"></i>
+							<span>Испанский</span>
+						</div>
+
+						<div class="lang">
+							<i class="ae"></i>
+							<span>Арабский</span>
+						</div>
+
+						<div class="lang">
+							<i class="pt"></i>
+							<span>Португальский</span>
+						</div>
+
+						<div class="lang">
+							<i class="de"></i>
+							<span>Немецкий</span>
+						</div>
+
+						<div class="lang">
+							<i class="gf"></i>
+							<span>Французский</span>
+						</div>
+
+						<div class="lang">
+							<i class="az"></i>
+							<span>
+								Азербайджанский
+							</span>
+						</div> -->
+
+						<a href="#" class="link_border">Смотреть все</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-6">
+
+				<div class="col-12">
+					<div class="page_title">
+				        <h4>Обо мне</h4>
+				        <div class="title_menu"></div>
+				        <div class="title_menu_content">
+				        	<a href="#about_modal" class="open_modal">Редактировать</a>
+				        </div>
+				    </div>
+				    <div class="about_mentor text">
+				    	<span>Высокий профессиональный уровень. Трезвый подход к решению профессиональных задач. Хорошие организаторские способности. Конструктивные отношения с подчиненными, коллегами и руководством. Высокая трудоспособность. Преданность делу и Компании. Постоянное стремление к совершенствованию знаний</span>
+				    </div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row mt-40">	
+			<div class="col-12">
+				<div class="page_title publications_title">
+			        <h4>Мои публикации</h4>
+			        <a href="#archive" class="open_modal border_btn">Все публикации</a>
+			    </div>
+
+			    <div class="line-slider publications">
+			    	
+			    	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+				   	<div class="shadow-box link_card">
+				   		<a href="/news.html">
+					   		<div class="img">
+					   			<div style="background-image: url('img/bg/image.jpg')"></div>
+					   		</div>
+					   		<div class="content">
+					   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+					   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+					   			<div class="sign-board date"><span>16 января 2019</span></div>
+					   			<div class="sign-board like"><span>12</span></div>
+					   		</div>
+					   	</a>
+				   	</div>
+
+			    </div>
+			</div>
+		</div>
+	    
+	</div>
+</div>
+
+<!-- Мои публикации модалка -->
+<div id="archive" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Мои публикации</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+			
+			<div class="text">
+				<span>Здесь отображаются все ваши публикации для треков.</span>
+			</div>
+			
+			<div class="list">
+				<div class="news">
+					<div class="news_list">
+
+						<div class="cut_news_title">
+							<span>Трек «Промышленный дизайн»</span>
+						</div>
+
+						<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<!--  -->
+
+					   	<div class="cut_news_title">
+							<span>Трек «Промышленный дизайн»</span>
+						</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<!--  -->
+
+					   	<div class="cut_news_title">
+							<span>Трек «Промышленный дизайн»</span>
+						</div>
+
+					   <div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+					   	
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Технические навыки модалка -->
+<div id="interests_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Технические навыки</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+			<div class="interests_modal_all_list">
+				<div class="interests_modal_selected checked_cb_container">
+					<label for="interest_1"><input id="interest_1" type="checkbox" name="interests[]"><span class="interest">Adobe Illustrator</span></label>
+					<label for="interest_2"><input id="interest_2" type="checkbox" name="interests[]"><span class="interest">Черчение</span></label>
+					<label for="interest_3"><input id="interest_3" type="checkbox" name="interests[]"><span class="interest">3D-печать</span></label>
+					<label for="interest_4"><input id="interest_4" type="checkbox" name="interests[]"><span class="interest">Моделирование</span></label>
+					<label for="interest_5"><input id="interest_5" type="checkbox" name="interests[]"><span class="interest">Adobe Photoshop</span></label>
+					<label for="interest_6"><input id="interest_6" type="checkbox" name="interests[]"><span class="interest">C#</span></label>
+					<label for="interest_7"><input id="interest_7" type="checkbox" name="interests[]"><span class="interest">C++</span></label>
+				</div>
+
+				<label for="interest_1"><input id="interest_1" type="checkbox" name="interests[]"><span class="interest">Adobe Illustrator</span></label>
+				<label for="interest_2"><input id="interest_2" type="checkbox" name="interests[]"><span class="interest">Черчение</span></label>
+				<label for="interest_3"><input id="interest_3" type="checkbox" name="interests[]"><span class="interest">3D-печать</span></label>
+				<label for="interest_4"><input id="interest_4" type="checkbox" name="interests[]"><span class="interest">Моделирование</span></label>
+				<label for="interest_5"><input id="interest_5" type="checkbox" name="interests[]"><span class="interest">Adobe Photoshop</span></label>
+				<label for="interest_6"><input id="interest_6" type="checkbox" name="interests[]"><span class="interest">C#</span></label>
+				<label for="interest_7"><input id="interest_7" type="checkbox" name="interests[]"><span class="interest">C++</span></label>
+	    	</div>
+
+	    	<div class="row">
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="blue_btn w100">Сохранить</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Увлечения модалка -->
+<div id="hobbies_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Увлечения</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+			<div class="hobbies_modal_all_list">
+
+				<div class="hobbies_modal_selected checked_cb_container">
+					<label for="hobby_1">
+		    			<input id="hobby_1" type="checkbox" name="hobby[]">
+		    			<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_2">
+						<input id="hobby_2" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_3">
+						<input id="hobby_3" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_4">
+						<input id="hobby_4" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_5">
+						<input id="hobby_5" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_6">
+						<input id="hobby_6" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_7">
+						<input id="hobby_7" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_8">
+						<input id="hobby_8" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_9">
+						<input id="hobby_9" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_10">
+						<input id="hobby_10" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_11">
+						<input id="hobby_11" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_12">
+						<input id="hobby_12" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+		    		<label for="hobby_13">
+		    			<input id="hobby_13" type="checkbox" name="hobby[]">
+		    			<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_14">
+						<input id="hobby_14" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_15">
+						<input id="hobby_15" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_16">
+						<input id="hobby_16" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_17">
+						<input id="hobby_17" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_18">
+						<input id="hobby_18" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_19">
+						<input id="hobby_19" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_20">
+						<input id="hobby_20" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_21">
+						<input id="hobby_21" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_22">
+						<input id="hobby_22" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_23">
+						<input id="hobby_23" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_24">
+						<input id="hobby_24" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_25">
+						<input id="hobby_25" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_26">
+						<input id="hobby_26" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_27">
+						<input id="hobby_27" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_28">
+						<input id="hobby_28" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_29">
+						<input id="hobby_29" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_30">
+						<input id="hobby_30" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+
+					<label for="hobby_31">
+						<input id="hobby_31" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="sport"></i>
+							<span>Спорт</span>
+						</div>
+					</label>
+
+					<label for="hobby_32">
+						<input id="hobby_32" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="programming"></i>
+							<span>Программирование</span>
+						</div>
+					</label>
+
+					<label for="hobby_33">
+						<input id="hobby_33" type="checkbox" name="hobby[]">
+						<div class="hobby">
+							<i class="reading"></i>
+							<span>Чтение</span>
+						</div>
+					</label>
+				</div>
+
+	    		<label for="hobby_1">
+	    			<input id="hobby_1" type="checkbox" name="hobby[]">
+	    			<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_2">
+					<input id="hobby_2" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_3">
+					<input id="hobby_3" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_4">
+					<input id="hobby_4" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_5">
+					<input id="hobby_5" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_6">
+					<input id="hobby_6" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_7">
+					<input id="hobby_7" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_8">
+					<input id="hobby_8" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_9">
+					<input id="hobby_9" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_10">
+					<input id="hobby_10" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_11">
+					<input id="hobby_11" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_12">
+					<input id="hobby_12" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+	    		<label for="hobby_13">
+	    			<input id="hobby_13" type="checkbox" name="hobby[]">
+	    			<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_14">
+					<input id="hobby_14" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_15">
+					<input id="hobby_15" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_16">
+					<input id="hobby_16" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_17">
+					<input id="hobby_17" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_18">
+					<input id="hobby_18" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_19">
+					<input id="hobby_19" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_20">
+					<input id="hobby_20" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_21">
+					<input id="hobby_21" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_22">
+					<input id="hobby_22" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_23">
+					<input id="hobby_23" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_24">
+					<input id="hobby_24" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_25">
+					<input id="hobby_25" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_26">
+					<input id="hobby_26" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_27">
+					<input id="hobby_27" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_28">
+					<input id="hobby_28" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_29">
+					<input id="hobby_29" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_30">
+					<input id="hobby_30" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>
+
+				<label for="hobby_31">
+					<input id="hobby_31" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="sport"></i>
+						<span>Спорт</span>
+					</div>
+				</label>
+
+				<label for="hobby_32">
+					<input id="hobby_32" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="programming"></i>
+						<span>Программирование</span>
+					</div>
+				</label>
+
+				<label for="hobby_33">
+					<input id="hobby_33" type="checkbox" name="hobby[]">
+					<div class="hobby">
+						<i class="reading"></i>
+						<span>Чтение</span>
+					</div>
+				</label>	
+	    	</div>
+
+	    	<div class="row">
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="blue_btn w100">Сохранить</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Языки модалка -->
+<div id="langs_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Языки</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="lang">
+				<i class="ru"></i>
+				<span>
+					Русский
+					<span>(родной)</span>
+					<span class="edit"></span>
+				</span>
+			</div>
+
+			<div class="lang">
+				<i class="az"></i>
+				<span>
+					Азербайджанский
+					<span>(С1 — Advance)</span>
+					<span class="edit"></span>
+				</span>
+			</div>
+
+
+		    <form>
+		    	<div class="row">
+		    		<div class="col-4">
+		    			<select>
+							<option selected>Английский</option>
+							<option>Русский</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<select>
+							<option selected>C1 — Advance</option>
+							<option>Родной</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<button class="border_btn big">Сохранить</button>
+		    		</div>
+		    	</div>
+		    </form>
+
+		    <hr>
+
+		    <form>
+		    	<div class="row">
+		    		<div class="col-4">
+		    			<select>
+		    				<option disabled selected>Язык</option>
+							<option>Английский</option>
+							<option>Русский</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<select>
+		    				<option disabled selected>Уровень владения</option>
+							<option>C1 — Advance</option>
+							<option>Родной</option>
+						</select>
+		    		</div>
+		    		<div class="col-4">
+		    			<button class="blue_btn">Добавить</button>
+		    		</div>
+		    	</div>
+		    </form>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Компетенции модалка -->
+<div id="competences_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Добавить компетенции</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь вы можете отправить компетенции на подтверждение.</span>
+	    	</div>
+
+	    	<form action="">
+	    		<textarea name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+
+	    		<hr>
+
+	    		<div class="files_uploader">
+					<div id="output_upload" class="upload_list"></div>
+
+					<div class="input file">
+						<label class="" for="competences_modal_upload">
+			    			Загрузить файл
+			    		</label>
+			    		<input type="file" id="competences_modal_upload" name="competences_modal_upload[]" multiple />
+					</div>
+				</div>
+	    	</form>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<!-- Достижения модалка -->
+<div id="progress_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Достижения</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь отображаются ваши достижения, в том числе полученные вне платформы.</span>
+	    	</div>
+
+	    	<div class="progres_list">
+	    		<div class="row">
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+
+	    			<div class="col-4">
+	    				<div class="progres_item">
+	    					<span class="del" data-id="!!!!тут указываем id и дальше в скрипте ajax`om удаляем его!!!!"></span>
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div>
+	    			</div>
+	    		</div>
+	    		
+	    	</div>
+			<form action="">
+		    	<hr>
+				<div class="files_uploader">
+					<div id="progress_modal_output_upload" class="upload_list"></div>
+
+					<div class="input file">
+						<label class="" for="progress_modal_upload">
+			    			Загрузить фото
+			    		</label>
+			    		<input type="file" id="progress_modal_upload" name="competences_modal_upload[]" multiple />
+					</div>
+				</div>
+			</form>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<!-- Челленджи модалка -->
+<div id="challenges_modal" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Челленджи</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+			<div class="list">
+				<div class="news">
+					<div class="news_list">
+
+						<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+
+					   	<div class="shadow-box link_card">
+					   		<a href="/news.html">
+						   		<div class="img">
+						   			<div style="background-image: url('img/bg/image.jpg')"></div>
+						   		</div>
+						   		<div class="content">
+						   			<h4>«Объект Дельта»: видеоэссе об искусственном</h4>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</a>
+					   	</div>
+					</div>
+				</div>
+	    	</div>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<!-- Мероприятия модалка -->
+<div id="activity_modal" class="modal_div">
+	<div>
+		<div class="modal_title"><h3>Мероприятия</h3></div>
+
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text"><span>Здесь отображаются мероприятия, которые вы посетили.</span></div>
+
+	    	<div class="list">
+	    		<div class="news">
+		    		<div class="news_list">
+						
+						<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+
+				    	<div class="shadow-box link_card">
+				    		<a href="#">
+				    			<div class="img">
+					    			<span class="price">от 1 200 ₽</span>
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    	</a>
+				    		<div class="content">
+								<div class="tag_line">
+									<span>открытая лекция</span>
+									<span>8+</span>
+								</div>
+
+				    			<h4>«Объект Дельта»</h4>
+
+				    			<div class="sign-board organization"><span>Кванториум</span></div>
+				    			<div class="sign-board date"><span>16 января 2019</span></div>
+				    			<div class="sign-board status"><span>Идет набор</span></div>
+				    		</div>
+				    	</div>
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Проекты модалка -->
+<div id="projects_modal" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Проекты</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь отображаются проекты, которые вы прошли на платформе.</span>
+	    	</div>
+
+	    	<div class="list">
+	    		<div class="news">
+		    		<div class="news_list">
+						
+						<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+				    				<div style="background-image: url('img/bg/image.jpg')"></div>
+				    			</div>
+					    		<div class="content">
+									<div class="tag_line">
+										<span>открытая лекция</span>
+										<span>8+</span>
+									</div>
+
+					    			<h4>«Объект Дельта»</h4>
+
+					    			<div class="text">
+					    				<span>Программный пакет, предназначенный для разработки или обеспечения работы в реальном времени систем сбора, отображения и архивирования.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+				    		</a>
+				    	</div>
+						
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Курсы модалка -->
+<div id="courses_modal" class="modal_div">
+	<div>
+		<div class="modal_title">
+			<h3>Курсы</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь отображаются курсы пройденные на платформе.</span>
+	    	</div>
+
+	    	<div class="list">
+	    		<div class="news">
+		    		<div class="news_list">
+						
+						<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+
+				    	<div class="shadow-box link_card big">
+				    		<a href="#">
+				    			<div class="img">
+					    			<div style="background-image: url('img/bg/image.jpg')"></div>
+					    		</div>
+					    		<div class="content">
+									<h4>Промышленный дизайн 💻⌚️</h4>
+
+					    			<div class="text">
+					    				<span>Промдизайнквантум призван соединить инженерное и художественное мышление, научное и гуманитарное направление.</span>
+					    			</div>
+
+					    			<div class="sign-board organization"><span>Кванториум</span></div>
+					    		</div>
+					    	</a>
+				    	</div>
+						
+					</div>
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Достижения модалка -->
+<div id="about_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Обо мне</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+			<form action="" class="mt-0">
+		    	<textarea name="about_mentor">Высокий профессиональный уровень. Трезвый подход к решению профессиональных задач. Хорошие организаторские способности. Конструктивные отношения с подчиненными, коллегами и руководством. Высокая трудоспособность. Преданность делу и Компании. Постоянное стремление к совершенствованию знаний</textarea>
+
+		    	<div class="row mt-24">
+		    		<div class="col-8">
+		    		</div>
+		    		<div class="col-4">
+		    			<button class="border_btn big">Сохранить</button>
+		    		</div>
+		    	</div>
+			</form>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<script>
+	function competences_modal_upload(evt) {
+	    var files = evt.target.files; // FileList object
+	    document.getElementById('competences_modal_upload').innerHTML = "";
+
+	    document.getElementById('output_upload').innerHTML = "";
+	    
+	    for (var i = 0, f; f = files[i]; i++) {
+
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Только изображения....");
+	            break;
+	        }
+
+	        var reader = new FileReader();
+
+	        // Closure to capture the file information.
+	        reader.onload = (function(theFile) {
+	            return function(e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	                document.getElementById('output_upload').insertBefore(span, null);
+	            };
+	        })(f);
+
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	  
+	document.getElementById('competences_modal_upload').addEventListener('change', competences_modal_upload, false);
+
+	function progress_modal_upload(evt) {
+	    var files = evt.target.files; // FileList object
+	    document.getElementById('progress_modal_upload').innerHTML = "";
+
+	    document.getElementById('progress_modal_output_upload').innerHTML = "";
+	    
+	    for (var i = 0, f; f = files[i]; i++) {
+
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Только изображения....");
+	            break;
+	        }
+
+	        var reader = new FileReader();
+
+	        // Closure to capture the file information.
+	        reader.onload = (function(theFile) {
+	            return function(e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	                document.getElementById('progress_modal_output_upload').insertBefore(span, null);
+	            };
+	        })(f);
+
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	  
+	document.getElementById('progress_modal_upload').addEventListener('change', progress_modal_upload, false);
+</script>
+
+//= template/right_block-mentor.html
+
+//= template/footer.html

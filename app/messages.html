@@ -1,0 +1,472 @@
+//= template/header.html
+
+<div class="page">
+	<div class="msgs_page">
+
+		<div class="list_of_messages">
+
+			<div class="header">
+				<div class="name">Сообщения</div>
+				<div class="title_menu"></div>
+				<div class="title_menu_content">
+					<a href="#create_chat" class="open_modal">
+						<img src="../img/icons/a-create-chat.svg" alt="">
+						<span>Создать чат</span>
+					</a>
+					<a href="#edit_banned" class="open_modal">
+						<img src="../img/icons/a-block.svg" alt="">
+						<span>Заблокированные</span>
+					</a>
+		        </div>
+			</div>
+
+			<form action="" class="find_form mb-24">
+				<div class="input find_input">
+					<input type="text" name="find" placeholder="Поиск">
+					<input type="submit" name="send">
+				</div>
+			</form>
+
+			<ul class="dialogs_list">
+
+				<a href="/messages_page_block.html" class="dialog new">
+					<div class="ava" style="background-image: url('../img/photo/photo_1.jpg');">
+						<div class="mentor"></div>
+						<div class="online"></div>
+					</div>
+					<div class="info">
+						<div class="text">
+							<span class="name">Заблокированный чат</span>
+							<div class="msg_text">
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae labore nostrum at facere, exercitationem? Commodi.</span>
+								<span class="time">• 2м</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="/messages_page_chat.html" class="dialog">
+					<div class="ava" style="background-image: url('../img/photo/photo_1.jpg');">
+						<div class="online"></div>
+					</div>
+					<div class="info">
+						<div class="text">
+							<span class="name">Чат</span>
+							<div class="msg_text">
+								<span>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Omnis fugit laudantium labore sint saepe, dolore.</span>
+								<span class="time">• 2м</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="/messages_page.html" class="dialog">
+					<div class="ava" style="background-image: url('../img/photo/photo_1.jpg');">
+						<div class="online"></div>
+					</div>
+					<div class="info">
+						<div class="text">
+							<span class="name">Василий Иванов</span>
+							<div class="msg_text">
+								<span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At odio illum, eius consequuntur aliquam unde.</span>
+								<span class="time">• 2м</span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+<!-- "Заблокированные" модалка -->
+<div id="edit_banned" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Заблокированные</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь отображаются заблокированным вами пользователи.</span>
+	    	</div>
+
+	    	<div class="list">
+	    		<form action="">
+					<input type="hidden" name="ban_list" class="ban-list">
+		 
+				    <div class="top_list">
+
+						<div id="mentors_list_modal" class="line">
+							<div class="user user_top user_ban" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_ban" data-user_id="2">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_ban" data-user_id="3">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_ban" data-user_id="4">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_ban" data-user_id="5">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_ban" data-user_id="6">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="mentor"></div>
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<input type="hidden" class="users-list">
+
+					<div class="btn_line blacklist_buttons">
+						<input type="button" value="Разблокировать" class="blue_btn">
+					</div>
+				</form>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!-- "Новый чат" модалка -->
+<div id="create_chat" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Создание группового чата</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <form action="">
+	    	<div class="content">
+	    	
+	    		<div class="input find_input">
+					<input type="text" name="chat_name" placeholder="Название чата">
+				</div>
+
+				<div class="select_list_chat_ava">
+					<div class="page_title mt-40">
+				        <h6>Выберите изображение чата</h6>
+				    </div>
+
+				    <div class="list">
+				    	<div class="new_ava">
+							<div id="new_ava_output_upload" class="upload_list"></div>
+
+							<div class="current_ava"></div>  <!-- style="background-image: url('../img/photo/photo_1.jpg');" -->
+
+							<div class="add_new_ava_input">
+								<label class="" for="new_ava_upload"></label>
+					    		<input type="file" id="new_ava_upload" name="competences_modal_upload[]" multiple />
+							</div>
+						</div>
+
+						<label>
+							<input type="radio" name="default_chat_ava" value="1">
+							<div class="ava" style="background-image: url('../img/chat_avatars/1.jpg');">
+								<div class="select"></div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="default_chat_ava" value="2">
+							<div class="ava" style="background-image: url('../img/chat_avatars/2.jpg');">
+								<div class="select"></div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="default_chat_ava" value="3">
+							<div class="ava" style="background-image: url('../img/chat_avatars/3.jpg');">
+								<div class="select"></div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="default_chat_ava" value="4">
+							<div class="ava" style="background-image: url('../img/chat_avatars/4.jpg');">
+								<div class="select"></div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="default_chat_ava" value="5">
+							<div class="ava" style="background-image: url('../img/chat_avatars/5.jpg');">
+								<div class="select"></div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="default_chat_ava" value="6">
+							<div class="ava" style="background-image: url('../img/chat_avatars/6.jpg');">
+								<div class="select"></div>
+							</div>
+						</label>
+				    </div>
+				</div>
+
+				<div class="mentors_list">
+					<div class="page_title mt-40">
+				        <h6>Участники (<span id="members_count">3</span>)</h6>
+				    </div>
+					
+					<input type="hidden" name="users-list" class="users-list" value="">
+
+				    <div class="top_list add_challenge">
+
+						<div id="users_list" class="line">
+							<div class="user user_top" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="del" onclick="del_user_item($(this))"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user add_new user_top">
+								<div>
+									<div class="ava"></div>
+									<div class="name">
+										<span>Добавить</span>
+										<span>участника</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="search_users">
+							<div class="find_form">
+								<div class="input find_input">
+									<input class="input_find" type="text" name="find" placeholder="Поиск">
+									<input type="submit" name="send">
+								</div>
+							</div>
+							
+							<div class="prev">
+								<div class="text">
+									<img src="/img/icons/a-search-80-px.svg" alt="">
+									<span>Чтобы добавить нового учатника в чат, напишите его имя в поле поиска выше</span>
+								</div>
+							</div>
+
+							<div class="search_users_result" style="display: none;">
+								<div id="mentors_list_modal"  class="line">
+									<div class="user user_top" data-user_id="1">
+										<div>
+											<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+												<div class="select"></div>
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="user user_top" data-user_id="2">
+										<div>
+											<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+												<div class="select"></div>
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="user user_top" data-user_id="3">
+										<div>
+											<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+												<div class="select"></div>
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="user user_top" data-user_id="4">
+										<div>
+											<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+												<div class="select"></div>
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="user user_top" data-user_id="5">
+										<div>
+											<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+												<div class="select"></div>
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="user user_top" data-user_id="6">
+										<div>
+											<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+												<div class="mentor"></div>
+												<div class="select"></div>
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<input type="hidden" class="users-list">
+						</div>	
+
+					</div>
+				</div>
+
+		    	<div class="btn_line blacklist_buttons">
+					<input type="button" value="Создать чат" class="blue_btn">
+				</div>
+
+			</form>
+
+		</div>
+
+
+	</div>
+</div>
+
+
+
+
+<!-- <div class="allert_list">
+	<div class="allert green">
+		<span>Все хорошо!</span>
+		<p>Произошла непредвиденная ошибка, попробуйте еще раз или обратитесь к администратору</p>
+	</div>
+	<div class="allert yellow">
+		<span>Внимание!</span>
+		<p>Произошла непредвиденная ошибка, попробуйте еще раз или обратитесь к администратору</p>
+	</div>
+	<div class="allert red">
+		<span>Все плохо!</span>
+		<p>Произошла непредвиденная ошибка, попробуйте еще раз или обратитесь к администратору</p>
+	</div>
+</div>
+
+<div class="cookie">
+	<span>Cookie</span>
+	<p>Этот сайт использует куки-файлы и другие технологии, чтобы помочь вам в навигации, а также предоставить лучший пользовательский опыт, анализировать использование наших продуктов и услуг. <a href="#">Подробнее</a></p>
+</div> -->
+
+<script>
+function new_ava_upload(evt) {
+    var files = evt.target.files; // FileList object
+    document.getElementById('new_ava_upload').innerHTML = "";
+
+    document.getElementById('new_ava_output_upload').innerHTML = "";
+    
+    for (var i = 0, f; f = files[i]; i++) {
+
+        // Only process image files.
+        if (!f.type.match('image.*')) {
+            alert("Только изображения....");
+            break;
+        }
+
+        var reader = new FileReader();
+
+        // Closure to capture the file information.
+        reader.onload = (function(theFile) {
+            return function(e) {
+                // Render thumbnail.
+                var span = document.createElement('span');
+                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+                document.getElementById('new_ava_output_upload').insertBefore(span, null);
+            };
+        })(f);
+
+        // Read in the image file as a data URL.
+        reader.readAsDataURL(f);
+    }
+}
+  
+document.getElementById('new_ava_upload').addEventListener('change', new_ava_upload, false);
+</script>
+
+//= template/footer.html

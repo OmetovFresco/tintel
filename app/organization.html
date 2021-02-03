@@ -1,0 +1,368 @@
+//= template/header.html
+
+<div class="page">
+	<div class="content">
+		
+		<div class="breadcrumbs">
+			<a href="#">Education</a>
+			<span class="separator"> / </span>
+
+			<span>Промышленный дизайн</span>
+		</div>
+
+		<div class="banner big" style="background-image: url('img/trek/bg/card_bg_1.jpg')">
+			<div class="text">
+				<span>Организация</span>
+				<h2>Название организации</h2>
+			</div>
+		</div>
+
+		<div class="row mt-24">
+			<div class="col-8">
+				<h2>Подзаголовок</h2>
+				<div class="text mt-24">
+					<span>Совокупность отраслей народного хозяйства, объединяющая материальное производство и материальные услуги; отрасли и виды деятельности, создающие материальные блага в форме вещественных продуктов и преобразованной энергии природы или же оказывающие услуги материального характера, являющиеся продолжением процесса производства. В результате практической деятельности людей, занятых в производственной сфере, осуществляется изменение физических или химических свойств веществ природы и ее сил, их состояния, местоположения с целью приспособить созданные продукты к общественным потребностям.</span>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="shadow-box h-auto">
+					<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+				    <script>
+				      ymaps.ready(function () {
+				      	var myMap = new ymaps.Map('YMapsID', {
+				      		center: [56.461944, 84.950425],
+				      		zoom: 17,
+				      		controls: []
+				      });
+
+				      var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				          balloonContent: 'цвет <strong>фэйсбука</strong>'
+				      }, {
+				          preset: 'islands#blueHeartCircleIcon',
+				          iconColor: '#3b5998'
+				      });
+
+				        myMap.geoObjects.add(myPlacemark);
+				      });
+				    </script>
+
+				    <div id="YMapsID" class="map">
+				    	
+				    </div>
+					<div class="content">
+						<div class="sign-board geo">
+					    	<span>Томск, пр. Ленина, 26, Точка кипения</span>
+					    </div>
+					    <div class="sign-board organization">
+					    	<span>Кванториум</span>
+					    </div>
+						
+						<div class="mt-24 mb-12">
+							<b>Контактное лицо</b>
+						</div>
+
+					    <div class="sign-board user">
+					    	<span>Никита Перумов</span>
+					    </div>
+
+					    <div class="sign-board mail">
+					    	<span>bf@mercuriya.ru</span>
+					    </div>
+
+					    <div class="sign-board phone">
+					    	<span>+7 (3822) 22-49-13</span>
+					    </div>
+					</div>
+				    
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-40">
+			<div class="col-12">
+				<div class="tabs">
+
+					<ul class="tabs__caption">
+						<li class="active">Мероприятия</li>
+						<li>Курсы</li>
+						<li>Проекты</li>
+					</ul>
+
+					<div class="tabs__content  active">
+						<div class="news">
+							<div class="news_list col4">
+
+								<div class="shadow-box">
+						    		<a href="#"><div class="img">
+						    			<span class="price">от 1 200 ₽</span>
+						    			<div style="background-image: url('img/bg/image.jpg')"></div>
+						    		</div></a>
+						    		<div class="content">
+										<div class="tag_line">
+											<span>открытая лекция</span>
+											<span>8+</span>
+										</div>
+
+						    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						    			<div class="sign-board organization"><span>Кванториум</span></div>
+						    			<div class="sign-board date"><span>16 января 2019</span></div>
+						    			<div class="sign-board status"><span>Идет набор</span></div>
+						    		</div>
+						    	</div>
+
+						    	<div class="shadow-box">
+						    		<a href="#"><div class="img">
+						    			<span class="price">от 1 200 ₽</span>
+						    			<div style="background-image: url('img/bg/image.jpg')"></div>
+						    		</div></a>
+						    		<div class="content">
+										<div class="tag_line">
+											<span>открытая лекция</span>
+											<span>8+</span>
+										</div>
+
+						    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						    			<div class="sign-board organization"><span>Кванториум</span></div>
+						    			<div class="sign-board date"><span>16 января 2019</span></div>
+						    			<div class="sign-board status"><span>Идет набор</span></div>
+						    		</div>
+						    	</div>
+								
+							</div>
+						</div>
+
+					</div>
+
+					<div class="tabs__content">
+
+						<div class="news">
+							<div class="news_list col4">
+
+								<div class="shadow-box">
+						    		<a href="#"><div class="img">
+						    			<span class="price">от 1 200 ₽</span>
+						    			<div style="background-image: url('img/bg/image.jpg')"></div>
+						    		</div></a>
+						    		<div class="content">
+										<div class="tag_line">
+											<span>открытая лекция</span>
+											<span>8+</span>
+										</div>
+
+						    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						    			<div class="sign-board organization"><span>Кванториум</span></div>
+						    			<div class="sign-board date"><span>16 января 2019</span></div>
+						    			<div class="sign-board status orange"><span>Идет набор</span></div>
+						    		</div>
+						    	</div>
+
+						    	<div class="shadow-box">
+						    		<a href="#"><div class="img">
+						    			<span class="price">от 1 200 ₽</span>
+						    			<div style="background-image: url('img/bg/image.jpg')"></div>
+						    		</div></a>
+						    		<div class="content">
+										<div class="tag_line">
+											<span>открытая лекция</span>
+											<span>8+</span>
+										</div>
+
+						    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						    			<div class="sign-board organization"><span>Кванториум</span></div>
+						    			<div class="sign-board date"><span>16 января 2019</span></div>
+						    			<div class="sign-board status orange"><span>Идет набор</span></div>
+						    		</div>
+						    	</div>
+								
+							</div>
+						</div>
+
+					</div>
+
+					<div class="tabs__content">
+						
+						<div class="news">
+							<div class="news_list col4">
+
+								<div class="shadow-box">
+						    		<a href="#"><div class="img">
+						    			<span class="price">от 1 200 ₽</span>
+						    			<div style="background-image: url('img/bg/image.jpg')"></div>
+						    		</div></a>
+						    		<div class="content">
+										<div class="tag_line">
+											<span>открытая лекция</span>
+											<span>8+</span>
+										</div>
+
+						    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						    			<div class="sign-board organization"><span>Кванториум</span></div>
+						    			<div class="sign-board date"><span>16 января 2019</span></div>
+						    			<div class="sign-board status green"><span>Идет набор</span></div>
+						    		</div>
+						    	</div>
+
+						    	<div class="shadow-box">
+						    		<a href="#"><div class="img">
+						    			<span class="price">от 1 200 ₽</span>
+						    			<div style="background-image: url('img/bg/image.jpg')"></div>
+						    		</div></a>
+						    		<div class="content">
+										<div class="tag_line">
+											<span>открытая лекция</span>
+											<span>8+</span>
+										</div>
+
+						    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						    			<div class="sign-board organization"><span>Кванториум</span></div>
+						    			<div class="sign-board date"><span>16 января 2019</span></div>
+						    			<div class="sign-board status green"><span>Идет набор</span></div>
+						    		</div>
+						    	</div>
+								
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-80">
+			<div class="col-12">
+				<div class="page_title">
+			        <h4>Наставники</h4>
+			    </div>
+
+			    <div class="mertors_list">
+			    	<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+
+		    		<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+
+		    		<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="row mt-80">
+			<div class="col-12">
+				
+				<div class="fb_footer_form">
+					<div class="img"></div>
+					<div class="content">
+						<h4 class="text-center">Форма обратной связи</h4>
+
+						<form action="" class="mt-24">
+							<div class="input">
+								<input type="text" placeholder="Тема">
+							</div>
+
+							<div class="input">
+								<textarea name="" id="" placeholder="Собщение"></textarea>
+							</div>
+
+							<div id="fb_form_output_upload" class="upload_list"></div>
+
+							<div class="row">
+								<div class="col-6">
+									<div class="files_uploader mt-12">
+
+										<div class="input file">
+											<label class="" for="fb_form_upload">
+								    			Прикрепить файл
+								    		</label>
+								    		<input type="file" id="fb_form_upload" name="comfb_form_upload[]" multiple />
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<button class="blue_btn w100">Добавить</button>
+								</div>
+							</div>
+
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	function fb_form_upload(evt) {
+	    var files = evt.target.files; // FileList object
+	    document.getElementById('fb_form_upload').innerHTML = "";
+
+	    document.getElementById('fb_form_output_upload').innerHTML = "";
+	    
+	    for (var i = 0, f; f = files[i]; i++) {
+
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Только изображения....");
+	            break;
+	        }
+
+	        var reader = new FileReader();
+
+	        // Closure to capture the file information.
+	        reader.onload = (function(theFile) {
+	            return function(e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	                document.getElementById('fb_form_output_upload').insertBefore(span, null);
+	            };
+	        })(f);
+
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	  
+	document.getElementById('fb_form_upload').addEventListener('change', fb_form_upload, false);
+</script>
+
+//= template/footer.html

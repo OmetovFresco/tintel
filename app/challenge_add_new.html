@@ -1,0 +1,1046 @@
+//= template/header.html
+
+<script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+
+<div class="page col-8-content">
+	<div class="content">
+		
+		<div class="form add_challenge">
+			<div class="page_title">
+		        <h3>Добавление челленджа</h3>
+		    </div>
+			<form action="">
+				<div class="page_title mt-24">
+			        <h6>Описание</h6>
+			    </div>
+
+				<div class="input">
+					<input type="text" placeholder="Название челленджа" name="title">
+				</div>
+
+				<div class="add_challenge_images">
+					
+					<label href="#add_image_modal">
+						<input type="radio" name="gallery">
+
+						<div class="card">
+							<div class="ico">
+								<!-- <img src="/img/icons/" alt=""> -->
+								<!-- <img src="/img/icons/" alt=""> -->
+							</div>
+							<span>Изображение</span>
+						</div>
+					</label>
+
+					<label href="#add_video_modal">
+						<input type="radio" name="gallery">
+
+						<div class="card">
+							<div class="ico">
+								<!-- <img src="/img/icons/" alt=""> -->
+								<!-- <img src="/img/icons/" alt=""> -->
+							</div>
+							<span>Видео</span>
+						</div>
+					</label>
+
+					<label href="#add_gallery_modal">
+						<input type="radio" name="gallery">
+
+						<div class="card">
+							<div class="ico">
+								<!-- <img src="/img/icons/" alt=""> -->
+								<!-- <img src="/img/icons/" alt=""> -->
+							</div>
+							<span>Галерея изображений</span>
+						</div>
+					</label>
+					
+				</div>
+
+				<div class="input">
+					<textarea name="editor1" placeholder="Описание"></textarea>
+				</div>
+
+				<div class="input file">
+					<label for="cover_news">Прикрепить файл</label>
+					<input type="file" id="cover_news" name="file" onchange="OnChange_FileName(this);" multiple="">
+				</div>
+
+
+				<div class="page_title mt-40">
+			        <h6>Даты проведения</h6>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-12">
+			    		<div class="input">
+				    		<div class="row">
+				    			<div class="col-4">
+
+				    				<div class="input">
+										<input type="date" placeholder="Дата начала">
+									</div>
+
+				    			</div>
+				    			<div class="col-4">
+									<div class="input">
+										<input type="date" placeholder="Дата окончания">
+									</div>
+				    			</div>
+				    			<div class="col-4">
+									<div class="input">
+										<input type="date" placeholder="Подведение итогов">
+									</div>
+				    			</div>
+				    		</div>
+			    		</div>
+				    		
+			    	</div>
+			    </div>
+
+
+			    <div class="page_title mt-40">
+			        <h6>Даты проведения</h6>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-12">
+			    		<div class="input">
+				    		<div class="row">
+				    			<div class="col-6">
+
+				    				<div class="input">
+										<select>
+											<option selected disabled>Рекомендуемый возраст</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+									</div>
+
+				    			</div>
+
+				    			<div class="col-6">
+
+				    				<div class="input">
+										<select>
+											<option selected disabled>ОВЗ</option>
+											<option>Январь</option>
+											<option>Февраль</option>
+										</select>
+									</div>
+
+				    			</div>
+
+				    			<div class="col-6">
+
+				    				<div class="input">
+										<select>
+											<option selected disabled>Вознаграждение</option>
+											<option>2000</option>
+											<option>2001</option>
+										</select>
+									</div>
+
+				    			</div>
+
+				    			<div class="col-6">
+
+				    				<div class="input">
+				    					<input type="text" placeholder="Стоимость">
+									</div>
+
+				    			</div>
+
+				    		</div>
+			    		</div>
+				    		
+			    	</div>
+			    </div>
+				
+				
+			    <div class="page_title mt-40">
+			        <h6>Компетенции</h6>
+			    </div>
+				
+				<div class="competencies_list">
+					<div class="list">
+						
+					</div>
+					<input type="hidden" name="competencies-list" class="competencies-list">	
+					<div class="add_element add_competence" data-treks="1,Трек1;2,Трек2;3,Трек3">
+						<div class="icon"></div>
+						<span>Добавить трек</span>
+					</div>
+				</div>
+
+				<div class="mentors_list">
+					<div class="page_title mt-40">
+				        <h6>Наставник <span>(не обязательно)</span></h6>
+				    </div>
+					
+					<input type="hidden" name="users-list" class="users-list">
+ 
+				    <div class="top_list">
+
+						<div class="line">
+							<div class="user user_top" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="del" onclick="del_user_item($(this))"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div href="#mentors_list_modal" class="open_modal user add_new user_top">
+								<div>
+									<div class="ava"></div>
+									<div class="name">
+										<span>Добавить</span>
+										<span>наставника</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="btn_block mt-40">
+					<input type="submit" class="blue_btn" value="Добавить челлендж">
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<!-- Добавить изображение -->
+<div id="add_image_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Добавить изображение</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<!-- <div class="text">
+	    		<span>Здесь вы можете отправить компетенции на подтверждение.</span>
+	    	</div> -->
+
+	    	<form action="">
+	    		<div class="files_uploader">
+					<div id="output_upload" class="upload_list"></div>
+
+					<div class="input file">
+						<label class="" for="add_image_upload">
+			    			Добавить изображение
+			    		</label>
+			    		<input type="file" id="add_image_upload" name="add_image_upload" />
+					</div>
+				</div>
+	    	</form>
+
+	    	<div class="row">
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="blue_btn w100">Добавить</button>
+	    		</div>
+	    	</div>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<!-- Добавить видео -->
+<div id="add_video_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Добавить видео</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<!-- 
+	    	<div class="text">
+	    		<span>Здесь вы можете отправить компетенции на подтверждение.</span>
+	    	</div>
+	    	-->
+
+	    	<form action="">
+	    		<div class="input">
+					<input type="text" placeholder="Ссылка на видео" name="video">
+				</div>
+	    	</form>
+
+	    	<div class="row">
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="blue_btn w100">Добавить</button>
+	    		</div>
+	    	</div>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<!-- Добавить галерею изображений -->
+<div id="add_gallery_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Добавить галерею изображений</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<!-- <div class="text">
+	    		<span>Здесь вы можете отправить компетенции на подтверждение.</span>
+	    	</div> -->
+
+	    	<form action="">
+	    		<div class="files_uploader">
+	    			
+	    			<div class="file_gallery">
+	    				<div class="del" onclick="del_competence_item($(this))"></div>
+	    				<div class="input file">
+							<label class="" for="add_gallery_upload">
+				    			Добавить изображение
+				    		</label>
+				    		<input type="file" id="add_gallery_upload" name="add_gallery_upload[]" onchange="OnChange_FileName(this);"/>
+						</div>
+						
+						<div class="input">
+							<textarea name="photo_descr[]" placeholder="Описание"></textarea>
+						</div>
+	    			</div>
+
+				</div>
+	    	</form>
+
+	    	<div class="row">
+	    		<div class="col-8">
+					<div class="add_element add_file" onclick="OnChange_file_gallery(file_gallery_clone);">
+						<div class="icon"></div>
+						<span>Добавить изображение</span>
+					</div>
+	    		</div>
+	    	</div>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<!-- Компетенции модалки -->
+<div id="competences_list_modal_1" class=" modal_div">
+	<div class="competences_list_modal big">
+		<div class="modal_title">
+			<h3>Компетенции трека — «Промышленный дизайн»</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+		<div class="switch modal_tabs" data-switch="competences">
+	    	<div class="active">
+	    		<span>Технологии компьютерного конструирования CAD</span>
+	    	</div>
+	    	<div class="">
+	    		<span>Разработка дизайн-концепции объетов промышленного производства</span>
+	    	</div>
+	    	<div class="">
+	    		<span>Владение графическими редакторами</span>
+	    	</div>
+	    </div>
+
+		<div class="switch_content content" data-switch="competences">
+	    	
+	    	<div class="active">
+	    		
+				<div class="competences_list">
+
+					<div class="competence_points_card not_active blue" data-competences_id="1">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>1</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange" data-competences_id="2">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>9</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active dark_blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>16</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+				</div>
+	    	</div>
+
+	    	<div>
+	    		
+				<div class="competences_list">
+
+					<div class="competence_points_card not_active blue" data-competences_id="1">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>1</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange" data-competences_id="2">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>9</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active dark_blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>16</span>
+							<span>балла</span>
+						</div>
+					</div>
+					
+				</div>
+	    	</div>
+
+	    	<div>
+	    		
+				<div class="competences_list">
+
+					<div class="competence_points_card not_active blue" data-competences_id="1">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>1</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange" data-competences_id="2">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>9</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active dark_blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>16</span>
+							<span>балла</span>
+						</div>
+					</div>
+					
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Наставники модалка -->
+<div id="mentors_list_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Добавить наставников</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<div class="text">
+	    		<span>Здесь вы можете отправить компетенции на подтверждение.</span>
+	    	</div>
+
+	    	<form action="">
+	    		<div class="top_list">
+
+					<div class="line">
+						<div class="user user_top selected" data-user_id="1">
+							<div>
+								<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+									<div class="select"></div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="user user_top" data-user_id="2">
+							<div>
+								<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+									<div class="select"></div>
+								</div>
+								<div class="name">
+									<span>Катерина</span>
+									<span>Любер</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+	    	</form>
+	    	
+		</div>
+	</div>
+		
+</div>
+
+<script>
+	function add_image_upload(evt) {
+	    var files = evt.target.files; // FileList object
+	    document.getElementById('add_image_upload').innerHTML = "";
+
+	    document.getElementById('output_upload').innerHTML = "";
+	    
+	    for (var i = 0, f; f = files[i]; i++) {
+
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Только изображения....");
+	            break;
+	        }
+
+	        var reader = new FileReader();
+
+	        // Closure to capture the file information.
+	        reader.onload = (function(theFile) {
+	            return function(e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	                document.getElementById('output_upload').insertBefore(span, null);
+	            };
+	        })(f);
+
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	  
+	document.getElementById('add_image_upload').addEventListener('change', add_image_upload, false);
+
+	// function add_gallery_upload(evt) {
+	//     var files = evt.target.files; // FileList object
+	//     document.getElementById('add_gallery_upload').innerHTML = "";
+
+	//     document.getElementById('add_gallery_output_upload').innerHTML = "";
+	    
+	//     for (var i = 0, f; f = files[i]; i++) {
+
+	//         // Only process image files.
+	//         if (!f.type.match('image.*')) {
+	//             alert("Только изображения....");
+	//             break;
+	//         }
+
+	//         var reader = new FileReader();
+
+	//         // Closure to capture the file information.
+	//         reader.onload = (function(theFile) {
+	//             return function(e) {
+	//                 // Render thumbnail.
+	//                 var span = document.createElement('span');
+	//                 span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	//                 document.getElementById('add_gallery_output_upload').insertBefore(span, null);
+	//             };
+	//         })(f);
+
+	//         // Read in the image file as a data URL.
+	//         reader.readAsDataURL(f);
+	//     }
+	// }
+	  
+	// document.getElementById('add_gallery_upload').addEventListener('change', add_gallery_upload, false);
+</script>
+
+//= template/footer.html

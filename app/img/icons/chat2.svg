@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2B84F669-B4E4-4D6C-8058-8DD908D1C394</title>
+    <g id="Система" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Сообщения-—-заглушка" transform="translate(-940.000000, -512.000000)">
+            <g id="чаты" transform="translate(600.000000, 80.000000)">
+                <g id="chat" transform="translate(340.000000, 432.000000)">
+                    <path d="M66.6666667,8.16666667 L13.3333333,8.16666667 C11.9065977,8.16666667 10.6149311,8.74496553 9.6799483,9.6799483 C8.74496553,10.6149311 8.16666667,11.9065977 8.16666667,13.3333333 L8.16666667,69.712013 L19.3786797,58.5 L66.6666667,58.5 C68.0934023,58.5 69.3850689,57.9217011 70.3200517,56.9867184 C71.2550345,56.0517356 71.8333333,54.7600689 71.8333333,53.3333333 L71.8333333,13.3333333 C71.8333333,11.9065977 71.2550345,10.6149311 70.3200517,9.6799483 C69.3850689,8.74496553 68.0934023,8.16666667 66.6666667,8.16666667 Z" id="Rectangle" stroke="#BFBFBF" stroke-width="3"></path>
+                    <rect id="Rectangle" fill="#BFBFBF" x="20" y="21" width="40" height="3"></rect>
+                    <rect id="Rectangle" fill="#BFBFBF" x="20" y="32" width="40" height="3"></rect>
+                    <rect id="Rectangle" fill="#BFBFBF" x="20" y="43" width="26.6666667" height="3"></rect>
+                    <polygon id="Shape" points="0 0 80 0 80 80 0 80"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

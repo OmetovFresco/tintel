@@ -1,0 +1,213 @@
+//= template/header.html
+
+<div class="page">
+	<div class="msgs_page">
+
+		<div class="open_dialog">
+			<div class="header">
+				<a href="/messages.html" class="back">
+					<img src="../img/icons/a-arrow-back.svg" alt="">
+					<span>Назад</span>
+				</a>
+				<div class="name">
+					<h4>Никита Перумов</h4>
+					<span>был(а) онлайн 2 дня назад</span>
+				</div>
+				<div class="title_menu"></div>
+				<div class="title_menu_content">
+					<a href="/profile.html">
+						<img src="../img/icons/a-person-outline.svg" alt="">
+						<span>Открыть профиль</span>
+					</a>
+					<a href="#blacklist_modal" class="open_modal">
+						<img src="../img/icons/a-person-block.svg" alt="">
+						<span>Заблокировать</span>
+					</a>
+					<a href="#del_chat" class="open_modal">
+						<img src="../img/icons/a-delete.svg" alt="">
+						<span>Удалить диалог</span>
+					</a>
+		        </div>
+			</div>
+
+			<div class="msg_list">
+
+				<div class="day">
+					<div class="date">13.08.2020</div>
+				
+					<div class="msgs">
+						<div class="list">
+							<div class="msg reed">
+								<p>Здравствуйте! Расскажите пожалуйста о курсе промышленного дизайна</p>
+								<div class="time">
+									<span>16:42</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="msgs re">
+						<div class="list">
+							<div class="msg">
+								<p>Программа направлена не только на промышленный дизайн, но и на дизайн образа жизни, мышления и общения, красоту предмета и предметной среды. Ребята получат знания и практические навыки в области бионики, эстетики и кинетики форм.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								<div class="time">
+									<span>16:42</span>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+					</div>
+
+					<div class="msgs">
+
+						<div class="list">
+							<div class="msg">
+								<p>Спасибо!</p>
+								<div class="time">
+									<span>16:42</span>
+								</div>
+							</div>
+
+							<div class="break"></div>
+							<div class="msg">
+								<p><a href="#">длинное название файла.pdf</a></p>
+								<div class="time">
+									<span>16:42</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="send_msg_form">
+				<form action="">
+					<div class="row">
+						<div class="col-12">
+							<textarea name="message" placeholder="Сообщение"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-8">
+							<div class="input file mt-8 mb-0">
+								<label for="cover_news">Прикрепить файл (до 30мб)</label>
+								<input type="file" id="cover_news" name="file" onchange="OnChange_FileName(this);" multiple="">
+							</div>
+						</div>
+						<div class="col-4">
+							<input type="submit" class="blue_btn w100" value="Отправить">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+<!-- "Удалить" модалка -->
+<div id="del_chat" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Удаление чата</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+	    	<div class="text">
+	    		<span>Вы уверены, что хотите удалить чат?</span>
+	    	</div>
+
+	    	<div class="row mt-24">
+	    		<div class="col-2"></div>
+	    		<div class="col-4">
+	    			<button class="border_btn big w100">Нет</button>
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="red_btn w100">Да</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="del_chat_member" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Удаление участника чата</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+	    	<div class="text">
+	    		<span>Вы уверены, что хотите удалить %имя_участника% из чата?</span>
+	    	</div>
+
+	    	<div class="row mt-24">
+	    		<div class="col-2"></div>
+	    		<div class="col-4">
+	    			<button class="border_btn big w100">Нет</button>
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="red_btn w100">Да</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="blacklist_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Заблокировать</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+
+	    	<div class="text">
+	    		<span>Вы уверены, что хотите заблокировать %имя_участника%?<br>%имя_участника% больше не сможет вам писать.</span>
+	    	</div>
+
+	    	<div class="row mt-24">
+	    		<div class="col-2"></div>
+	    		<div class="col-4">
+	    			<button class="border_btn big w100">Нет</button>
+	    		</div>
+	    		<div class="col-4">
+	    			<button class="red_btn w100">Да</button>
+	    		</div>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+<!-- <div class="allert_list">
+	<div class="allert green">
+		<span>Все хорошо!</span>
+		<p>Произошла непредвиденная ошибка, попробуйте еще раз или обратитесь к администратору</p>
+	</div>
+	<div class="allert yellow">
+		<span>Внимание!</span>
+		<p>Произошла непредвиденная ошибка, попробуйте еще раз или обратитесь к администратору</p>
+	</div>
+	<div class="allert red">
+		<span>Все плохо!</span>
+		<p>Произошла непредвиденная ошибка, попробуйте еще раз или обратитесь к администратору</p>
+	</div>
+</div>
+
+<div class="cookie">
+	<span>Cookie</span>
+	<p>Этот сайт использует куки-файлы и другие технологии, чтобы помочь вам в навигации, а также предоставить лучший пользовательский опыт, анализировать использование наших продуктов и услуг. <a href="#">Подробнее</a></p>
+</div> -->
+
+//= template/footer.html

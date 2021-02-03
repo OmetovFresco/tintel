@@ -1,0 +1,463 @@
+@import "colors";
+@import "fonts";
+
+.breadcrumbs{
+	margin-bottom: 24px;
+	> *{
+		font-size: 14px;
+		line-height: 1.43;
+		color: #000000;
+		display: inline-block;
+		font-weight: 400;
+
+	}
+	a{
+		opacity: 0.25;
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	span{
+		opacity: 0.25;
+	}
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	border-radius: 8px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	&.big{
+		height: 340px;
+	}
+	.text{
+		position: absolute;
+		bottom: 24px;
+		left: 24px;
+		right: 24px;
+		span{
+			text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1.2;
+			letter-spacing: 0.2px;
+			color: #ffffff;
+		}
+		h2{
+			text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+			color: #ffffff;
+		}
+	}
+
+	&.selection{
+		height: 116px;
+	}
+	.deskr_page_link{
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 24px;
+		a{
+			color: #fff;
+			font-size: 14px;
+			font-weight: 500;
+			display: block;
+			padding-right: 24px;
+			line-height: 25px;
+			i{
+				font-weight: 400;
+				display: block;
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				right: 0;
+				top: 0;
+				text-align: center;
+				line-height: 24px;
+				font-size: 20px;
+			}
+		}
+	}
+	.btn_block_bg{
+		display: flex;
+		position: absolute;
+		right: 24px;
+		bottom: 24px;
+		padding: 16px 24px;
+		border-radius: 8px;
+  		background-color: rgba(255, 255, 255, 0.85);
+  		max-width: 425px;
+  		div{
+  			padding-right: 24px;
+  			span{
+  				opacity: 0.5;
+  				font-size: 14px;
+  				line-height: 22px;
+    			display: block;
+  			}
+  			& + div{
+  				padding-right: 0;
+  				padding-left: 24px;
+  				border-left: 1px solid #bfbfbf;
+  			}
+  		}
+	}
+}
+
+.trek_page{	
+	& > .text{
+		padding: 24px 0 40px 0;
+		max-width: 808px;
+		h3{
+			margin-bottom: 24px;
+		}
+		p{
+			margin: 0;
+			& + p{
+				margin-top: 16px;
+			}
+		}
+	}
+	
+	.text_info{
+		margin-top: 16px;
+		padding-top: 24px;
+		border-top: 1px solid rgba(0, 0, 0, 0.05);
+	}
+
+	.btn_block{
+		.blue_btn{
+			width: 240px;
+		}
+		padding-bottom: 20px;
+	}
+
+	.competences_and_interests{
+		padding-top: 20px;
+		display: flex;
+		.competences{
+			width: 50%;
+			padding: 0 24px 0 0;
+			h4{
+				margin-bottom: 16px;
+			}
+		}
+		.interests{
+			width: 50%;
+			padding: 0 0 0 24px;
+			h4{
+				margin-bottom: 16px;
+			}
+		}
+	}
+	.rectangle{
+		font-size: 14px;
+		margin: 24px 0 16px 0;
+		padding: 16px;
+		border-radius: 8px;
+		background-color: $pale-grey;
+		div{
+			& + div{
+				margin-top: 16px;
+			}
+			b{
+				color: #000;
+			}
+			a{
+				font-size: 14px;
+			    font-weight: 400;
+			    text-decoration: underline!important;
+			    border-bottom: 1px solid;
+			}
+		}
+	}
+
+	.trek_card_bottom{
+		position: relative;
+		width: 100%;
+		height: 200px;
+		border-radius: 8px;
+		background: #f2e5df;
+		box-shadow: 0 8px 24px 0 rgba(0, 72, 135, 0.1);
+		margin-top: 130px;
+		.img{
+			height: 237px;
+			position: absolute;
+			left: 150px;
+			bottom: 24px;
+			@media (max-width: 1400px){
+				left: 30px;
+			}
+			@media (max-width: 1600px){
+				left: 50px;
+			}
+			img{
+				display: block;
+				width: auto;
+				height: 100%;
+			}
+		}
+		.text{
+			position: absolute;
+			top: 32px;
+			right: 160px;
+			@media (max-width: 1400px){
+				right: 30px;
+			}
+			@media (max-width: 1600px){
+				right: 50px;
+			}
+			span{
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 1.2;
+				letter-spacing: 0.2px;
+				color: #000;
+			}
+			h2{
+				color: #000;
+			}
+			.btn_block{
+				margin-top: 24px;
+			}
+		}
+	}
+
+	.news{
+		padding-top: 40px;
+	}
+}
+
+.interests_list{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -4px;
+	max-height: 96px;
+	overflow: hidden;
+	span{
+		display: block;
+		border-radius: 12px;
+		border: 1px solid #ccc;
+		font-size: 14px;
+		line-height: 1.43;
+		color: rgba(0, 0, 0, 0.25);
+		line-height: 22px;
+		margin: 4px;
+		padding: 0 16px;
+		font-weight: bold;
+		cursor: default;
+	}
+}
+
+.hobby,
+.competence{
+	padding: 0 0 0 40px;
+	position: relative;
+	min-height: 24px;
+	cursor: default;
+	i{
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $french-blue;
+		display: block;
+		width: 24px;
+		height: 24px;
+		font-size: 24px;
+		&.sport{
+			background: url('../img/icons/competence/sport.svg') no-repeat center;
+		}
+		&.programming{
+			background: url('../img/icons/competence/programming.svg') no-repeat center;
+		}
+		&.reading{
+			background: url('../img/icons/competence/reading.svg') no-repeat center;
+		}
+	}
+	span{
+		font-size: 14px;
+		line-height: 24px;
+		color: #000000;
+		display: block;
+	}
+	& + .hobby,
+	& + .competence{
+		margin-top: 16px;
+	}
+}
+
+.lang{
+	padding: 0 0 0 40px;
+	position: relative;
+	// min-height: 20px;
+	cursor: default;
+	i{
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: $french-blue;
+		display: block;
+		width: 24px;
+		height: 16px;
+		font-size: 24px;
+		margin: 2px 0;
+		/* background-size: contain; */
+		background-repeat: no-repeat;
+		background-position: center;
+		&.ru{
+			background-image: url('../img/icons/langs/russia.svg');
+		}
+		&.cn{
+			background-image: url('../img/icons/langs/china.svg');
+		}
+		&.es{
+			background-image: url('../img/icons/langs/spain.svg');
+		}
+		&.ae{
+			background-image: url('../img/icons/langs/united-arab-emirates.svg');
+		}
+		&.pt{
+			background-image: url('../img/icons/langs/portugal.svg');
+		}
+		&.de{
+			background-image: url('../img/icons/langs/germany.svg');
+		}
+		&.gf{
+			background-image: url('../img/icons/langs/france.svg');
+		}
+		&.gb{
+			background-image: url('../img/icons/langs/united-kingdom.svg');
+		}
+		// 
+		&.az{
+			background-image: url('../img/icons/langs/azerbaijan.svg');
+		}
+		&.by{
+			background-image: url('../img/icons/langs/belarus.svg');
+		}
+		&.ge{
+			background-image: url('../img/icons/langs/georgia.svg');
+		}
+		&.kz{
+			background-image: url('../img/icons/langs/kazakhstan.svg');
+		}
+		&.kg{
+			background-image: url('../img/icons/langs/kyrgyzstan.svg');
+		}
+		&.lv{
+			background-image: url('../img/icons/langs/latvia.svg');
+		}
+		&.lt{
+			background-image: url('../img/icons/langs/lithuania.svg');
+		}
+		&.md{
+			background-image: url('../img/icons/langs/moldova.svg');
+		}
+		&.tj{
+			background-image: url('../img/icons/langs/tajikistan.svg');
+		}
+		&.tm{
+			background-image: url('../img/icons/langs/turkmenistan.svg');
+		}
+		&.uz{
+			background-image: url('../img/icons/langs/uzbekistan.svg');
+		}
+		&.ua{
+			background-image: url('../img/icons/langs/ukraine.svg');
+		}
+		&.ee{
+			background-image: url('../img/icons/langs/estonia.svg');
+		}
+		// 
+	}
+	span{
+		font-size: 14px;
+		line-height: 20px;
+		color: #000000;
+		font-weight: normal;
+		& span{
+			display: inline;
+			opacity: 0.25;
+			margin-left: 8px;
+			&.edit{
+				width: 16px;
+  				height: 16px;
+				margin: 2px 0 2px 8px;
+				position: relative;
+				opacity: 1;
+				cursor: pointer;
+				&:after{
+					content: "";
+					display: block;
+					width: 16px;
+  					height: 16px;
+  					background: url('../img/icons/a-edit.svg') no-repeat center;
+				}
+				&:hover{
+					opacity: 0.7;
+				}
+			}
+			&.delete{
+				width: 16px;
+  				height: 16px;
+				margin: 2px 0 2px 8px;
+				position: relative;
+				opacity: 1;
+				cursor: pointer;
+				&:after{
+					content: "";
+					display: block;
+					width: 16px;
+  					height: 16px;
+  					background: url('../img/icons/a-delete.svg') no-repeat center;
+					background-size: 21px;
+				}
+				&:hover{
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+	& + .lang{
+		margin-top: 14px;
+	}
+}
+
+.modal_div{
+	.lang{
+		span{
+			display: flex;
+		}
+	}
+}
+
+.text{
+
+}
+.text *:last-child{
+	margin-bottom: 0 !important;
+}
+.text ul{
+	margin: 15px 0;
+}
+.text ul li + li{
+	margin-top: 15px;
+}
+
+
+.about_mentor{
+	&.text{
+		font-size: 14px;
+	}
+}
+
+
+
+
+
+
+

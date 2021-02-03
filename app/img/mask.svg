@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520px" height="115px" viewBox="0 0 520 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M271,104 L260,115 L249,104 L8,104 C3.581722,104 5.41083001e-16,100.418278 0,96 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 L512,0 C516.418278,-8.11624501e-16 520,3.581722 520,8 L520,96 C520,100.418278 516.418278,104 512,104 L271,104 Z" id="path-1"></path>
+    </defs>
+    <g id="Профайл" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-581.000000, -152.000000)" id="карта-приоритетов">
+            <g transform="translate(304.000000, 104.000000)">
+                <g id="Group" transform="translate(277.000000, 48.000000)">
+                    <g id="image-copy">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#CCCCCC" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

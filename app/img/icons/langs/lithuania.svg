@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>lithuania</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Профайл" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Профайл-—-языки" transform="translate(-465.000000, -579.000000)" fill-rule="nonzero">
+            <g id="lithuania" transform="translate(465.000000, 579.000000)">
+                <path d="M0,10.6622857 L23.9532164,10.6622857 L23.9532164,15.5664762 C23.9532164,15.798619 23.7682807,15.9868571 23.5402105,15.9868571 L0.413005848,15.9868571 C0.184935673,15.9868571 0,15.798619 0,15.5664762 L0,10.6622857 Z" id="Path" fill="#FF4B55"></path>
+                <path d="M0.413005848,0.0131428571 L23.5402573,0.0131428571 C23.7683275,0.0131428571 23.9532632,0.201380952 23.9532632,0.43352381 L23.9532632,5.33771429 L0,5.33771429 L0,0.43347619 C0,0.201333333 0.184935673,0.0131428571 0.413005848,0.0131428571 Z" id="Path" fill="#FFE15A"></path>
+                <rect id="Rectangle" fill="#73AF00" x="0" y="5.33761905" width="23.9532164" height="5.32428571"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

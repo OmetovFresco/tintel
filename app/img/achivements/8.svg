@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<circle fill="#7563C7" cx="50.7" cy="50.3" r="40"/>
+<circle opacity="0.16" cx="50.7" cy="50.3" r="36.7"/>
+<g>
+	<g>
+		<path fill="#00CD6A" d="M40.3,55.9v-2.4l1.6-0.3v-5.6L40.6,48l-0.7-2.3l3.7-1h1.7v8.5l1.6,0.3v2.4H40.3z"/>
+		<path fill="#00CD6A" d="M47.6,49.1v-2.8h3.1v2.8H47.6z M47.6,53.9v-2.8h3.1v2.8H47.6z"/>
+		<path fill="#00CD6A" d="M60.3,54.9c-0.4,0.3-0.8,0.7-1.2,1h-4.6l-2.4-2v-7.3l2.4-2h4.8l2.4,2v7.3C61.1,54.3,60.7,54.6,60.3,54.9z
+			 M55.8,47.4l-0.4,0.3v5l0.5,0.4h2l0.5-0.4v-5l-0.4-0.3H55.8z"/>
+	</g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="20.5" y="27.9" width="60.5" height="44.7"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<path clip-path="url(#SVGID_2_)" fill="#00CD6A" d="M50.6,27.9c-12.3,0-22.3,10-22.3,22.3c0,12.3,10,22.3,22.3,22.3
+				s22.3-10,22.3-22.3C72.9,37.9,62.9,27.9,50.6,27.9L50.6,27.9z M50.6,68.6c-10.1,0-18.4-8.3-18.4-18.4c0-10.1,8.3-18.4,18.4-18.4
+				C60.8,31.8,69,40,69,50.2C69,60.3,60.8,68.6,50.6,68.6L50.6,68.6z M50.6,68.6"/>
+			<path clip-path="url(#SVGID_2_)" fill="#00CD6A" d="M32,31.6c0.8-0.8,0.8-2,0-2.7c-0.8-0.8-2-0.8-2.7,0
+				c-11.8,11.8-11.8,30.9,0,42.7c0.4,0.4,0.9,0.6,1.4,0.6c0.5,0,1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.7C21.8,58.5,21.8,41.8,32,31.6
+				L32,31.6z M32,31.6"/>
+			<path clip-path="url(#SVGID_2_)" fill="#00CD6A" d="M72,28.9c-0.8-0.8-2-0.8-2.7,0c-0.8,0.8-0.8,2,0,2.7
+				c10.3,10.3,10.3,27,0,37.2c-0.8,0.8-0.8,2,0,2.7c0.4,0.4,0.9,0.6,1.4,0.6c0.5,0,1-0.2,1.4-0.6C83.7,59.8,83.7,40.6,72,28.9
+				L72,28.9z M72,28.9"/>
+		</g>
+	</g>
+</g>
+<g>
+	
+		<image overflow="visible" width="552" height="487" xlink:href="EBF9D94B.png"  transform="matrix(0.24 0 0 0.24 -15.5259 -8.074)">
+	</image>
+</g>
+</svg>

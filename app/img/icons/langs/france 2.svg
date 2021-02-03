@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>france</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Профайл" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Профайл-—-языки" transform="translate(-465.000000, -961.000000)" fill-rule="nonzero">
+            <g id="france" transform="translate(465.000000, 961.000000)">
+                <path d="M8.00001562,15.9867143 L0.4138125,15.9867143 C0.185296875,15.9867143 0,15.7984762 0,15.5663333 L0,0.433333333 C0,0.201190476 0.185296875,0.012952381 0.4138125,0.012952381 L8.00001562,0.012952381 L8.00001562,15.9867143 Z" id="Path" fill="#41479B"></path>
+                <rect id="Rectangle" fill="#F5F5F5" x="8.00015625" y="0.0131904762" width="8.00015625" height="15.9738095"></rect>
+                <path d="M23.5861875,15.9867143 L15.9999844,15.9867143 L15.9999844,0.013 L23.5861875,0.013 C23.8147031,0.013 24,0.201238095 24,0.433380952 L24,15.566381 C24,15.7985714 23.8147031,15.9867143 23.5861875,15.9867143 Z" id="Path" fill="#FF4B55"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,252 @@
+//= template/header.html
+
+<script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+
+<div class="page col-8-content center">
+	<div class="content">
+		
+		<div class="form settings_page">
+			<div class="page_title">
+		        <h3>Настройки</h3>
+		    </div>
+			<form action="">
+
+				<div class="add_new_ava_line">
+					
+					<div class="new_ava">
+						<div id="new_ava_output_upload" class="upload_list"></div>
+
+						<div class="current_ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+
+						<div class="add_new_ava_input">
+							<label class="" for="new_ava_upload"></label>
+				    		<input type="file" id="new_ava_upload" name="competences_modal_upload[]" multiple />
+						</div>
+					</div>
+
+					<div class="input mt-24">
+						<label for="status">Статус</label>
+						<input type="text" id="status" name="title">
+					</div>
+
+				</div>
+
+				<div class="page_title mt-24">
+			        <h4>Общие сведения</h4>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="user_name">Имя</label>
+							<input type="text" id="user_name" name="title">
+						</div>
+			    	</div>
+
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="surname">Фамилия</label>
+							<input type="text" id="surname" name="title">
+						</div>
+			    	</div>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-6">
+			    		<div class="input">
+			    			<label class="mb-16">Пол</label>
+				    		<div class="row">
+				    			<div class="col-6">
+				    				<div class="input radio">
+										<input type="radio" id="sex_m" name="sex">
+										<label for="sex_m">Мужской</label>
+									</div>
+				    			</div>
+				    			<div class="col-6">
+				    				<div class="input radio">
+										<input type="radio" id="sex_w" name="sex">
+										<label for="sex_w">Женский</label>
+									</div>
+				    			</div>
+
+				    		</div>
+			    		</div>
+				    		
+			    	</div>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-8">
+			    		<div class="input">
+			    			<label class="mb-16">Дата рождения</label>
+				    		<div class="row">
+				    			<div class="col-3">
+				    				<div class="input">
+										<label for="surname">День</label>
+										<select>
+											<option selected="">1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>5</option>
+											<option>6</option>
+											<option>7</option>
+											<option>8</option>
+											<option>9</option>
+											<option>10</option>
+											<option>11</option>
+										</select>
+									</div>
+				    			</div>
+				    			<div class="col-5">
+				    				<div class="input">
+										<label for="surname">Месяц</label>
+										<select>
+											<option selected="">Январь</option>
+											<option>Февраль</option>
+											<option>Март</option>
+											<option>Апрель</option>
+											<option>Май</option>
+											<option>Июнь</option>
+											<option>Июль</option>
+											<option>Август</option>
+										</select>
+									</div>
+				    			</div>
+				    			<div class="col-4">
+				    				<div class="input">
+										<label for="surname">Год</label>
+										<select>
+											<option selected="">2000</option>
+											<option>2001</option>
+											<option>2002</option>
+											<option>2003</option>
+											<option>2005</option>
+											<option>2006</option>
+											<option>2007</option>
+											<option>2008</option>
+											<option>2009</option>
+											<option>2010</option>
+											<option>2011</option>
+										</select>
+									</div>
+				    			</div>
+				    		</div>
+			    		</div>
+				    		
+			    	</div>
+			    </div>
+
+
+
+			    <div class="page_title mt-24">
+			        <h4>Контактная информация</h4>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="phone">Телефон</label>
+							<input type="text" id="phone" value="+7 (987) 654-32-10" name="title">
+						</div>
+			    	</div>
+
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="mail">E-mail</label>
+							<input type="text" id="mail" value="vasilisa@mail.ru" name="title">
+						</div>
+			    	</div>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="city">Город</label>
+							<input type="text" id="city" value="Томск" name="title">
+						</div>
+			    	</div>
+
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="school">Школа</label>
+							<input type="text" id="school" value="Школа №40" name="title">
+						</div>
+			    	</div>
+			    </div>
+
+
+			    <div class="page_title mt-24">
+			        <h4>Изменение пароля</h4>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="pass">Текущий пароль</label>
+							<input type="password" id="pass" value="password" name="title">
+						</div>
+			    	</div>
+			    </div>
+
+			    <div class="row">
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="new_pass">Новый пароль</label>
+							<input type="password" id="new_pass" value="password" name="title">
+						</div>
+			    	</div>
+
+			    	<div class="col-6">
+			    		<div class="input">
+							<label for="rep_new_pass">Повторите новый пароль</label>
+							<input type="password" id="rep_new_pass" value="password" name="title">
+						</div>
+			    	</div>
+			    </div>
+
+
+				<div class="btn_block left">
+					<input type="submit" class="blue_btn" value="Сохранить изменения">
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<script>
+function new_ava_upload(evt) {
+    var files = evt.target.files; // FileList object
+    document.getElementById('new_ava_upload').innerHTML = "";
+
+    document.getElementById('new_ava_output_upload').innerHTML = "";
+    
+    for (var i = 0, f; f = files[i]; i++) {
+
+        // Only process image files.
+        if (!f.type.match('image.*')) {
+            alert("Только изображения....");
+            break;
+        }
+
+        var reader = new FileReader();
+
+        // Closure to capture the file information.
+        reader.onload = (function(theFile) {
+            return function(e) {
+                // Render thumbnail.
+                var span = document.createElement('span');
+                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+                document.getElementById('new_ava_output_upload').insertBefore(span, null);
+            };
+        })(f);
+
+        // Read in the image file as a data URL.
+        reader.readAsDataURL(f);
+    }
+}
+  
+document.getElementById('new_ava_upload').addEventListener('change', new_ava_upload, false);
+</script>
+
+//= template/footer.html

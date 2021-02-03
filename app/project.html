@@ -1,0 +1,385 @@
+//= template/header.html
+
+<div class="page">
+	<div class="content">
+		
+		<div class="breadcrumbs">
+			<a href="#">Education</a>
+			<span class="separator"> / </span>
+
+			<span>Промышленный дизайн</span>
+		</div>
+
+		<div class="banner big" style="background-image: url('img/trek/bg/card_bg_1.jpg')">
+			<div class="text">
+				<span>Курс</span>
+				<h2>Промышленный дизайн</h2>
+			</div>
+		</div>
+
+		<div class="row mt-24">
+			<div class="col-8">
+
+				<div class="course_page btn_line">
+					<a href="/project_selection.html" class="blue_btn">Записаться</a>
+
+					<div class="reg_info">
+						<div class="alert"><span>Регистрация открыта</span></div>
+						<div class="stat">
+							<span>Мест: <span>12</span></span>
+						</div>
+						<div class="stat">
+							<span>Принято заявок: <span>8</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="text mt-24">
+					<span>Совокупность отраслей народного хозяйства, объединяющая материальное производство и материальные услуги; отрасли и виды деятельности, создающие материальные блага в форме вещественных продуктов и преобразованной энергии природы или же оказывающие услуги материального характера, являющиеся продолжением процесса производства. В результате практической деятельности людей, занятых в производственной сфере, осуществляется изменение физических или химических свойств веществ природы и ее сил, их состояния, местоположения с целью приспособить созданные продукты к общественным потребностям.</span>
+				</div>
+
+				<div class="about_course mt-40">
+					<div class="row">
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/napr.svg" alt="">
+								</div>
+								<div class="text">
+									<span>Направление</span>
+									<span>Научно-производственная сфера</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/trec.svg" alt="">
+								</div>
+								<div class="text">
+									<span>Трек</span>
+									<span>промышленный дизайн</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/vozrast.svg" alt="">
+								</div>
+								<div class="text">
+									<span>10–16 лет</span>
+									<span>рекомендуемый возраст</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/ovz.svg" alt="">
+								</div>
+								<div class="text">
+									<span>Без ОВЗ</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/price.svg" alt="">
+								</div>
+								<div class="text">
+									<span>6 000 ₽/мес</span>
+									<span>стоимость обучения</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="shadow-box h-auto">
+					<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+				    <script>
+				      ymaps.ready(function () {
+				      	var myMap = new ymaps.Map('YMapsID', {
+				      		center: [56.461944, 84.950425],
+				      		zoom: 17,
+				      		controls: []
+				      });
+
+				      var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				          balloonContent: 'цвет <strong>фэйсбука</strong>'
+				      }, {
+				          preset: 'islands#blueHeartCircleIcon',
+				          iconColor: '#3b5998'
+				      });
+
+				        myMap.geoObjects.add(myPlacemark);
+				      });
+				    </script>
+
+				    <div id="YMapsID" class="map">
+				    	
+				    </div>
+					<div class="content">
+						<div class="sign-board geo">
+					    	<span>Томск, пр. Ленина, 26, Точка кипения</span>
+					    </div>
+					    <div class="sign-board organization">
+					    	<span>Кванториум</span>
+					    </div>
+						
+						<div class="mt-24 mb-12">
+							<b>Контактное лицо</b>
+						</div>
+
+					    <div class="sign-board user">
+					    	<span>Никита Перумов</span>
+					    </div>
+
+					    <div class="sign-board mail">
+					    	<span>bf@mercuriya.ru</span>
+					    </div>
+
+					    <div class="sign-board phone">
+					    	<span>+7 (3822) 22-49-13</span>
+					    </div>
+					</div>
+				    
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-40">	
+			<div class="col-12">
+				<div class="page_title publications_title">
+			        <h3>Галерея</h3>
+			    </div>
+
+			    <div class="line-slider publications">
+			    	
+			    	<div data-fancybox="gallery" href="/img/bg/bg1.jpg" class="img_in_slider"></div>
+
+			    	<div data-fancybox="gallery" href="/img/bg/bg2.jpg" class="img_in_slider"></div>
+
+			    	<div data-fancybox="gallery" href="/img/bg/bg2.jpg" class="img_in_slider"></div>
+
+			    	<div data-fancybox="gallery" href="/img/bg/bg1.jpg" class="img_in_slider"></div>
+
+			    	<div data-fancybox="gallery" href="/img/bg/bg2.jpg" class="img_in_slider"></div>
+
+			    </div>
+			</div>
+		</div>
+
+		<div class="row mt-80">
+			<div class="col-12">
+				<div class="page_title">
+			        <h4>Наставники</h4>
+			    </div>
+
+			    <div class="mertors_list">
+			    	<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+
+		    		<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+
+		    		<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="row mt-60">
+			<div class="col-10">
+				<div class="page_title">
+			        <h3>Развитие компетенций</h3>
+			    </div>
+
+			    <div class="text mt-24 mb-24">
+			    	<p>Пройдя курс вы заработаете баллы по следующим компетенциям</p>
+			    </div>
+				
+				<div class="row">
+					<div class="col-8">
+						<h4>Базовые</h4>
+
+						<div class="competences_list">
+							<div class="row">
+
+								<div class="col-6">
+									<div class="competence_points_card blue">
+										<div class="text">
+											<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+										</div>
+										<div class="points">
+											<span>1</span>
+											<span>балл</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-6">
+									<div class="competence_points_card orange">
+										<div class="text">
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+										</div>
+										<div class="points">
+											<span>2</span>
+											<span>балла</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<h4>Профессиональные</h4>
+
+						<div class="competences_list">
+							<div class="row">
+
+								<div class="col-12">
+									<div class="competence_points_card red">
+										<div class="text">
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam, laudantium provident harum explicabo?</span>
+										</div>
+										<div class="points">
+											<span>3</span>
+											<span>балла</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row mt-214">
+			<div class="col-12">
+				
+				<div class="fb_footer_form">
+
+					<div class="img">
+						<img src="../img/course_fb_back.png" alt="">
+					</div>
+
+					<div class="content">
+								
+						<div class="reg_info">
+							<div class="alert"><span>Регистрация открыта</span></div>
+							<div class="stat">
+								<span>Мест: <span>12</span></span>
+							</div>
+							<div class="stat">
+								<span>Принято заявок: <span>8</span></span>
+							</div>
+						</div>
+
+						<h4 class="text-center">Записывайся!</h4>
+
+						<div class="row justify-content-center">
+							<div class="col-8">
+
+								<form action="" class="mt-24">
+									<div class="input">
+										<input type="text" placeholder="Имя">
+									</div>
+
+									<div class="input">
+										<input type="text" placeholder="Телефон">
+									</div>
+
+									<button class="blue_btn w100">Добавить</button>
+								</form>
+
+							</div>
+						</div>
+
+								
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	function fb_form_upload(evt) {
+	    var files = evt.target.files; // FileList object
+	    document.getElementById('fb_form_upload').innerHTML = "";
+
+	    document.getElementById('fb_form_output_upload').innerHTML = "";
+	    
+	    for (var i = 0, f; f = files[i]; i++) {
+
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Только изображения....");
+	            break;
+	        }
+
+	        var reader = new FileReader();
+
+	        // Closure to capture the file information.
+	        reader.onload = (function(theFile) {
+	            return function(e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<div class="img-thumbnail" style="background-image: url(', e.target.result, ');"></div>'].join('');
+	                document.getElementById('fb_form_output_upload').insertBefore(span, null);
+	            };
+	        })(f);
+
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	  
+	document.getElementById('fb_form_upload').addEventListener('change', fb_form_upload, false);
+</script>
+
+//= template/footer.html

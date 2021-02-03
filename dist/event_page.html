@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Exterium</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/style/jquery.jscrollpane.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.2.7/tippy.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+
+    <!-- NEW -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    <div id="small_screen">
+        <div class="content">
+            <div class="big">У вас маленький экран</div>
+        </div>
+    </div>
+    
+    <!-- <div class="ie_msg">
+    	<div class="header">
+    		<a href="/">
+    			<div class="site_name">
+    		        <div class="logo"></div>
+    		    </div>
+    		</a>
+    	</div>
+    	<div class="content">
+    		<div class="text">
+    			<h4>К сожалению, Ваш браузер устарел и не поддерживает используемые на платформе технологии</h4>
+    			<p>Мы рекомендуем обновить ваш браузер или перейти по одной из ссылок ниже, чтобы загрузить последнюю версию современного браузера.</p>
+    
+    			<div class="browser_list">
+    				<a href="https://www.google.com/intl/ru_ru/chrome/" target="_blank">
+    					<img src="../img/icons/chrome.svg" alt="">
+    					<span>Google Chrome</span>
+    				</a>
+    				<a href="https://www.mozilla.org/ru/firefox/new/" target="_blank">
+    					<img src="../img/icons/firefox.svg" alt="">
+    					<span>Mozila Firefox</span>
+    				</a>
+    				<a href="https://www.apple.com/ru/safari/" target="_blank">
+    					<img src="../img/icons/safari.svg" alt="">
+    					<span>Safari</span>
+    				</a>
+    				<a href="https://www.opera.com/" target="_blank">
+    					<img src="../img/icons/opera.svg" alt="">
+    					<span>Opera</span>
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    </div> -->
+    <div id="left_menu">
+        <a href="/challenges.html">
+             <div class="site_name">
+                <!-- <div class="logo">
+                    <span>EX</span>
+                </div>
+                <div class="text">
+                    <span class="name">Exterium</span>
+                    <span class="deskr">Make it. Creative</span>
+                </div> -->
+            </div>
+        </a>
+    
+        <div class="menu_list">
+            <a href="/navigator.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-navigator"></span>
+                </span>
+                <span class="item_name">
+                    <span>Navigator</span>
+                </span>
+            </a>
+    
+            <a href="/courses.html" class="menu_item active">
+                <span class="icon">
+                    <span class="icon-education"></span>
+                </span>
+                <span class="item_name">
+                    <span>Education</span>
+                </span>
+            </a>
+    
+            <a href="/projects.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-project"></span>
+                </span>
+                <span class="item_name">
+                    <span>Project</span>
+                </span>
+            </a>
+    
+            <a href="/challenges.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-challenge"></span>
+                </span>
+                <span class="item_name">
+                    <span>Challenge</span>
+                </span>
+            </a>
+    
+            <a href="/people.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-people"></span>
+                </span>
+                <span class="item_name">
+                    <span>People</span>
+                </span>
+            </a>
+    
+            <a href="/events.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-events"></span>
+                </span>
+                <span class="item_name">
+                    <span>Events</span>
+                </span>
+            </a>
+    
+            <a href="/questions.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-q-a"></span>
+                </span>
+                <span class="item_name">
+                    <span>Questions</span>
+                </span>
+            </a>
+        </div>
+    
+        <div class="footer">
+            <div class="about">
+                <a href="#about">О системе</a>
+            </div>
+            <div class="copy">
+                <span>© Все права защищены 2018</span>
+            </div>
+        </div>
+    </div>
+    <div id="top_menu">
+        <div class="user_pages">
+            <a href="/treks.html">Треки</a>
+            <a href="/activities.html">Активности</a>
+            <a href="/recommendations.html">Рекомендации</a>
+            <a href="/profile.html">Профайл</a>
+        </div>
+    
+        <div class="the_best">
+            <div>
+                <div class="ico">
+                    <img src="/img/best_1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Сегодня рулит:</span>
+                    <span>
+                        <a href="/profile.html">Кирилл Орехов</a>
+                    </span>
+                </div>
+            </div>
+    
+            <div>
+                <div class="ico">
+                    <img src="/img/best_2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Всего на треках:</span>
+                    <span>4253 человек</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <a href="/messages.html" class="link_btn messages">
+                <div class="indicator"></div>
+                <i class="icon icon-a-mail"></i>
+            </a>
+            <div class="open_list_btn notifications">
+                <div class="indicator"></div>
+                <i class="icon icon-a-notifications"></i>
+            </div>
+        </div>
+        <div class="user">
+            <span>Василиса</span>
+            <div class="ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+        </div>
+        
+        <div class="menu">
+            <a href="/profile.html">
+                <img src="../img/icons/a-person-outline.svg" alt="">
+                Профайл
+            </a>
+            <a href="/settings.html">
+                <img src="../img/icons/a-settings.svg" alt="">
+                Настройки
+            </a>
+            <div class="line"></div>
+            <a href="/login.html">
+                <img src="../img/icons/a-logout.svg" alt="">
+                Выход
+            </a>
+        </div>
+    
+    </div>
+    
+    <div class="notifications_popup popup_cloud">
+    
+        <div class="event_alert">
+            <span class="status">Ура! Ваша заявка на курс</span>
+            <span class="event_status accepted">принята</span>
+            <div class="text">
+                <a href="#">«Промышленный дизайн»</a>
+            </div>
+            <div class="time">
+                <span>12:36</span>
+            </div>
+        </div>
+    
+        <div class="event_alert">
+            <span class="status">Увы, Ваша заявка на мероприятие</span>
+            <span class="event_status rejected">отклонена</span>
+            <div class="text">
+                <a href="#">«Сессия по реализации национальных проектов на территории Томской области»</a>
+            </div>
+            <div class="time">
+                <span>10:24</span>
+            </div>
+        </div>
+    
+        <div class="show_all">
+            <a href="/notifications.html">Все уведомления</a>
+        </div>
+    
+    </div>
+
+<div class="page">
+	<div class="content">
+
+		<div class="banner big" style="background-image: url('img/trek/bg/card_bg_1.jpg')">
+			<div class="text">
+				<span>Курс</span>
+				<h2>Промышленный дизайн</h2>
+			</div>
+
+			<div class="btn_block_bg">
+				<div>
+					<span>Мест: 12</span>
+					<span>Свободно: 8</span>
+				</div>
+				<div>
+					<a href="/project_selection.html" class="blue_btn">Записаться</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-24">
+			<div class="col-8">
+
+				<div class="text">
+					<span>Совокупность отраслей народного хозяйства, объединяющая материальное производство и материальные услуги; отрасли и виды деятельности, создающие материальные блага в форме вещественных продуктов и преобразованной энергии природы или же оказывающие услуги материального характера, являющиеся продолжением процесса производства. В результате практической деятельности людей, занятых в производственной сфере, осуществляется изменение физических или химических свойств веществ природы и ее сил, их состояния, местоположения с целью приспособить созданные продукты к общественным потребностям.</span>
+					<ul>
+						<li><b>Lorem ipsum dolor.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi animi beatae amet.</li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste expedita saepe amet distinctio? Sint, repellendus, odio.</li>
+						<li><b>Lorem ipsum dolor sit amet.</b> Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+					</ul>
+				</div>
+
+				<div class="about_course mt-40">
+					<div class="row">
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/napr.svg" alt="">
+								</div>
+								<div class="text">
+									<span>Направление</span>
+									<span>Научно-производственная сфера</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/trec.svg" alt="">
+								</div>
+								<div class="text">
+									<span>Трек</span>
+									<span>промышленный дизайн</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/vozrast.svg" alt="">
+								</div>
+								<div class="text">
+									<span>10–16 лет</span>
+									<span>рекомендуемый возраст</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/ovz.svg" alt="">
+								</div>
+								<div class="text">
+									<span>Без ОВЗ</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="card mb-24">
+								<div class="icon">
+									<img src="../img/icons/price.svg" alt="">
+								</div>
+								<div class="text">
+									<span>6 000 ₽/мес</span>
+									<span>стоимость обучения</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="shadow-box h-auto">
+					<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+				    <script>
+				      ymaps.ready(function () {
+				      	var myMap = new ymaps.Map('YMapsID', {
+				      		center: [56.461944, 84.950425],
+				      		zoom: 17,
+				      		controls: []
+				      });
+
+				      var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				          balloonContent: 'цвет <strong>фэйсбука</strong>'
+				      }, {
+				          preset: 'islands#blueHeartCircleIcon',
+				          iconColor: '#3b5998'
+				      });
+
+				        myMap.geoObjects.add(myPlacemark);
+				      });
+				    </script>
+
+				    <div id="YMapsID" class="map">
+				    	
+				    </div>
+					<div class="content">
+						<div class="sign-board geo">
+					    	<span>Томск, пр. Ленина, 26, Точка кипения</span>
+					    </div>
+					    <div class="sign-board organization">
+					    	<span>Кванториум</span>
+					    </div>
+						
+						<div class="mt-24 mb-12">
+							<b>Контактное лицо</b>
+						</div>
+
+					    <div class="sign-board user">
+					    	<span>Никита Перумов</span>
+					    </div>
+
+					    <div class="sign-board mail">
+					    	<span>bf@mercuriya.ru</span>
+					    </div>
+
+					    <div class="sign-board phone">
+					    	<span>+7 (3822) 22-49-13</span>
+					    </div>
+					</div>
+				    
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-60">
+			<div class="col-10">
+				<div class="page_title">
+			        <h3>Развитие компетенций</h3>
+			    </div>
+
+			    <div class="text mt-24 mb-24">
+			    	<p>Пройдя курс вы заработаете баллы по следующим компетенциям</p>
+			    </div>
+				
+				<div class="row">
+					<div class="col-8">
+						<h4>Базовые</h4>
+
+						<div class="competences_list">
+
+							<div class="competence_points_card blue">
+								<div class="text">
+									<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+								</div>
+								<div class="points">
+									<span>1</span>
+									<span>балл</span>
+								</div>
+							</div>
+
+							<div class="competence_points_card orange">
+								<div class="text">
+									<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+								</div>
+								<div class="points">
+									<span>2</span>
+									<span>балла</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-4">
+						<h4>Профессиональные</h4>
+
+						<div class="competences_list">
+
+							<div class="competence_points_card not">
+								<div class="text">
+									<span>У данного мероприятия баллы профессиональных компетенции не начисляются</span>
+								</div>
+							</div>
+									
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="row mt-80">
+			<div class="col-6">
+				<div class="page_title">
+			        <h4>Организаторы мероприятия</h4>
+			    </div>
+
+			    <div class="org_list">
+			    	<div class="shadow-box">
+			    		<a href="#"><div class="img">
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div></a>
+			    		<div class="content">
+			    			<div class="tag_line">
+								<span>Образовательный центр</span>
+							</div>
+							<a href="#"><h4>ИТ-центр</h4></a>
+
+							<div class="sign-board geo">
+								<span>Герцена, 18</span>
+							</div>
+
+			    			<div class="text">
+			    				<span>Основа программы — методики академика Н.А. Зайцева и авторские разработки наших методистов</span>
+			    			</div>
+							
+							<div class="sign-boards-line">
+								<div class="sign-board a-card-education"><span>2</span></div>
+								<div class="sign-board a-card-project"><span>1</span></div>
+								<div class="sign-board a-card-events"><span>4</span></div>
+								<div class="sign-board a-card-challenge"><span>10</span></div>
+							</div>
+			    		</div>
+			    	</div>
+			    	<div class="shadow-box">
+			    		<a href="#"><div class="img">
+			    			<div style="background-image: url('img/bg/image.jpg')"></div>
+			    		</div></a>
+			    		<div class="content">
+			    			<div class="tag_line">
+								<span>Образовательный центр</span>
+							</div>
+							<a href="#"><h4>ИТ-центр</h4></a>
+
+							<div class="sign-board geo">
+								<span>Герцена, 18</span>
+							</div>
+
+			    			<div class="text">
+			    				<span>Основа программы — методики академика Н.А. Зайцева и авторские разработки наших методистов</span>
+			    			</div>
+							
+							<div class="sign-boards-line">
+								<div class="sign-board a-card-education"><span>2</span></div>
+								<div class="sign-board a-card-project"><span>1</span></div>
+								<div class="sign-board a-card-events"><span>4</span></div>
+								<div class="sign-board a-card-challenge"><span>10</span></div>
+							</div>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+
+			<div class="col-6">
+				<div class="page_title">
+			        <h4>Ведущие/спикеры</h4>
+			    </div>
+
+			    <div class="mertors_list">
+			    	<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+
+		    		<div class="mentor">
+		    			<div class="img">
+		    				<div></div>
+		    			</div>
+		    			<div class="ava" style="background-image: url('../img/photo/ava5.png');"></div>
+		    			<div class="name">
+		    				<span>Анастасия<br>Вольнорудова</span>
+		    			</div>
+		    			<div class="deskr">
+		    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+		    			</div>
+		    		</div>
+
+			    </div>
+			</div>
+		</div>
+
+		<div class="page_title mt-80">
+	        <h4>Похожие мероприятия</h4>
+	    </div>
+
+		<div class="news">
+    		<div class="news_list col4">
+				
+				<div class="shadow-box">
+		    		<a href="/event_page.html"><div class="img">
+		    			<span class="price">от 1 200 ₽</span>
+		    			<div style="background-image: url('img/bg/image.jpg')"></div>
+		    		</div></a>
+		    		<div class="content">
+						<div class="tag_line">
+							<span>открытая лекция</span>
+							<span>8+</span>
+						</div>
+
+		    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+		    			<div class="sign-board organization"><span>Кванториум</span></div>
+		    			<div class="sign-board date"><span>16 января 2019</span></div>
+		    			<div class="sign-board status"><span>Идет набор</span></div>
+		    		</div>
+		    	</div>
+
+		    	<div class="shadow-box">
+		    		<a href="/event_page.html"><div class="img">
+		    			<span class="price">от 1 200 ₽</span>
+		    			<div style="background-image: url('img/bg/image.jpg')"></div>
+		    		</div></a>
+		    		<div class="content">
+		    			<a href="#"><h4>«Объект Дельта»: видеоэссе об искусственном интеллекте</h4></a>
+
+		    			<div class="sign-board organization"><span>Кванториум</span></div>
+		    			<div class="sign-board date"><span>16 января 2019</span></div>
+		    			<div class="sign-board status orange"><span>На рассмотрении</span></div>
+		    		</div>
+		    	</div>
+
+		    	<div class="shadow-box">
+		    		<a href="/event_page.html"><div class="img">
+		    			<span class="price">от 1 200 ₽</span>
+		    			<div style="background-image: url('img/bg/image.jpg')"></div>
+		    		</div></a>
+		    		<div class="content">
+		    			<a href="#"><h4>«Объект Дельта»: видеоэссе об искусственном</h4></a>
+
+		    			<div class="sign-board organization"><span>Кванториум</span></div>
+		    			<div class="sign-board date"><span>16 января 2019</span></div>
+		    			<div class="sign-board status green"><span>Участник</span></div>
+		    		</div>
+		    	</div>
+
+		    	<div class="shadow-box">
+		    		<a href="/event_page.html"><div class="img">
+		    			<span class="price">от 1 200 ₽</span>
+		    			<div style="background-image: url('img/bg/image.jpg')"></div>
+		    		</div></a>
+		    		<div class="content">
+						<div class="tag_line">
+							<span>открытая лекция</span>
+							<span>8+</span>
+						</div>
+
+		    			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+		    			<div class="sign-board organization"><span>Кванториум</span></div>
+		    			<div class="sign-board date"><span>16 января 2019</span></div>
+		    			<div class="sign-board status"><span>Идет набор</span></div>
+		    		</div>
+		    	</div>
+				
+			</div>
+		</div>
+
+	</div>
+</div>
+
+	<footer>
+
+	</footer>
+
+	<div id="overlay"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
+
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<!-- NEW -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

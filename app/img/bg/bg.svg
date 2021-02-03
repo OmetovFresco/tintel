@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1032px" height="296px" viewBox="0 0 1032 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.1 (78136) - https://sketchapp.com -->
+    <title>27236664-9656-4993-AF4F-BD68CDB8FB2D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="42.440959%" cy="52.2151693%" fx="42.440959%" fy="52.2151693%" r="206.28955%" gradientTransform="translate(0.424410,0.522152),scale(0.286822,1.000000),rotate(13.393622),translate(-0.424410,-0.522152)" id="radialGradient-1">
+            <stop stop-color="#1588EE" offset="0%"></stop>
+            <stop stop-color="#7563C7" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="1032" height="296" rx="8"></rect>
+    </defs>
+    <g id="Треки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Трек-–-выбранный" transform="translate(-304.000000, -2520.000000)">
+            <g id="топ-участников" transform="translate(304.000000, 2520.000000)">
+                <g id="image">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                    <circle id="Oval" fill="#534A9C" opacity="0.100000001" mask="url(#mask-3)" cx="-216" cy="148" r="300"></circle>
+                    <circle id="Oval" fill="#534A9C" opacity="0.100000001" mask="url(#mask-3)" cx="-28" cy="148" r="300"></circle>
+                    <circle id="Oval" fill="#534A9C" opacity="0.100000001" mask="url(#mask-3)" cx="244" cy="148" r="300"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

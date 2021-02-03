@@ -1,0 +1,40 @@
+//= template/header.html
+
+<script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+
+<div class="page col-8-content">
+	<div class="content">
+		
+		<div class="form add_news">
+			<div class="page_title">
+		        <h3>Добавление новости</h3>
+		    </div>
+			<form action="">
+				<div class="input">
+					<label for="title_news">Заголовок</label>
+					<input type="text" id="title_news" name="title">
+				</div>
+
+				<div class="input file">
+					<label for="cover_news">Прикрепить обложку</label>
+					<input type="file" id="cover_news" name="file">
+				</div>
+				
+				<div class="input">
+					<textarea name="editor1"></textarea>
+				</div>
+
+				<div class="btn_block">
+					<input type="submit" class="blue_btn" value="Опубликовать">
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<script>
+        CKEDITOR.replace( 'editor1' );
+</script>
+
+//= template/footer.html

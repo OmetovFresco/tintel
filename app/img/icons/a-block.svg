@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F4686CB8-B918-4A72-A9B3-E6AAA723F967</title>
+    <g id="Система" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Сообщения-—-заглушка" transform="translate(-1157.000000, -195.000000)">
+            <g id="more" transform="translate(1141.000000, 130.000000)">
+                <g id="a-block" transform="translate(16.000000, 65.000000)">
+                    <path d="M12,2 C17.52,2 22,6.48 22,12 C22,17.52 17.52,22 12,22 C6.48,22 2,17.52 2,12 C2,6.48 6.48,2 12,2 Z M18.3174176,7.09798489 L7.09798489,18.3174176 C8.45316423,19.3715044 10.1548041,20 12,20 C16.41,20 20,16.41 20,12 C20,10.2701288 19.4476113,8.66642997 18.5100219,7.35609157 L18.3174176,7.09798489 Z M12,4 C7.59,4 4,7.59 4,12 C4,13.8451959 4.62849561,15.5468358 5.68258243,16.9020151 L16.9020151,5.68258243 C15.5468358,4.62849561 13.8451959,4 12,4 Z" id="Shape" fill="#BFBFBF" fill-rule="nonzero"></path>
+                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+@import "colors";
+@import "fonts";
+
+#right_block{
+    width: 320px;
+    // height: 952px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 8px 24px 0 rgba(0, 72, 135, 0.1);
+    background-color: #ffffff;
+    position: fixed;
+    top: 104px;
+    bottom: 24px;
+    right: 0;
+    z-index: 10;
+    overflow: auto;
+    .settings{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile{
+    	text-align: center;
+    	position: relative;
+    	padding-bottom: 24px;
+    	.photo{
+    		padding: 24px 0 16px;
+    		position: relative;
+    		.ava{
+    			margin: 0 auto;
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+	            background: #333;
+	            background-size: cover;
+	            background-repeat: no-repeat;
+	            background-position: center;
+    		}
+    	}
+    	.name{
+    		span{
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 1.2;
+				letter-spacing: 0.2px;
+				color: #000000;
+    		}
+    	}
+    	.deskr{
+    		margin-top: 8px;
+    		padding: 0 40px;
+    		span{
+				opacity: 0.5;
+				font-family: Roboto;
+				font-size: 14px;
+				line-height: 1.43;
+				color: #000000;
+    		}
+    	}
+        .send_msg{
+            margin: 24px 40px;
+            .big{
+                display: block;
+                width: 100%;
+            }
+        }
+
+    	&:after{
+	    	content: "";
+	    	display: block;
+	    	position: absolute;
+	    	bottom: 0;
+	    	left: 0;
+	    	right: 0;
+	    	height: 1px;
+			opacity: 0.05;
+			background-color: #000000;
+	    }
+    }
+    @media (max-width: 1650px){
+        width: 98px;
+        overflow: hidden;
+        & > *{
+            opacity: 0;
+            pointer-events: none;
+        }
+        .expand_block{
+            opacity: 1;
+            pointer-events: auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 98px;
+            &:before,
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                transition: all .15s ease-in-out;
+                border-radius: 50%;
+            }
+            &:before{
+                left: 0;
+                top: 50%;
+                margin-top: -16px;
+                width: 32px;
+                height: 32px;
+                background: url('../img/icons/arrow_prpl.svg') no-repeat center;
+            }
+            &:after{
+                right: 16px;
+                top: 50%;
+                margin-top: -25px;
+                width: 50px;
+                height: 50px;
+                background: #534a9c url('../img/icons/profile.svg') no-repeat center;
+            }
+
+            &:hover{
+                cursor: pointer;
+                background: #534a9c;
+                &:before,
+                &:after{
+                    // opacity: 0.75;
+                }
+                &:before{
+                    left: 10px;
+                    background: url('../img/icons/arrow_left.svg') no-repeat center;
+                }
+                &:after{
+                    right: 10px;
+                }
+            }
+        }
+
+        &.show{
+            width: 320px;
+            border-radius: 8px 0 0 8px;
+            box-shadow: 0 8px 24px 0 rgba(0, 72, 135, 0.1);
+            background-color: #ffffff;
+            position: fixed;
+            top: 104px;
+            bottom: 24px;
+            right: 0;
+            z-index: 10;
+            overflow: auto;
+            & > *{
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .expand_block{
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
+    &.expand{
+        width: 98px;
+        overflow: hidden;
+        & > *{
+            opacity: 0;
+            pointer-events: none;
+        }
+        .expand_block{
+            opacity: 1;
+            pointer-events: auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 98px;
+            &:before,
+            &:after{
+                content: "";
+                display: block;
+                position: absolute;
+                transition: all .15s ease-in-out;
+                border-radius: 50%;
+            }
+            &:before{
+                left: 0;
+                top: 50%;
+                margin-top: -16px;
+                width: 32px;
+                height: 32px;
+                background: url('../img/icons/arrow_prpl.svg') no-repeat center;
+            }
+            &:after{
+                right: 16px;
+                top: 50%;
+                margin-top: -25px;
+                width: 50px;
+                height: 50px;
+                background: #534a9c url('../img/icons/profile.svg') no-repeat center;
+            }
+
+            &:hover{
+                cursor: pointer;
+                background: #534a9c;
+                &:before,
+                &:after{
+                    // opacity: 0.75;
+                }
+                &:before{
+                    left: 10px;
+                    background: url('../img/icons/arrow_left.svg') no-repeat center;
+                }
+                &:after{
+                    right: 10px;
+                }
+            }
+        }
+        
+            
+
+        &.roll_up{
+            .roll_up_btn{
+
+            }
+        }
+    }
+    &.roll_up{
+        .roll_up_btn{
+            border-radius: 10px 0 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(180deg);
+            width: 50px;
+            height: 50px;
+            background: rgba(83, 74, 156, 0.1) url(../img/icons/arrow_prpl.svg) no-repeat 50%;
+            cursor: pointer;
+            z-index: 1;
+            &:hover{
+                background: #534a9c url(../img/icons/arrow_left.svg) no-repeat 50%;
+            }
+        }
+    }
+}
+
+.mertors{
+    padding: 20px 40px;
+    .mertors_slider{
+        text-align: center;
+        padding: 0!important;
+        overflow: initial;
+        height: 296px;
+        .slick-list, .slick-list *{
+            transition: none;
+        }
+
+        .slick-prev{
+            right: 40px!important;
+        }
+        .slick-next{
+            transform: rotate(180deg);
+        }
+        .slick-arrow{
+            background: #fff url('../img/icons/a-arrow_left_24px.svg') no-repeat center;
+            width: 32px;
+            height: 32px;
+            font-size: 0;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            display: block;
+            position: absolute;
+            top: -52px;
+            right: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            opacity: 0.7;
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+        .users_list{
+            display: flex;
+            flex-wrap: wrap;
+
+            .user{
+                width: 50%;
+                margin-top: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Exterium</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/style/jquery.jscrollpane.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.2.7/tippy.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+
+    <!-- NEW -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    <div id="small_screen">
+        <div class="content">
+            <div class="big">У вас маленький экран</div>
+        </div>
+    </div>
+    
+    <!-- <div class="ie_msg">
+    	<div class="header">
+    		<a href="/">
+    			<div class="site_name">
+    		        <div class="logo"></div>
+    		    </div>
+    		</a>
+    	</div>
+    	<div class="content">
+    		<div class="text">
+    			<h4>К сожалению, Ваш браузер устарел и не поддерживает используемые на платформе технологии</h4>
+    			<p>Мы рекомендуем обновить ваш браузер или перейти по одной из ссылок ниже, чтобы загрузить последнюю версию современного браузера.</p>
+    
+    			<div class="browser_list">
+    				<a href="https://www.google.com/intl/ru_ru/chrome/" target="_blank">
+    					<img src="../img/icons/chrome.svg" alt="">
+    					<span>Google Chrome</span>
+    				</a>
+    				<a href="https://www.mozilla.org/ru/firefox/new/" target="_blank">
+    					<img src="../img/icons/firefox.svg" alt="">
+    					<span>Mozila Firefox</span>
+    				</a>
+    				<a href="https://www.apple.com/ru/safari/" target="_blank">
+    					<img src="../img/icons/safari.svg" alt="">
+    					<span>Safari</span>
+    				</a>
+    				<a href="https://www.opera.com/" target="_blank">
+    					<img src="../img/icons/opera.svg" alt="">
+    					<span>Opera</span>
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    </div> -->
+    <div id="left_menu">
+        <a href="/challenges.html">
+             <div class="site_name">
+                <!-- <div class="logo">
+                    <span>EX</span>
+                </div>
+                <div class="text">
+                    <span class="name">Exterium</span>
+                    <span class="deskr">Make it. Creative</span>
+                </div> -->
+            </div>
+        </a>
+    
+        <div class="menu_list">
+            <a href="/navigator.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-navigator"></span>
+                </span>
+                <span class="item_name">
+                    <span>Navigator</span>
+                </span>
+            </a>
+    
+            <a href="/courses.html" class="menu_item active">
+                <span class="icon">
+                    <span class="icon-education"></span>
+                </span>
+                <span class="item_name">
+                    <span>Education</span>
+                </span>
+            </a>
+    
+            <a href="/projects.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-project"></span>
+                </span>
+                <span class="item_name">
+                    <span>Project</span>
+                </span>
+            </a>
+    
+            <a href="/challenges.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-challenge"></span>
+                </span>
+                <span class="item_name">
+                    <span>Challenge</span>
+                </span>
+            </a>
+    
+            <a href="/people.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-people"></span>
+                </span>
+                <span class="item_name">
+                    <span>People</span>
+                </span>
+            </a>
+    
+            <a href="/events.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-events"></span>
+                </span>
+                <span class="item_name">
+                    <span>Events</span>
+                </span>
+            </a>
+    
+            <a href="/questions.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-q-a"></span>
+                </span>
+                <span class="item_name">
+                    <span>Questions</span>
+                </span>
+            </a>
+        </div>
+    
+        <div class="footer">
+            <div class="about">
+                <a href="#about">О системе</a>
+            </div>
+            <div class="copy">
+                <span>© Все права защищены 2018</span>
+            </div>
+        </div>
+    </div>
+    <div id="top_menu">
+        <div class="user_pages">
+            <a href="/treks.html">Треки</a>
+            <a href="/activities.html">Активности</a>
+            <a href="/recommendations.html">Рекомендации</a>
+            <a href="/profile.html">Профайл</a>
+        </div>
+    
+        <div class="the_best">
+            <div>
+                <div class="ico">
+                    <img src="/img/best_1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Сегодня рулит:</span>
+                    <span>
+                        <a href="/profile.html">Кирилл Орехов</a>
+                    </span>
+                </div>
+            </div>
+    
+            <div>
+                <div class="ico">
+                    <img src="/img/best_2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Всего на треках:</span>
+                    <span>4253 человек</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <a href="/messages.html" class="link_btn messages">
+                <div class="indicator"></div>
+                <i class="icon icon-a-mail"></i>
+            </a>
+            <div class="open_list_btn notifications">
+                <div class="indicator"></div>
+                <i class="icon icon-a-notifications"></i>
+            </div>
+        </div>
+        <div class="user">
+            <span>Василиса</span>
+            <div class="ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+        </div>
+        
+        <div class="menu">
+            <a href="/profile.html">
+                <img src="../img/icons/a-person-outline.svg" alt="">
+                Профайл
+            </a>
+            <a href="/settings.html">
+                <img src="../img/icons/a-settings.svg" alt="">
+                Настройки
+            </a>
+            <div class="line"></div>
+            <a href="/login.html">
+                <img src="../img/icons/a-logout.svg" alt="">
+                Выход
+            </a>
+        </div>
+    
+    </div>
+    
+    <div class="notifications_popup popup_cloud">
+    
+        <div class="event_alert">
+            <span class="status">Ура! Ваша заявка на курс</span>
+            <span class="event_status accepted">принята</span>
+            <div class="text">
+                <a href="#">«Промышленный дизайн»</a>
+            </div>
+            <div class="time">
+                <span>12:36</span>
+            </div>
+        </div>
+    
+        <div class="event_alert">
+            <span class="status">Увы, Ваша заявка на мероприятие</span>
+            <span class="event_status rejected">отклонена</span>
+            <div class="text">
+                <a href="#">«Сессия по реализации национальных проектов на территории Томской области»</a>
+            </div>
+            <div class="time">
+                <span>10:24</span>
+            </div>
+        </div>
+    
+        <div class="show_all">
+            <a href="/notifications.html">Все уведомления</a>
+        </div>
+    
+    </div>
+
+<div class="page">
+	<div class="content">
+		<div class="trek_page">
+
+			<div class="challenge_page">
+				<div class="page_title d-block">
+					<h4>Челлендж</h4>
+					<h2>Монтаж</h2>
+				</div>
+
+				<div class="row justify-content-between">
+					<div class="col-6">
+						<div class="sign-boards-line">
+							<div class="sign-board organization"><span>Кванториум</span></div>
+							<div class="sign-board video"><span>4 видео</span></div>
+							<div class="sign-board photo"><span>8 фото</span></div>
+							<div class="sign-board user"><span>12 участников</span></div>
+						</div>
+					</div>
+					<div class="col-6 text-right">
+						<a href="#edit_competences" class="border_btn open_modal">Редактировать ресурс</a>
+						<a href="/treks.html" class="border_btn ml-24">Управление</a>
+					</div>
+				</div>
+
+				<div class="row mt-24">
+					<div class="col-9">
+						<div class="header_photo">
+							<!-- <video width="100%" height="576px" controls="controls" poster="video/duel.jpg">
+							   <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+							   <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							   <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+							   Тег video не поддерживается вашим браузером. 
+							</video> -->
+
+							<!-- <img src="../img/18B8B642-D3BF-4524-87C1-C8110AF75DB4.png" alt=""> -->
+
+							<!-- <div class="header_photo_gallery">
+								<div class="slide" style="background-image: url('../img/18B8B642-D3BF-4524-87C1-C8110AF75DB4.png');"></div>
+								<div class="slide" style="background-image: url('../img/18B8B642-D3BF-4524-87C1-C8110AF75DB4.png');"></div>
+								<div class="slide" style="background-image: url('../img/18B8B642-D3BF-4524-87C1-C8110AF75DB4.png');"></div>
+							</div> -->
+
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/KKYAeWPKMzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+						</div>
+							
+					</div>
+					<div class="col-3">
+						<div class="gradient_block h400">
+							
+							<!-- 
+								Элемент "Добавить результат". 
+								!!!!!!!!!!! У родителя "gradient_block" ставим класс "bottom_button" !!!!!!!!!!!
+							-->
+							<!-- <div class="content">
+								<span>Добавить результат</span>
+								<p>Загружай результат челленджа в формате фото или видео</p>
+								<a href="#" class="blue_btn w100">Добавить</a>
+							</div>
+
+							<div class="button_line">
+								<a href="#" class="border_btn w100">Список участников</a>
+							</div> -->
+							<!-- конец -->
+
+							<!-- Элемент "Принять участие" -->
+							<!-- <div class="content">
+								<span>Интересно?</span>
+								<p>Принимай участие в челленжде «Конструирование»</p>
+
+								<div class="date_list">
+									<span>Дата начала:</span>
+									<span><b>12 сентября 2019</b></span>
+									<span>Дата окончания:</span>
+									<span><b>12 ноября 2019</b></span>
+									<span>Подведение итогов:</span>
+									<span><b>15 ноября 2019</b></span>
+								</div>
+
+								<a href="#" class="blue_btn w100">Принять участие</a>
+							</div> -->
+							<!-- конец -->
+
+							<!-- Элемент "Спасибо за участие" -->
+							<!-- <div class="content">
+								<span>Спасибо за участие!</span>
+								<p>В челлендже «Собери робота 🤖 за 10 минут» приняло участие 12 человек</p>
+
+								<a href="#" class="border_btn w100">Список участников</a>
+							</div> -->
+							<!-- конец -->
+
+							<!-- Элемент "Победители" -->
+							<div class="content">
+								<span>Поздравляем с победой!</span>
+								<p>Победители челленджа «Собери робота 🤖 за 10 минут»</p>
+
+								<div class="mertors_slider">
+
+									<div class="user user_top">
+										<a href="/profile.html">
+											<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</a>
+									</div>
+
+									<div class="user user_top">
+										<a href="/profile.html">
+											<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</a>
+									</div>
+
+									<div class="user user_top">
+										<a href="/profile.html">
+											<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+											</div>
+											<div class="name">
+												<span>Катерина</span>
+												<span>Любер</span>
+											</div>
+										</a>
+									</div>
+
+								</div>
+
+								<div class="slider_counter">
+							    	<span id="mertors_slider_counter">1</span>/3
+							    </div>
+							</div>
+							<!-- конец -->
+								
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-7">
+
+						<div class="slider-nav">
+							<div class="slide">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quod vitae unde cumque, ratione laboriosam aliquam assumenda, aperiam, numquam debitis soluta repellendus molestiae similique, vero praesentium voluptatum ducimus minus. Ipsam.</p>
+							</div>
+							<div class="slide">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+							</div>
+							<div class="slide">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero accusantium saepe quae culpa similique, amet!</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-7">
+
+						<div class="text_info">
+							<div class="text">
+								<span>Скачай файл Монтаж.png и расставь персонажей в кадре, как ты считаешь нужным.</span>
+							</div>
+						</div>
+
+						<div class="page_title mt-40">
+							<h6>Материалы к челленджу</h6>
+						</div>
+						<a href="#" class="link link_file">Монтаж.png</a>
+							
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-8">
+						<div class="about_course mt-40">
+							<div class="row">
+								<div class="col-4">
+									<div class="card mb-24">
+										<div class="icon">
+											<img src="../img/icons/napr.svg" alt="">
+										</div>
+										<div class="text">
+											<span>Направление</span>
+											<span>Научно-производственная сфера</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4">
+									<div class="card mb-24">
+										<div class="icon">
+											<img src="../img/icons/trec.svg" alt="">
+										</div>
+										<div class="text">
+											<span>Трек</span>
+											<span>промышленный дизайн</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4">
+									<div class="card mb-24">
+										<div class="icon">
+											<img src="../img/icons/vozrast.svg" alt="">
+										</div>
+										<div class="text">
+											<span>10–16 лет</span>
+											<span>рекомендуемый возраст</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4">
+									<div class="card mb-24">
+										<div class="icon">
+											<img src="../img/icons/ovz.svg" alt="">
+										</div>
+										<div class="text">
+											<span>Без ОВЗ</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-4">
+									<div class="card mb-24">
+										<div class="icon">
+											<img src="../img/icons/price.svg" alt="">
+										</div>
+										<div class="text">
+											<span>6 000 ₽/мес</span>
+											<span>стоимость обучения</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-24">
+					<div class="col-12">
+						<div class="page_title">
+					        <h4>Наставники</h4>
+					    </div>
+
+					    <div class="mertors_list">
+					    	<div class="mentor">
+				    			<div class="img">
+				    				<div style="background-image: url('../img/bg/bg2.jpg');"></div>
+				    			</div>
+				    			<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');"></div>
+				    			<div class="name">
+				    				<span>Анастасия<br>Вольнорудова</span>
+				    			</div>
+				    			<div class="deskr">
+				    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+				    			</div>
+				    		</div>
+
+				    		<div class="mentor">
+				    			<div class="img">
+				    				<div style="background-image: url('../img/bg/bg1.jpg');"></div>
+				    			</div>
+				    			<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');"></div>
+				    			<div class="name">
+				    				<span>Анастасия<br>Вольнорудова</span>
+				    			</div>
+				    			<div class="deskr">
+				    				<span>Основатель креативного агенства «Амика». В&nbsp;разработке и&nbsp;руководстве коммандой 10&nbsp;лет</span>
+				    			</div>
+				    		</div>
+
+					    </div>
+					</div>
+				</div>
+
+				<div class="row mt-40">
+					<div class="col-10">
+						<div class="page_title">
+					        <h3>Развитие компетенций</h3>
+					    </div>
+
+					    <div class="text mt-24 mb-24">
+					    	<p>Участвуя в челендже, вы заработаете баллы по следующим компетенциям</p>
+					    </div>
+						
+						<div class="row">
+							<div class="col-12 mt-24">
+								<h4>Трек — «Промышленный дизайн»</h4>
+								<p class="m-0">Технологии компьютерного конструирования CAD</p>
+
+								<div class="competences_list">
+
+									<div class="competence_points_card blue">
+										<div class="text">
+											<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+										</div>
+										<div class="points">
+											<span>1</span>
+											<span>балл</span>
+										</div>
+									</div>
+
+									<div class="competence_points_card orange">
+										<div class="text">
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+										</div>
+										<div class="points">
+											<span>2</span>
+											<span>балла</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-12 mt-40">
+								<h4>Трек — «Промышленный дизайн»</h4>
+								<p class="m-0">Технологии компьютерного конструирования CAD</p>
+
+								<div class="competences_list">
+									
+									<div class="competence_points_card red">
+										<div class="text">
+											<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+										</div>
+										<div class="points">
+											<span>1</span>
+											<span>балл</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="page_title mt-40">
+				    <h3>Результаты (11)</h3>
+				</div>
+				<div class="list">
+					<div class="news pt-0">
+						<div class="news_list col4">
+
+							<div href="#add_result_modal" class="add_result open_modal">
+								<div class="icon"></div>
+								<span>Добавить результат</span>
+							</div>
+
+							<div class="shadow-box">
+						   		<div class="img">
+						   			<a href="/chalenge_video_page.html"><div style="background-image: url('img/bg/image.jpg')"></div></a>
+						   		</div>
+						   		<div class="content">
+						   			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</div>
+
+						   	<div class="shadow-box">
+						   		<div class="img">
+						   			<a href="/chalenge_video_page.html"><div style="background-image: url('img/bg/image.jpg')"></div></a>
+						   		</div>
+						   		<div class="content">
+						   			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</div>
+
+						   	<div class="shadow-box">
+						   		<div class="img">
+						   			<a href="/chalenge_video_page.html"><div style="background-image: url('img/bg/image.jpg')"></div></a>
+						   		</div>
+						   		<div class="content">
+						   			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</div>
+
+						   	<div class="shadow-box">
+						   		<div class="img">
+						   			<a href="/chalenge_video_page.html"><div style="background-image: url('img/bg/image.jpg')"></div></a>
+						   		</div>
+						   		<div class="content">
+						   			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</div>
+
+						   	<div class="shadow-box">
+						   		<div class="img">
+						   			<a href="/chalenge_video_page.html"><div style="background-image: url('img/bg/image.jpg')"></div></a>
+						   		</div>
+						   		<div class="content">
+						   			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</div>
+
+						   	<div class="shadow-box">
+						   		<div class="img">
+						   			<a href="/chalenge_video_page.html"><div style="background-image: url('img/bg/image.jpg')"></div></a>
+						   		</div>
+						   		<div class="content">
+						   			<a href="#"><h4>«Объект Дельта»</h4></a>
+
+						   			<div class="sign-board user"><span>Василиса Александрова</span></div>
+						   			<div class="sign-board date"><span>16 января 2019</span></div>
+						   			<div class="sign-board like"><span>12</span></div>
+						   		</div>
+						   	</div>
+						   	
+						</div>
+					</div>
+		    	</div>
+
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+
+<!-- Компетенции модалки -->
+<div id="competences_list_modal_1" class="modal_div">
+	<div class="competences_list_modal big">
+		<div class="modal_title">
+			<h3>Начисление компетенций</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+		<div class="switch modal_tabs" data-switch="competences">
+	    	<div class="active">
+	    		<span>Технологии компьютерного конструирования CAD</span>
+	    	</div>
+	    	<div class="">
+	    		<span>Разработка дизайн-концепции объетов промышленного производства</span>
+	    	</div>
+	    	<div class="">
+	    		<span>Владение графическими редакторами</span>
+	    	</div>
+	    </div>
+
+		<div class="switch_content content" data-switch="competences">
+	    	
+	    	<div class="active">
+	    		
+				<div class="competences_list">
+
+					<div class="competence_points_card not_active blue" data-competences_id="1">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>1</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange" data-competences_id="2">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>9</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active dark_blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>16</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+				</div>
+	    	</div>
+
+	    	<div>
+	    		
+				<div class="competences_list">
+
+					<div class="competence_points_card not_active blue" data-competences_id="1">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>1</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange" data-competences_id="2">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>9</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active dark_blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>16</span>
+							<span>балла</span>
+						</div>
+					</div>
+					
+				</div>
+	    	</div>
+
+	    	<div>
+	    		
+				<div class="competences_list">
+
+					<div class="competence_points_card not_active blue" data-competences_id="1">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>1</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange" data-competences_id="2">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active orange">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>2</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active red">
+						<div class="text">
+							<span>Владеет основами изобразительной грамоты. Использует различные приемы и технику рисунка при разработке эскизов объекта</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>3</span>
+							<span>балл</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>6</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>9</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active yellow">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>4</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active green">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>8</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>12</span>
+							<span>балла</span>
+						</div>
+					</div>
+
+					<div class="competence_points_card not_active dark_blue">
+						<div class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						</div>
+						<div class="points">
+							<div class="select_icon"></div>
+							<span>16</span>
+							<span>балла</span>
+						</div>
+					</div>
+					
+				</div>
+	    	</div>
+
+		</div>
+	</div>
+		
+</div>
+
+<!-- Проекты модалка -->
+<div id="add_result_modal" class="modal_div">
+	<div class="min">
+		<div class="modal_title">
+			<h3>Добавление результата</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="content">
+	    	<form class="mt-0">
+		    	<div class="row">
+		    		<div class="col-12">
+		    			<div class="input mt-0">
+							<input type="text" name="name" placeholder="Название">
+						</div>
+		    		</div>
+		    		<div class="col-12">
+		    			<div class="input">
+							<input type="text" name="url" placeholder="Ссылка на видео (если требуется)">
+						</div>
+		    		</div>
+		    		<div class="col-12">
+		    			<div class="input">
+		    				<textarea name="desc" id="" placeholder="Описание"></textarea>
+						</div>
+		    		</div>
+
+	    			<div class="col-12 mt-24">
+	    				<div class="row">
+	    					<div class="col-8">
+			    				<div class="input file mt-8">
+									<label for="cover_news">Прикрепить обложку</label>
+									<input type="file" id="cover_news" name="file">
+								</div>
+			    			</div>
+		    				<div class="col-4">
+		    					<button class="blue_btn">Отправить</button>
+		    				</div>
+	    				</div>
+	    			</div>
+				    		
+		    	</div>
+		    </form>
+		</div>
+	</div>
+		
+</div>
+
+<!-- Компетенции модалки -->
+<div id="edit_competences" class="modal_div">
+	<div class="edit_competences_modal big">
+		<div class="modal_title">
+			<h3>Управление ресурсом</h3>
+		</div>
+	    <span class="modal_close">×</span>
+
+	    <div class="date_list">
+	    	<div class="date">
+	    		<span>Дата начала:</span>
+	    		<span>12 сентября 2019</span>
+	    	</div>
+	    	<div class="date">
+	    		<span>Дата окончания:</span>
+	    		<span>12 ноября 2019</span>
+	    	</div>
+	    	<div class="date">
+	    		<span>Подведение итогов:</span>
+	    		<span>15 ноября 2019</span>
+	    	</div>
+	    </div>
+
+		<div class="switch modal_tabs" data-switch="competences">
+	    	<div class="active">
+	    		<span>Заявки</span>
+	    	</div>
+	    	<div class="">
+	    		<span>Участники</span>
+	    	</div>
+	    	<div class="">
+	    		<span>Номинанты</span>
+	    	</div>
+	    	<div class="">
+	    		<span>Победители</span>
+	    	</div>
+	    	<div class="ban_tab">
+	    		<span>Заблокированные</span>
+	    	</div>
+	    </div>
+
+		<div class="switch_content content" data-switch="competences">
+	    	
+	    	<div class="active">
+				<form action="">
+					<input type="hidden" name="unconfirmed-list" class="unconfirmed-list">
+		 
+				    <div class="top_list">
+						<div class="line">
+							<div class="user user_top user_unconfirmed" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_unconfirmed" data-user_id="2">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="btn_line">
+						<input type="button" value="Выбрать всех" class="border_btn big select_all">
+						<input type="button" value="Подтвердить участие" class="blue_btn">
+					</div>
+				</form>
+	    	</div>
+
+	    	<div>
+	    		<form action="">
+					<input type="hidden" name="member-list" class="member-list">
+		 
+				    <div class="top_list">
+
+						<div class="line">
+							<div class="user user_top user_member" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_member" data-user_id="2">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_member" data-user_id="3">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_member" data-user_id="4">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_member" data-user_id="5">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_member" data-user_id="6">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="btn_line">
+						<input type="button" value="Заблокировать" class="border_btn red big">
+						<input type="button" value="Выбрать всех" class="border_btn big select_all">
+						<input type="button" value="Номинировать" class="blue_btn">
+					</div>
+				</form>
+	    	</div>
+
+	    	<div>
+	    		<form action="">
+					<input type="hidden" name="nominated-list" class="nominated-list">
+		 
+				    <div class="top_list">
+
+						<div class="line">
+							<div class="user user_top user_nominated" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_nominated" data-user_id="2">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_nominated" data-user_id="3">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_nominated" data-user_id="4">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="btn_line">
+						<input type="button" value="Выбрать всех" class="border_btn big select_all">
+						<input type="button" value="Отменить номинанта" class="border_btn red big">
+						<div class="border-left"></div>
+						<input type="button" value="Завершить челлендж" class="blue_btn">
+					</div>
+				</form>
+	    	</div>
+
+	    	<div>
+	    		<form action="">
+					<input type="hidden" name="winner-list" class="winner-list">
+		 
+				    <div class="top_list">
+
+						<div class="line">
+							<div class="user user_top user_winner" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_winner" data-user_id="2">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_winner" data-user_id="3">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</form>
+	    	</div>
+
+	    	<div>
+	    		<form action="">
+					<input type="hidden" name="ban_list" class="ban-list">
+		 
+				    <div class="top_list">
+
+						<div class="line">
+							<div class="user user_top user_ban" data-user_id="1">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_ban" data-user_id="2">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="user user_top user_ban" data-user_id="3">
+								<div>
+									<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');">
+										<div class="select"></div>
+									</div>
+									<div class="name">
+										<span>Катерина</span>
+										<span>Любер</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="btn_line">
+						<input type="button" value="Выбрать всех" class="border_btn big select_all">
+						<input type="button" value="Разблокировать" class="blue_btn">
+					</div>
+				</form>
+	    	</div>
+
+		</div>
+	</div>
+</div>
+
+	<footer>
+
+	</footer>
+
+	<div id="overlay"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
+
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<!-- NEW -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

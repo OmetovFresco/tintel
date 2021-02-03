@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E8755B03-BB27-479E-AA1F-6A413E5D6357</title>
+    <g id="Система" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Сообщения-—-создание-чата" transform="translate(-1200.000000, -793.000000)">
+            <g id="чат" transform="translate(860.000000, 80.000000)">
+                <g id="a-search-80px" transform="translate(340.000000, 713.000000)">
+                    <rect id="Rectangle" stroke="#BFBFBF" stroke-width="3" x="11.5" y="11.5" width="41" height="41" rx="20.5"></rect>
+                    <polyline id="Path" stroke="#BFBFBF" stroke-width="3" points="47.5 47.5 49 49 53 49 68 64 64 68 49 53 49 49"></polyline>
+                    <polygon id="Shape" points="0 0 80 0 80 80 0 80"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>germany</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Профайл" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Профайл-—-языки" transform="translate(-465.000000, -929.000000)" fill-rule="nonzero">
+            <g id="germany" transform="translate(465.000000, 929.000000)">
+                <path d="M23.9532632,5.3377619 L0,5.3377619 L0,0.43352381 C0,0.201380952 0.184935673,0.0131428571 0.413005848,0.0131428571 L23.5402573,0.0131428571 C23.7683275,0.0131428571 23.9532632,0.201380952 23.9532632,0.43352381 L23.9532632,5.3377619 L23.9532632,5.3377619 Z" id="Path" fill="#464655"></path>
+                <path d="M23.5402105,15.9869048 L0.413005848,15.9869048 C0.184935673,15.9869048 0,15.7986667 0,15.5665238 L0,10.6623333 L23.9532164,10.6623333 L23.9532164,15.5665238 C23.9532164,15.7987143 23.7682807,15.9869048 23.5402105,15.9869048 Z" id="Path" fill="#FFE15A"></path>
+                <rect id="Rectangle" fill="#FF4B55" x="0" y="5.33766667" width="23.9532164" height="5.32428571"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,455 @@
+@import "colors";
+@import "fonts";
+
+.modal_div {
+  z-index: 9999;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0!important;
+  left: 0!important;
+  right: 0!important;
+  bottom: 0!important;
+  cursor: pointer;
+  display: none;
+  transition: none;
+  overflow: auto;
+  & > div{
+    width: 1056px;
+    border-radius: 8px;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99999;
+    padding: 0;
+    transition: none;
+    margin-bottom: 30px;
+    overflow: hidden;
+    cursor: default;
+    &.min{
+      width: 798px;
+    }
+    &.big{
+      width: 1240px;
+    }
+
+    .head{
+      border-radius: 8px 8px 0 0;
+      background: #f2f6fa;
+      .modal_title{
+        text-align: center;
+        padding: 16px 24px;
+      }
+      .modal_close{
+        top: 18px;
+      }
+    }
+
+    .modal_title{
+      padding: 22px 24px;
+      &.for_ava{
+        display: flex;
+        flex-wrap: wrap;
+        .ava{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: #333;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: 50%;
+        }
+        h3{
+          font-size: 20px;
+          line-height: 25px;
+          width: calc(100% - 50px);
+          padding-left: 16px;
+        }
+      }
+      h3{
+        margin: 0;
+      }
+    }
+
+    .modal_close {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      cursor: pointer;
+      display: block;
+      font-size: 24px;
+      line-height: 24px;
+      text-align: center;
+      color: #000;
+      opacity: 0.25;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+
+    .date_list{
+      display: flex;
+      padding: 0 24px 24px 24px;
+      .date{
+        span{
+          font-size: 14px;
+          line-height: 20px;
+          color: #000;
+          opacity: 0.5;
+          display: block;
+          & + span{
+            margin-top: 4px;
+            opacity: 1;
+          }
+        }
+        & + .date{
+          margin-left: 40px;
+        }
+      }
+    }
+
+    .content{
+      padding: 0 24px 24px 24px;
+      .text{
+        padding-bottom: 12px;
+      }
+      .for_ava{
+        padding-left: 66px;
+      }
+      form{
+        margin-top: 24px;
+        select,
+        button{
+          width: 100%;
+        }
+      }
+      & > hr{
+        margin: 24px -24px!important;
+      }
+    }
+  }
+    
+}
+
+#overlay {
+  z-index: 9999;
+  position: fixed;
+  background-color: #000;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none!important;
+  transition: none;
+}
+
+
+.edit_competences_modal{
+  .top_list{
+    margin-top: 20px;
+    .line .user_top{
+      width: 10%;
+    }
+  }
+  .content{
+    padding-bottom: 92px;
+  }
+  .btn_line{
+    display: flex;
+    padding: 24px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    input[type="button"]{
+      width: 200px!important;
+      & + input[type="button"]{
+        margin-left: 24px;
+      }
+    }
+    .border-left{
+      margin: 0 24px;
+      width: 1px;
+      height: 44px;
+      background: #ccc;
+    }
+  }
+}
+
+.edit_competences_modal{
+  .modal_tabs{
+    & > *{
+      height: 39px;
+    }
+  }
+  .content{
+    height: calc(100vh - 306px);
+  }
+}
+
+// .competences_list_modal{
+//   .content{
+//     height: calc(100vh - 238px);
+//   }
+// }
+
+.edit_competences_modal,
+.competences_list_modal{
+  background: #f2f6fa!important;
+  .content{
+    overflow: auto;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    .competence_points_card{
+      cursor: pointer;
+      border: solid 1px #f2f6fa;
+      .points{
+        position: relative;
+        .select_icon{
+          width: 24px;
+          height: 24px;
+          background: url("../img/icons/a-check-white.svg");
+          position: absolute;
+          top: 12px;
+          left: 20px;
+          opacity: 1;
+        }
+      }
+      &.not_active{
+        box-shadow: 0 8px 24px 0 rgba(0,72,135,0);
+        .points{
+          background: #f2f6fa;
+          span{
+            color: #bfbfbf;
+          }
+          .select_icon{
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal_tabs{
+  display: flex;
+  padding: 0 24px;
+  & > *{
+    height: 66px;
+    border-radius: 8px 8px 0 0;
+    background-color: #f2f6fa;
+    padding: 8px 23px;
+    display: flex;
+    cursor: pointer;
+    &:hover{
+      background: rgba(255, 255, 255, 0.5)
+    }
+    span{
+      opacity: 0.25;
+      color: #000000;
+      font-weight: 400;
+      font-size: 14px;  
+    }
+    &.active{
+      background: #fff;
+      cursor: default;
+      span{
+        opacity: 1;
+        color: #1588ee;
+      }
+    }
+  }
+  .ban_tab{
+    margin-left: auto;
+    &:hover{
+      background: rgba(220, 53, 69, 0.05);
+      span{
+        // color: #fff;
+        // opacity: 1;
+      }
+    }
+    &.active{
+      background: rgba(220, 53, 69, 0.7);
+      span{
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.switch_content{
+  .competences_list{
+    padding-top: 12px;
+    margin: 0 -14px -12px -14px;
+  }
+}
+
+.modal_div{
+  .tracks{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 24px 24px 24px;
+    margin: 0 -8px 20px -8px;
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      left: 32px;
+      right: 32px;
+      background: #d9dadc;
+      bottom: 0;
+    }
+    .track{
+      position: relative;
+      display: block;
+      border-radius: 16px;
+      background-color: #ffffff;
+      font-size: 14px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.5);
+      margin: 8px;
+      display: none;
+      cursor: pointer;
+      opacity: 0.75;
+      span{
+        display: block;
+        padding: 6px 36px 6px 16px;
+      }
+      .close{
+        padding: 0;
+        width: 24px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        right: 4px;
+        cursor: pointer;
+        display: block;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #000;
+        opacity: .25;
+        font-weight: 100;
+        font-size: 20px;
+      }
+      &:hover{
+        opacity: 1;
+      }
+      &.show{
+        display: block;
+      }
+      &.active{
+        opacity: 1;
+        background: #1588ee;
+        color: #fff;
+        span{
+          color: #fff;
+        }
+        .close{
+          color: #fff;
+          opacity: 1;
+        }
+      }
+
+      & + .track{
+        margin: 8px;
+      }
+    }
+    .add_element{
+      margin: 8px 8px 8px 24px;
+      .icon{
+        width: 32px;
+        height: 32px;
+        &:before{
+          width: 10px;
+        }
+        &:after{
+          height: 10px;
+        }
+      }
+      span{
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+      }
+    }
+  }
+  .tracks_list{
+    position: relative;
+    padding: 0 24px;
+    margin: 0 -8px 20px;
+    transition: none;
+    display: none;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 1px;
+      left: 32px;
+      right: 32px;
+      background: #d9dadc;
+      bottom: 0;
+    }
+    .tracks{
+      padding: 0;
+      margin: 0;
+      &:after{
+        display: none;
+      }
+      .track{
+        display: block;
+        cursor: pointer;
+        span{
+          padding: 6px 16px;
+        }
+        &.active{
+          color: rgba(0, 0, 0, 0.5);
+          background: rgba(21, 136, 238, 0.2);
+          span{
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  .hide{
+    margin-top: -8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    span{
+      text-align: center;
+      padding: 16px;
+      display: block;
+      color: #000;
+      opacity: 0.25;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+}
+  
+
+.bottom_btn{
+  padding: 24px;
+  display: flex;
+  justify-content: flex-end;
+  button{
+    width: auto;
+  }
+}
+

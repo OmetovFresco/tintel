@@ -1,0 +1,25 @@
+.news{
+    & + .news{
+        margin-top: 28px;
+    }
+    .page_title{
+        margin-bottom: 12px;
+    }
+    .news_list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -12px;
+        &.col4{
+            .shadow-box,
+            .add_new_card{
+                width: calc(25% - 24px)!important;
+            }
+        }
+        .shadow-box,
+        .add_new_card{
+            margin: 12px 12px;
+            width: calc(33.333333333% - 24px);
+            display: block;
+        }
+    }
+}

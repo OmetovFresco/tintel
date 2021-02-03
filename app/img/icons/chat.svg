@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>B5521E1D-20DF-47A5-B93C-4D0FFE7B514B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Система" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Сообщения" transform="translate(-954.000000, -518.000000)">
+            <g id="chat" transform="translate(948.000000, 512.000000)">
+                <path d="M8.16666667,69.712013 L19.3786797,58.5 L66.6666667,58.5 C69.5201379,58.5 71.8333333,56.1868045 71.8333333,53.3333333 L71.8333333,13.3333333 C71.8333333,10.4798621 69.5201379,8.16666667 66.6666667,8.16666667 L13.3333333,8.16666667 C10.4798621,8.16666667 8.16666667,10.4798621 8.16666667,13.3333333 L8.16666667,69.712013 Z" id="Rectangle" stroke="#4167BB" stroke-width="3"></path>
+                <rect id="Rectangle" fill="#4167BB" x="20" y="21" width="40" height="3"></rect>
+                <rect id="Rectangle" fill="#4167BB" x="20" y="32" width="40" height="3"></rect>
+                <rect id="Rectangle" fill="#4167BB" x="20" y="43" width="26.6666667" height="3"></rect>
+                <polygon id="Shape" points="0 0 80 0 80 80 0 80"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
