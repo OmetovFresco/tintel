@@ -23,7 +23,8 @@ html {
     position: relative;
     overflow-x: hidden;
     // min-width: 1160px;
-    min-width: 1240px;
+    //min-width: 1240px;
+    min-width: 1400px;
 
     ::-webkit-scrollbar {
       width: 4px;
@@ -1082,7 +1083,9 @@ form {
   padding-left: 280px;
   position: relative;
   overflow: hidden;
-
+  @media (max-width: 1400px){
+    overflow: auto;
+  }
   .blue_block_link {
     margin-top: 80px;
     border-radius: 8px;
@@ -7410,7 +7413,10 @@ figure {
     background: #e6f0fa;
     border-radius: 8px;
     min-height: 310px;
-
+    @media (max-width: 1650px){
+      bottom: 15px;
+      overflow: auto;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -7585,6 +7591,7 @@ figure {
           opacity: 0.5;
           color: #000;
           font-size: 14px;
+          overflow-wrap: break-word;
         }
       }
 
@@ -10192,6 +10199,21 @@ form div.terms.gray {
   color: #000;
   opacity: 0.25;
   float: none;
+}
+
+.body_login_page{
+  @media (max-width: 767px){
+    min-height: calc(100vh - 80px);
+    min-width: 100vw;
+    .ie_msg .login_tab,
+    .login_page .login_tab{
+      width: calc(100vw - 30px);
+    }
+    .login_page .login_tab .tabs .tabs__caption li{
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
 }
 
 .login_page .header .site_name {

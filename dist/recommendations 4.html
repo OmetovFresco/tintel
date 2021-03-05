@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Exterium</title>
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/style/jquery.jscrollpane.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="http://gregfranko.com/jquery.selectBoxIt.js/css/jquery.selectBoxIt.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.2.7/tippy.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+
+    <!-- NEW -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    <div id="small_screen">
+        <div class="content">
+            <div class="big">У вас маленький экран</div>
+        </div>
+    </div>
+    
+    <!-- <div class="ie_msg">
+    	<div class="header">
+    		<a href="/">
+    			<div class="site_name">
+    		        <div class="logo"></div>
+    		    </div>
+    		</a>
+    	</div>
+    	<div class="content">
+    		<div class="text">
+    			<h4>К сожалению, Ваш браузер устарел и не поддерживает используемые на платформе технологии</h4>
+    			<p>Мы рекомендуем обновить ваш браузер или перейти по одной из ссылок ниже, чтобы загрузить последнюю версию современного браузера.</p>
+    
+    			<div class="browser_list">
+    				<a href="https://www.google.com/intl/ru_ru/chrome/" target="_blank">
+    					<img src="../img/icons/chrome.svg" alt="">
+    					<span>Google Chrome</span>
+    				</a>
+    				<a href="https://www.mozilla.org/ru/firefox/new/" target="_blank">
+    					<img src="../img/icons/firefox.svg" alt="">
+    					<span>Mozila Firefox</span>
+    				</a>
+    				<a href="https://www.apple.com/ru/safari/" target="_blank">
+    					<img src="../img/icons/safari.svg" alt="">
+    					<span>Safari</span>
+    				</a>
+    				<a href="https://www.opera.com/" target="_blank">
+    					<img src="../img/icons/opera.svg" alt="">
+    					<span>Opera</span>
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    </div> -->
+    <div id="left_menu">
+        <a href="/challenges.html">
+             <div class="site_name">
+                <!-- <div class="logo">
+                    <span>EX</span>
+                </div>
+                <div class="text">
+                    <span class="name">Exterium</span>
+                    <span class="deskr">Make it. Creative</span>
+                </div> -->
+            </div>
+        </a>
+    
+        <div class="menu_list">
+            <a href="/navigator.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-navigator"></span>
+                </span>
+                <span class="item_name">
+                    <span>Navigator</span>
+                </span>
+            </a>
+    
+            <a href="/courses.html" class="menu_item active">
+                <span class="icon">
+                    <span class="icon-education"></span>
+                </span>
+                <span class="item_name">
+                    <span>Education</span>
+                </span>
+            </a>
+    
+            <a href="/projects.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-project"></span>
+                </span>
+                <span class="item_name">
+                    <span>Project</span>
+                </span>
+            </a>
+    
+            <a href="/challenges.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-challenge"></span>
+                </span>
+                <span class="item_name">
+                    <span>Challenge</span>
+                </span>
+            </a>
+    
+            <a href="/people.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-people"></span>
+                </span>
+                <span class="item_name">
+                    <span>People</span>
+                </span>
+            </a>
+    
+            <a href="/events.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-events"></span>
+                </span>
+                <span class="item_name">
+                    <span>Events</span>
+                </span>
+            </a>
+    
+            <a href="/questions.html" class="menu_item">
+                <span class="icon">
+                    <span class="icon-q-a"></span>
+                </span>
+                <span class="item_name">
+                    <span>Questions</span>
+                </span>
+            </a>
+        </div>
+    
+        <div class="footer">
+            <div class="about">
+                <a href="#about">О системе</a>
+            </div>
+            <div class="copy">
+                <span>© Все права защищены 2018</span>
+            </div>
+        </div>
+    </div>
+    <div id="top_menu">
+        <div class="user_pages">
+            <a href="/treks.html">Треки</a>
+            <a href="/activities.html">Активности</a>
+            <a href="/recommendations.html">Рекомендации</a>
+            <a href="/profile.html">Профайл</a>
+        </div>
+    
+        <div class="the_best">
+            <div>
+                <div class="ico">
+                    <img src="/img/best_1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Сегодня рулит:</span>
+                    <span>
+                        <a href="/profile.html">Кирилл Орехов</a>
+                    </span>
+                </div>
+            </div>
+    
+            <div>
+                <div class="ico">
+                    <img src="/img/best_2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <span>Всего на треках:</span>
+                    <span>4253 человек</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <a href="/messages.html" class="link_btn messages">
+                <div class="indicator"></div>
+                <i class="icon icon-a-mail"></i>
+            </a>
+            <div class="open_list_btn notifications">
+                <div class="indicator"></div>
+                <i class="icon icon-a-notifications"></i>
+            </div>
+        </div>
+        <div class="user">
+            <span>Василиса</span>
+            <div class="ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+        </div>
+        
+        <div class="menu">
+            <a href="/profile.html">
+                <img src="../img/icons/a-person-outline.svg" alt="">
+                Профайл
+            </a>
+            <a href="/settings.html">
+                <img src="../img/icons/a-settings.svg" alt="">
+                Настройки
+            </a>
+            <div class="line"></div>
+            <a href="/login.html">
+                <img src="../img/icons/a-logout.svg" alt="">
+                Выход
+            </a>
+        </div>
+    
+    </div>
+    
+    <div class="notifications_popup popup_cloud">
+    
+        <div class="event_alert">
+            <span class="status">Ура! Ваша заявка на курс</span>
+            <span class="event_status accepted">принята</span>
+            <div class="text">
+                <a href="#">«Промышленный дизайн»</a>
+            </div>
+            <div class="time">
+                <span>12:36</span>
+            </div>
+        </div>
+    
+        <div class="event_alert">
+            <span class="status">Увы, Ваша заявка на мероприятие</span>
+            <span class="event_status rejected">отклонена</span>
+            <div class="text">
+                <a href="#">«Сессия по реализации национальных проектов на территории Томской области»</a>
+            </div>
+            <div class="time">
+                <span>10:24</span>
+            </div>
+        </div>
+    
+        <div class="show_all">
+            <a href="/notifications.html">Все уведомления</a>
+        </div>
+    
+    </div>
+
+<div class="page right_block">
+	<div class="content">
+		
+		<div class="page_title">
+			<h4>Заходи, учавствуй и получай свои первые баллы</h4>
+			<a href="#" class="print_btn">Распечатать индивидуальный план развития</a>
+		</div>
+
+		<div class="table">
+			<div class="row">
+
+				<div class="col-12 table-head">
+					<div class="row">
+						<div class="col-4">
+							<span>Название мероприятия</span>
+						</div>
+						<div class="col-3">
+							<span>Рекомендует</span>
+						</div>
+						<div class="col-5">
+							<span>Комментарий</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-12 table-row">
+					<div class="row">
+						<div class="col-4">
+							<a href="#">Сессия по реализации национальных проектов на территории Томской области</a>
+						</div>
+						<div class="col-3">
+							<span>Анастасия Вольнорудова</span>
+						</div>
+						<div class="col-4">
+							<span>Рекомендую посетить это мероприятие, думаю тебе будет интересно</span>
+						</div>
+						<div class="col-1">
+							<span class="del"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 table-row">
+					<div class="row">
+						<div class="col-4">
+							<a href="#">Встреча HR-клуба Томских компаний</a>
+						</div>
+						<div class="col-3">
+							<span>Анастасия Вольнорудова</span>
+						</div>
+						<div class="col-4">
+							<span>Мы приглашаем на конференцию главных инженеров, заместителей директоров по производству, заместителей по развитию</span>
+						</div>
+						<div class="col-1">
+							<span class="del"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 table-row">
+					<div class="row">
+						<div class="col-4">
+							<a href="#">Обсуждение модели функционирования центра опережающей профподготовки</a>
+						</div>
+						<div class="col-3">
+							<span>Валерия Морозова</span>
+						</div>
+						<div class="col-4">
+							<span></span>
+						</div>
+						<div class="col-1">
+							<span class="del"></span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="page_title mt-40">
+			<h4>Рекомендации на основе вашего профиля</h4>
+		</div>
+
+		<div class="news">
+    		<div class="news_list news_list_switcher">
+
+    			<a href="challenge_page.html" class="recomm_card">
+    				<span class="where">Курс</span>
+    				<span class="name">Дизайн-мышление в программировании и верстке</span>
+
+    				<div class="bg">
+    					<div style="background-image: url('img/bg/image.jpg')"></div>
+    				</div>
+    			</a>
+
+    			<a href="challenge_page.html" class="recomm_card">
+    				<span class="where">Мероприятие</span>
+    				<span class="time">Через 5 дней</span>
+    				<span class="name">Сессия по реализации национальных проектов на территории Томска</span>
+    				
+    				<div class="bg">
+    					<div style="background-image: url('img/bg/image.jpg')"></div>
+    				</div>
+    			</a>
+
+    			<a href="challenge_page.html" class="recomm_card">
+    				<span class="where">Курс</span>
+    				<span class="name">Канбан и Agile проектирование в жизни и работе</span>
+    				
+    				<div class="bg">
+    					<div style="background-image: url('img/bg/image.jpg')"></div>
+    				</div>
+    			</a>
+
+    			<a href="challenge_page.html" class="recomm_card">
+    				<span class="where">Челлендж</span>
+    				<span class="name">Соревнования по робототехнике</span>
+
+    				<div class="bg">
+    					<div style="background-image: url('img/bg/image.jpg')"></div>
+    				</div>
+    			</a>
+
+    			<a href="challenge_page.html" class="recomm_card">
+    				<span class="where">Курс</span>
+    				<span class="name">Дизайн-мышление в программировании и верстке</span>
+    				
+    				<div class="bg">
+    					<div style="background-image: url('img/bg/image.jpg')"></div>
+    				</div>
+    			</a>
+
+    			<a href="challenge_page.html" class="recomm_card">
+    				<span class="where">Открытая лекция</span>
+    				<span class="time">21.09.19</span>
+    				<span class="name">Встреча HR-клуба Томских компаний</span>
+    				
+    				<div class="bg">
+    					<div style="background-image: url('img/bg/image.jpg')"></div>
+    				</div>
+    			</a>
+
+			</div>
+		</div>
+			
+	</div>
+</div>
+
+<div id="right_block">
+
+	<div class="expand_block"></div>
+
+	<div class="roll_up_btn"></div>
+
+	<a href="/settings.html" class="settings"><img src="../img/icons/a-settings.svg" alt=""></a>
+
+	<div class="profile">
+		<div class="photo">
+			<div class="ava" style="background-image: url('../img/photo/photo_1.jpg');"></div>
+		</div>
+		<div class="name">
+			<span>Василиса<br>Александрова</span>
+		</div>
+		<div class="deskr">
+			<span>«Хочу войти в состав команды Томска по JuniorSkill!»</span>
+		</div>
+
+		<div class="online_status">
+			<span>Онлайн</span>
+		</div>
+
+		<div class="send_msg">
+			<a href="/messages.html" class="border_btn big">Написать сообщение</a>
+		</div>
+
+		<div class="add_friend">
+			<button class="border_btn big">Добавить в друзья</button>
+		</div>
+
+		<div class="delete-friend hide">
+			<a href="#del_friend" class="open_modal link_border ico ico-person-delete">Удалить из друзей</a>
+		</div>
+
+		<div class="complain">
+			<a href="#" class="link_border ico ico-attention">Пожаловаться</a>
+		</div>
+	</div>
+
+	<div class="friends">
+		<div class="page_title">
+	        <h4>Друзья</h4>
+	        <a href="/user_friends.html" class="link_border">Все друзья</a>
+	    </div>
+
+	    <div class="friends_slider">
+	    	<div>
+	    		<div class="users_list">
+	    			<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+								<div class="points buble">122</div>
+							</div>
+							<div class="name">
+								<span>Катерина</span>
+								<span>Любер</span>
+							</div>
+						</a>
+					</div>
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava2.png');">
+								<div class="points buble">102</div>
+							</div>
+							<div class="name">
+								<span>Максим</span>
+								<span>Балановский</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+								<div class="points buble">96</div>
+							</div>
+							<div class="name">
+								<span>Петр</span>
+								<span>Лазарев</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava4.png');">
+								<div class="points buble">93</div>
+							</div>
+							<div class="name">
+								<span>Кирилл</span>
+								<span>Орехов</span>
+							</div>
+						</a>
+					</div>
+	    		</div>
+	    	</div>
+
+	    	<div>
+	    		<div class="users_list">
+	    			<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava1.png');">
+								<div class="points buble">122</div>
+							</div>
+							<div class="name">
+								<span>Катерина</span>
+								<span>Любер</span>
+							</div>
+						</a>
+					</div>
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava2.png');">
+								<div class="points buble">102</div>
+							</div>
+							<div class="name">
+								<span>Максим</span>
+								<span>Балановский</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava3.png');">
+								<div class="points buble">96</div>
+							</div>
+							<div class="name">
+								<span>Петр</span>
+								<span>Лазарев</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="user user_top">
+						<a href="/profile.html">
+							<div class="ava" style="background-image: url('../img/photo/ava4.png');">
+								<div class="points buble">93</div>
+							</div>
+							<div class="name">
+								<span>Кирилл</span>
+								<span>Орехов</span>
+							</div>
+						</a>
+					</div>
+	    		</div>
+	    	</div>
+
+	    </div>
+	    <div class="slider_counter">
+	    	<span id="friends_slider_counter">1</span>/3
+	    </div>
+	</div>
+
+	<div class="mertors">
+		<div class="page_title">
+	        <h4>Наставники</h4>
+	    </div>
+
+	    <div class="mertors_slider shadow-box">
+	    	<div>
+	    		<div class="mentor">
+	    			<div class="img">
+	    				<div style="background-image: url('../img/bg/bg1.jpg');"></div>
+	    			</div>
+	    			<div class="ava" style="background-image: url('../img/photo/mentor1.jpg');"></div>
+	    			<div class="name">
+	    				<span>Анастасия<br>Вольнорудова</span>
+	    			</div>
+	    			<div class="deskr">
+	    				<span>Основатель креативного агенства «Амика». В разработке и руководстве коммандой 10 лет</span>
+	    			</div>
+	    			
+	    		</div>
+	    	</div>
+
+	    	<div>
+	    		<div class="mentor">
+	    			<div class="img">
+	    				<div style="background-image: url('../img/bg/bg2.jpg');"></div>
+	    			</div>
+	    			<div class="ava" style="background-image: url('../img/photo/mentor2.jpeg');"></div>
+	    			<div class="name">
+	    				<span>Анастасия<br>Вольнорудова</span>
+	    			</div>
+	    			<div class="deskr">
+	    				<span>Основатель креативного агенства «Амика». В разработке и руководстве коммандой 10 лет</span>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    </div>
+	    <div class="slider_counter">
+	    	<span id="mertors_slider_counter">1</span>/3
+	    </div>
+	</div>
+
+</div>
+
+	<footer>
+
+	</footer>
+
+	<div id="overlay"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="../js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="http://gregfranko.com/jquery.selectBoxIt.js/js/jquery.selectBoxIt.min.js"></script>
+
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+
+	<!-- NEW -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>
