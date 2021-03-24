@@ -11931,6 +11931,15 @@ $color: white;
   }
 }
 
+.tabs__content{
+  .people_list{
+    display: flex;
+    flex-wrap: wrap;
+    & > div{
+      width: calc(100% / 9);
+    }
+  }
+}
 
 
 
