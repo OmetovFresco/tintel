@@ -1,4 +1,4 @@
-tippy('[data-tippy-content]',{
+tippy('[data-tippy-content]', {
     allowHTML: true,
     animateFill: false,
     hideOnClick: 'toggle'
@@ -1269,9 +1269,62 @@ $(".traectoria_line-today").click(function(e) {
     margin_left = 0;
 });
 
+$(".competencies_btn").click(function(e) {
+    e.preventDefault();
+
+    $(this).toggleClass('show');
+
+    $(this).parent().parent().toggleClass('open');
+
+    $(this).parent().parent().find('.full_info').slideToggle();
+
+    if ($(this).hasClass('show')){
+        $('.table_row.open .full_info .progress div').each(function(i,elem) {
+            let timeout = i * 100;
+
+            let progress = $(this).data("progress");
+
+            setTimeout(() => {
+                $(this).width(progress + "%");
+            }, timeout);
+        });
+    } else {
+        $('.table_row:not(.open) .full_info .progress div').each(function(i,elem) {
+            $(this).width("0");
+        });
+    }
+
+});
+
+$(".table_row > div .del").click(function(e) {
+    e.preventDefault();
+    $(this).parent().parent().slideToggle();
+
+    setTimeout(() => {
+        $(this).parent().parent().remove();
+    }, 1000);
+});
+
+$('.speedometers .speedometer .arrow > div').each(function(i,elem) {
+    let timeout = i * 100;
+
+    let speedometer = $(this).data("speedometer");
+
+    setTimeout(() => {
+        $(this).css('transform', 'rotate(' + speedometer + 'deg)');
+    }, timeout);
+});
 
 
+$('.rating-content .progress div').each(function(i,elem) {
+    let timeout = i * 100;
 
+    let progress = $(this).data("progress");
+
+    setTimeout(() => {
+        $(this).width(progress + "%");
+    }, timeout);
+});
 
 
 
