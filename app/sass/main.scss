@@ -95,10 +95,10 @@ html {
         top: 0;
         left: 0;
         &:first-child{
-          background-image: url('../img/icons/a-visibility-20-px.svg');
+          background-image: url('../img/icons/a-visibility-20px.svg');
         }
         &:last-child{
-          background-image: url('../img/icons/a-visibility-off-20-px.svg');
+          background-image: url('../img/icons/a-visibility-off-20px.svg');
           opacity: 0;
         }
       }
@@ -151,9 +151,30 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-
         &:first-child {
           background-image: url('../img/icons/a-file.svg');
+          opacity: 1;
+        }
+        &:last-child {
+          background-image: url('../img/icons/a-file-white.svg');
+          opacity: 0;
+        }
+      }
+    }
+
+    &:hover{
+      background: #1588ee;
+      span{
+        color: #ffffff!important;
+      }
+      .ico{
+        div{
+          &:first-child {
+            opacity: 0;
+          }
+          &:last-child {
+            opacity: 1;
+          }
         }
       }
     }
@@ -6271,7 +6292,7 @@ figure {
   position: relative;
   margin-top: 80px;
   min-height: calc(100vh - 80px);
-  padding: 30px 0;
+  padding: 120px 0 30px 0;
 
   .header {
     width: 100%;
@@ -6637,14 +6658,15 @@ figure {
     }
 
     .del {
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       background: rgba(0, 0, 0, 0.5) url(../img/icons/a-close-white.svg) no-repeat center;
       position: absolute;
-      top: -4px;
-      right: -4px;
+      top: 0px;
+      right: 0px;
       cursor: pointer;
       border-radius: 50%;
+      background-size: 18px;
       &:hover {
         opacity: 0.8;
       }

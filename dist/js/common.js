@@ -1316,6 +1316,23 @@ $('.speedometers .speedometer .arrow > div').each(function(i,elem) {
 });
 
 
+$(".card-speedometers .switch span").click(function(e) {
+    e.preventDefault();
+
+    $('.speedometers .speedometer .arrow > div').css('transform', 'rotate(0deg)');
+
+    $('.speedometers .speedometer .arrow > div').each(function(i,elem) {
+        let timeout = i * 100;
+
+        let speedometer = $(this).data("speedometer");
+
+        setTimeout(() => {
+            $(this).css('transform', 'rotate(' + speedometer + 'deg)');
+        }, timeout);
+    });
+});
+
+
 $('.rating-content .progress div').each(function(i,elem) {
     let timeout = i * 100;
 
@@ -1324,6 +1341,22 @@ $('.rating-content .progress div').each(function(i,elem) {
     setTimeout(() => {
         $(this).width(progress + "%");
     }, timeout);
+});
+
+$(".card.rating .nav.nav-tabs .nav-link").click(function(e) {
+    e.preventDefault();
+
+    $('.rating-content .progress div').width("0%");
+
+    $('.rating-content .progress div').each(function(i,elem) {
+        let timeout = i * 100;
+
+        let progress = $(this).data("progress");
+
+        setTimeout(() => {
+            $(this).width(progress + "%");
+        }, timeout);
+    });
 });
 
 
